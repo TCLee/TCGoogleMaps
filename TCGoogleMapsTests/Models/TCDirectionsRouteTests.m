@@ -33,11 +33,14 @@
         STAssertTrue([leg isKindOfClass:[TCDirectionsLeg class]],
                      @"Leg should be of class TCDirectionsLeg.");
     }
+    
+    STAssertEquals([route.legs count], (NSUInteger)1, @"There should only be one leg in the route.");
 }
 
 - (void)testInitWithNilPropertiesShouldReturnNil
 {
-    
+    TCDirectionsRoute *route = [[TCDirectionsRoute alloc] initWithProperties:nil];
+    STAssertNil(route, @"Route should be nil if attemp to initialize with nil properties.");
 }
 
 @end

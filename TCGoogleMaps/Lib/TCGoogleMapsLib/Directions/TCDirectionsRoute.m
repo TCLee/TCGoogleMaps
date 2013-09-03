@@ -14,6 +14,8 @@
 
 - (id)initWithProperties:(NSDictionary *)properties
 {
+    if (!properties) { return nil; }
+    
     self = [super init];
     if (self) {
         _summary = properties[@"summary"];

@@ -14,7 +14,7 @@
 
 @implementation TCDirectionsStepTests
 
-- (void)testInitWithPropertiesCreatedFromJSON
+- (void)testInitWithValidProperties
 {
     NSDictionary *properties = [TCTestData JSONObjectFromFilename:@"TCDirectionStepTestData"];
     TCDirectionsStep *step = [[TCDirectionsStep alloc] initWithProperties:properties];

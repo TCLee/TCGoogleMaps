@@ -23,6 +23,7 @@
 		815CF8A317D5B6BB00FFFA83 /* TCDirectionsServiceTests_AlternativeRoutes.json in Resources */ = {isa = PBXBuildFile; fileRef = 815CF8A217D5B6BB00FFFA83 /* TCDirectionsServiceTests_AlternativeRoutes.json */; };
 		815CF8A617D5B8B800FFFA83 /* TCDirectionsRouteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 815CF8A517D5B8B700FFFA83 /* TCDirectionsRouteTests.m */; };
 		81718ED317CB40940082F631 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81718ED217CB40940082F631 /* libxml2.2.dylib */; };
+		81AA9B7E17D5C85B00B45089 /* TCDirectionsLegTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B7D17D5C85B00B45089 /* TCDirectionsLegTests.m */; };
 		81C1BAED17CEF6900032BA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BAE817CEF6900032BA8F /* InfoPlist.strings */; };
 		81C1BAEE17CEF6900032BA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAEA17CEF6900032BA8F /* main.m */; };
 		81C1BAF717CEF7230032BA8F /* TCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF217CEF7230032BA8F /* TCMapViewController.m */; };
@@ -95,6 +96,8 @@
 		815CF8A417D5B8B600FFFA83 /* TCDirectionsRouteTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDirectionsRouteTests.h; sourceTree = "<group>"; };
 		815CF8A517D5B8B700FFFA83 /* TCDirectionsRouteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDirectionsRouteTests.m; sourceTree = "<group>"; };
 		81718ED217CB40940082F631 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		81AA9B7C17D5C85B00B45089 /* TCDirectionsLegTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDirectionsLegTests.h; sourceTree = "<group>"; };
+		81AA9B7D17D5C85B00B45089 /* TCDirectionsLegTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDirectionsLegTests.m; sourceTree = "<group>"; };
 		81C1BAE917CEF6900032BA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81C1BAEA17CEF6900032BA8F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81C1BAEB17CEF6900032BA8F /* TCGoogleMaps-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMaps-Info.plist"; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				815CF89217D083D300FFFA83 /* TCDirectionsDataMapperTests.m */,
 				815CF8A417D5B8B600FFFA83 /* TCDirectionsRouteTests.h */,
 				815CF8A517D5B8B700FFFA83 /* TCDirectionsRouteTests.m */,
+				81AA9B7C17D5C85B00B45089 /* TCDirectionsLegTests.h */,
+				81AA9B7D17D5C85B00B45089 /* TCDirectionsLegTests.m */,
 				815CF88E17D07F7E00FFFA83 /* TCDirectionsStepTests.h */,
 				815CF87917D071CA00FFFA83 /* TCDirectionsStepTests.m */,
 				815CF89717D181B100FFFA83 /* TCDistanceTests.h */,
@@ -646,6 +651,7 @@
 				815CF89C17D1856B00FFFA83 /* TCDurationTests.m in Sources */,
 				815CF8A117D3411D00FFFA83 /* TCDirectionsServiceTest.m in Sources */,
 				815CF8A617D5B8B800FFFA83 /* TCDirectionsRouteTests.m in Sources */,
+				81AA9B7E17D5C85B00B45089 /* TCDirectionsLegTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
