@@ -1,0 +1,1141 @@
+TTCGoogleMaps
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Info.plist" TCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plist
+cPhaseScriptExecution "Check Pods Manifest.lock" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-6D9907E031E041BDAF7CD84B.sh"
+cProcessPCH /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.pth TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps" normal armv7
+cGenerateDSYMFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app.dSYM" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps"
+cCopyStringsFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/en.lproj/InfoPlist.strings" TCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.strings
+cCompileStoryboard "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard"
+cCopyPNGFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default-568h@2x.png" TCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png
+cCopyPNGFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default.png" TCGoogleMaps/Resources/Assets/Images/Default/Default.png
+cCopyPNGFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default@2x.png" TCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png
+cPhaseScriptExecution "Copy Pods Resources" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-8A6EB38628A54A9BAA15D00B.sh"
+cTouch "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000051BA7C980000000000000110
+t1371176088
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005109C6EB0000000000322700
+t1359595243
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005109C6EC0000000000114910
+t1359595244
+s1132816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000005109C6EB0000000000000279
+t1359595243
+s633
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005109C6EE000000000062AD10
+t1359595246
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000005109C6EC00000000000015F7
+t1359595244
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers/MobileCoreServices.h
+c000000005109C6EE00000000000000EB
+t1359595246
+s235
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000005109C6EF000000000012C360
+t1359595247
+s1229664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h
+c000000005109C6F00000000000001B13
+t1359595248
+s6931
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000005109C6F000000000000CAFB0
+t1359595248
+s831408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000005109C6F00000000000000E8D
+t1359595248
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000005109C6F500000000011BCDF0
+t1359595253
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
+c000000005109C6FD0000000000001B73
+t1359595261
+s7027
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libxml2.2.dylib
+c000000005109C70200000000001B4D30
+t1359595266
+s1789232
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFHTTPClient.h
+c000000005211B55600000000000094F6
+t1376892246
+s38134
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFHTTPRequestOperation.h
+c000000005211B5560000000000001907
+t1376892246
+s6407
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFImageRequestOperation.h
+c000000005211B55600000000000017D7
+t1376892246
+s6103
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFJSONRequestOperation.h
+c000000005211B5560000000000000E83
+t1376892246
+s3715
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFNetworkActivityIndicatorManager.h
+c000000005211B5560000000000000EB8
+t1376892246
+s3768
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFNetworking.h
+c000000005211B55600000000000006BF
+t1376892246
+s1727
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFPropertyListRequestOperation.h
+c000000005211B5560000000000000DCB
+t1376892246
+s3531
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFURLConnectionOperation.h
+c000000005211B5560000000000004A28
+t1376892246
+s18984
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/AFXMLRequestOperation.h
+c000000005211B55600000000000013E0
+t1376892246
+s5088
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking/UIImageView+AFNetworking.h
+c000000005211B556000000000000152E
+t1376892246
+s5422
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSCameraPosition.h
+c00000000520C932D000000000000111A
+t1376555821
+s4378
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSCameraUpdate.h
+c00000000520C932D0000000000000BBF
+t1376555821
+s3007
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSCircle.h
+c00000000520C932D0000000000000571
+t1376555821
+s1393
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSCoordinateBounds.h
+c00000000520C932D0000000000000B69
+t1376555821
+s2921
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSGeocoder.h
+c00000000520C932D0000000000000464
+t1376555821
+s1124
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSGeometryUtils.h
+c00000000520C932D00000000000014CB
+t1376555821
+s5323
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSGroundOverlay.h
+c00000000520C932D0000000000000994
+t1376555821
+s2452
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSIndoorBuilding.h
+c00000000520C932D0000000000000336
+t1376555821
+s822
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSIndoorDisplay.h
+c00000000520C932D0000000000000700
+t1376555821
+s1792
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSIndoorLevel.h
+c00000000520C932D00000000000002CC
+t1376555821
+s716
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSMapLayer.h
+c00000000520C932D0000000000000F75
+t1376555821
+s3957
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSMapView+Animation.h
+c00000000520C932D0000000000000737
+t1376555821
+s1847
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSMapView+Overlays.h
+c00000000520C932D00000000000003C5
+t1376555821
+s965
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSMapView.h
+c00000000520C932D000000000000242C
+t1376555821
+s9260
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSMarker.h
+c00000000520C932D0000000000000C9E
+t1376555821
+s3230
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSMutablePath.h
+c00000000520C932D0000000000000740
+t1376555821
+s1856
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSOrientation.h
+c00000000520C932D000000000000041B
+t1376555821
+s1051
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSOverlay.h
+c00000000520C932D000000000000074E
+t1376555821
+s1870
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPanorama.h
+c00000000520C932D0000000000000348
+t1376555821
+s840
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPanoramaCamera.h
+c00000000520C932D0000000000000A00
+t1376555821
+s2560
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPanoramaCameraUpdate.h
+c00000000520C932D000000000000032E
+t1376555821
+s814
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPanoramaLayer.h
+c00000000520C932D000000000000048B
+t1376555821
+s1163
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPanoramaLink.h
+c00000000520C932D0000000000000260
+t1376555821
+s608
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPanoramaService.h
+c00000000520C932D000000000000052F
+t1376555821
+s1327
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPanoramaView.h
+c00000000520C932D0000000000001F6F
+t1376555821
+s8047
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPath.h
+c00000000520C932D00000000000004BA
+t1376555821
+s1210
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPolygon.h
+c00000000520C932D00000000000004EE
+t1376555821
+s1262
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSPolyline.h
+c00000000520C932D0000000000000452
+t1376555821
+s1106
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSProjection.h
+c00000000520C932D000000000000084C
+t1376555821
+s2124
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSReverseGeocodeOutput.h
+c00000000520C932D0000000000000470
+t1376555821
+s1136
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSServices.h
+c00000000520C932D0000000000000688
+t1376555821
+s1672
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSSyncTileLayer.h
+c00000000520C932D000000000000034C
+t1376555821
+s844
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSTileLayer.h
+c00000000520C932D0000000000000CEF
+t1376555821
+s3311
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSUISettings.h
+c00000000520C932D0000000000000CDC
+t1376555821
+s3292
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GMSURLTileLayer.h
+c00000000520C932D0000000000000611
+t1376555821
+s1553
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps/GoogleMaps.h
+c00000000520C932D000000000000067E
+t1376555821
+s1662
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.h
+c000000005211D4430000000000000107
+t1376900163
+s263
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.m
+c00000000521ECE9F0000000000000196
+t1377750687
+s406
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.h
+c000000005215AAA500000000000001D4
+t1377151653
+s468
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.m
+c00000000521F011B00000000000011D8
+t1377763611
+s4568
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.h
+c000000005215AA9500000000000001A3
+t1377151637
+s419
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.m
+c0000000052133B7F000000000000198F
+t1376992127
+s6543
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.h
+c000000005219C6780000000000000194
+t1377420920
+s404
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.m
+c00000000521EEC2E0000000000000837
+t1377758254
+s2103
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirections.h
+c00000000521EEB910000000000000178
+t1377758097
+s376
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.h
+c00000000521EEDC10000000000000455
+t1377758657
+s1109
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m
+c00000000521EEDD10000000000000504
+t1377758673
+s1284
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.h
+c00000000521C56120000000000000A62
+t1377588754
+s2658
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m
+c00000000521F0131000000000000054C
+t1377763633
+s1356
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.h
+c00000000521C55DB0000000000000873
+t1377588699
+s2163
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m
+c00000000521F015C00000000000006BD
+t1377763676
+s1725
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.h
+c00000000521D5BDC00000000000005BA
+t1377655772
+s1466
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m
+c00000000521EED81000000000000042E
+t1377758593
+s1070
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.h
+c00000000521EE3B200000000000006F1
+t1377756082
+s1777
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m
+c00000000521EE3BD0000000000000BF6
+t1377756093
+s3062
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.h
+c00000000521EE395000000000000050A
+t1377756053
+s1290
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.m
+c00000000521EE1880000000000000973
+t1377755528
+s2419
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.h
+c00000000521ECFAB000000000000065D
+t1377750955
+s1629
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.m
+c00000000521F015200000000000009E5
+t1377763666
+s2533
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.h
+c00000000521C5733000000000000035F
+t1377589043
+s863
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m
+c00000000521C5A98000000000000019C
+t1377589912
+s412
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.h
+c00000000521C5AE90000000000000329
+t1377589993
+s809
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m
+c00000000521C5AA1000000000000019C
+t1377589921
+s412
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.h
+c00000000521F37870000000000000398
+t1377777543
+s920
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.m
+c00000000521EEE560000000000000855
+t1377758806
+s2133
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.h
+c0000000052133C420000000000000BB3
+t1376992322
+s2995
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.m
+c000000005215742D000000000000150A
+t1377137709
+s5386
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png
+c0000000050262AB100000000000048A2
+t1344678577
+s18594
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default.png
+c0000000050262AB1000000000000198C
+t1344678577
+s6540
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png
+c0000000050262AB10000000000003EEB
+t1344678577
+s16107
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch
+c00000000521EC72D000000000000025C
+t1377748781
+s604
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<CoreLocation/CoreLocation.h>
+i<GoogleMaps/GoogleMaps.h>
+i<SystemConfiguration/SystemConfiguration.h>
+i<MobileCoreServices/MobileCoreServices.h>
+i<AFNetworking/AFNetworking.h>
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.strings
+c00000000520F5A7E000000000000002D
+t1376737918
+s45
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/main.m
+c00000000520F5A7E000000000000015D
+t1376737918
+s349
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.h
+c00000000520F5A7F0000000000000122
+t1376737919
+s290
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.m
+c00000000521EC45C00000000000001F0
+t1377748060
+s496
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard
+c00000000521EDE43000000000000443A
+t1377754691
+s17466
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app.dSYM
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default-568h@2x.png
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default.png
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default@2x.png
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Info.plist
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/PkgInfo
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/libPods.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMaps.LinkFileList
+c000000005220062F0000000000000A65
+t1377830447
+s2661
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-6D9907E031E041BDAF7CD84B.sh
+c000000005220062F0000000000000103
+t1377830447
+s259
+
+N/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-8A6EB38628A54A9BAA15D00B.sh
+c000000005220062F000000000000002F
+t1377830447
+s47
+
+N/var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.pth
+t2
+s0
+
+NTCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plist
+c000000005211B6C00000000000000607
+t1376892608
+s1543
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesedd55baf3dd0b741^855c79af3dd0b741^---0#1#0#--18"Check dependencies36"191607E2-A696-4B58-8A2C-EE6B763EE440-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.617127
+e399523248.739921
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.mc32e9eb03dd0b741^e469bdb03dd0b741^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.m0000000000000000^4387"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.o TCGoogleMaps/TCAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/TCAppDelegate.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCAppDelegate.o"36"8327149E-A90D-477A-9D86-E9C8719A4613-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523249.056679
+e399523249.117925
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m17b60eb13dd0b741^81411eb13dd0b741^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m0000000000000000^4503"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsDataMapper.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsDataMapper.o"36"793B2BB8-0900-405A-BBE6-339DFACB278D-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.676654
+e399523248.747056
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m486eadb03dd0b741^0e84c0b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m0000000000000000^4461"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsLeg.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsLeg.o"36"4C3AA07D-0BBC-4A34-9FFA-A8CC4CD0770C-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.741285
+e399523248.820095
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m90f8bdb03dd0b741^919ad2b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m0000000000000000^4503"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsParameters.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsParameters.o"36"49CE6B4E-F7F2-49AD-A48D-597187F6C5D8-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.752482
+e399523248.840756
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m677ec1b03dd0b741^2655d7b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m0000000000000000^4473"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsRoute.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsRoute.o"36"CB5914C8-D997-42AA-9B52-45184227BD59-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.821441
+e399523248.905204
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m6e8bd2b03dd0b741^81cbe7b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m0000000000000000^4485"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsService.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsService.o"36"50E94B8E-7A3E-4441-8B3B-73F110298013-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.968846
+e399523249.027295
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.md238f8b03dd0b741^d80d07b13dd0b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.m0000000000000000^4479"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStatus.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStatus.o"36"8DEF0A19-5C15-45B8-8B21-EA74F0224497-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.842058
+e399523248.921406
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.ma0c4d7b03dd0b741^6ff2ebb03dd0b741^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.m0000000000000000^4467"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDirectionsStep.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDirectionsStep.o"36"7944A448-2E3E-4D9A-B232-F192A2C11717-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.906554
+e399523248.966214
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m8849e8b03dd0b741^1d5bf7b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m0000000000000000^4431"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDistance.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDistance.o"36"16439AFC-7914-43FC-8D03-D270C1BB67E4-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.923122
+e399523248.966851
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m1f84ecb03dd0b741^fa98f7b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m0000000000000000^4431"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.o TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/Directions/TCDuration.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCDuration.o"36"4F07830F-4BEB-4730-913E-15B121AE5D74-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523249.029099
+e399523249.102339
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.mebab07b13dd0b741^0d501ab13dd0b741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.m0000000000000000^4407"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.o TCGoogleMaps/App/TCGoogleAPIKeys.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/App/TCGoogleAPIKeys.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleAPIKeys.o"36"CA9AA5CB-70E9-42E0-90AC-69C126D7210E-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.968188
+e399523249.055139
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.mcc0bf8b03dd0b741^ea250eb13dd0b741^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.m0000000000000000^4475"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.o TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Lib/TCGoogleMapsLib/TCGoogleMapsAPIClient.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMapsAPIClient.o"36"591FA010-92C3-4618-9464-93C595915363-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.161010
+e399523248.432127
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.m617029b03dd0b741^8eb26eb03dd0b741^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.m0000000000000000^4425"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.o TCGoogleMaps/Models/TCGooglePlacesAPI.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Models/TCGooglePlacesAPI.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGooglePlacesAPI.o"36"0503C724-3419-489F-A034-FC76C5DA16DB-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.316151
+e399523248.502097
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.m7c2851b03dd0b741^819880b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.m0000000000000000^4447"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.o TCGoogleMaps/Controllers/TCMapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCMapViewController.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCMapViewController.o"36"0FA54ECB-5B36-4479-86CA-DDAC9346424F-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.433628
+e399523248.613554
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.m09356fb03dd0b741^bc219db03dd0b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.m0000000000000000^4465"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.o TCGoogleMaps/Controllers/TCSearchViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCSearchViewController.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCSearchViewController.o"36"CB18EBBE-7230-41EC-9C42-3C51483BE11E-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.503997
+e399523248.665246
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.mb09081b03dd0b741^b953aab03dd0b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.m0000000000000000^4459"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.o TCGoogleMaps/Controllers/TCStepsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Controllers/TCStepsViewController.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCStepsViewController.o"36"9BC4F3F5-429F-4518-AC96-DEFAB08EC49B-
+
+CCompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523248.160475
+e399523248.314716
+r1
+xCompileC
+xbuild/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.o
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/main.mb95429b03dd0b741^72a350b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@110"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/main.m0000000000000000^4365"CompileC build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.o TCGoogleMaps/SupportingFiles/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -include /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch -MMD -MT dependencies -MF "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.d" --serialize-diagnostics "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.dia" -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/main.m" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/main.o"36"538305FA-DD80-4799-BBFA-3BDCB1A8CB85-
+
+CCompileStoryboard "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard"
+s399523249.204815
+e399523249.502191
+r1
+xCompileStoryboard
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"CompileStoryboard TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard198d34b13dd0b741^1b9c80b13dd0b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard0000000000000000^1403"CompileStoryboard TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/en.lproj/MainStoryboard.storyboardc" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Views/en.lproj/MainStoryboard.storyboard" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"A95102AE-B79E-47F4-B186-92F0D52ACDD6-
+
+CCopyPNGFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default-568h@2x.png" TCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png
+s399523249.277841
+e399523249.496005
+r1
+xCopyPNGFile
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default-568h@2x.png
+xTCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"CopyPNGFile build/Debug-iphoneos/TCGoogleMaps.app/Default-568h@2x.png TCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png744347b13dd0b741^700a7fb13dd0b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png0000000000000000^1193"CopyPNGFile "build/Debug-iphoneos/TCGoogleMaps.app/Default-568h@2x.png" "TCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png"    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default-568h@2x.png" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default-568h@2x.png"36"72DDFA6E-6119-4A1B-A092-ABE9756A7138-
+
+CCopyPNGFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default.png" TCGoogleMaps/Resources/Assets/Images/Default/Default.png
+s399523249.501217
+e399523249.695079
+r1
+xCopyPNGFile
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default.png
+xTCGoogleMaps/Resources/Assets/Images/Default/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"CopyPNGFile build/Debug-iphoneos/TCGoogleMaps.app/Default.png TCGoogleMaps/Resources/Assets/Images/Default/Default.pngac7380b13dd0b741^f0fdb1b13dd0b741^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default.png0000000000000000^1157"CopyPNGFile build/Debug-iphoneos/TCGoogleMaps.app/Default.png TCGoogleMaps/Resources/Assets/Images/Default/Default.png    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default.png" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default.png"36"88569843-127E-429D-9A7D-4FFE0BA3EAD2-
+
+CCopyPNGFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default@2x.png" TCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png
+s399523249.531496
+e399523249.743511
+r1
+xCopyPNGFile
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default@2x.png
+xTCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"CopyPNGFile build/Debug-iphoneos/TCGoogleMaps.app/Default@2x.png TCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png9dd98ab13dd0b741^eb57beb13dd0b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png0000000000000000^1173"CopyPNGFile "build/Debug-iphoneos/TCGoogleMaps.app/Default@2x.png" "TCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png"    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/Resources/Assets/Images/Default/Default@2x.png" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Default@2x.png"36"18B221EB-4605-4DF9-A64D-4DD0484C43C8-
+
+CCopyStringsFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/en.lproj/InfoPlist.strings" TCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.strings
+s399523249.204469
+e399523249.276468
+r1
+xCopyStringsFile
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/en.lproj/InfoPlist.strings
+xTCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy TCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.stringse17e34b13dd0b741^36ca46b13dd0b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.strings0000000000000000^1091"CopyStringsFile build/Debug-iphoneos/TCGoogleMaps.app/en.lproj/InfoPlist.strings TCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.strings    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/en.lproj" -- TCGoogleMaps/SupportingFiles/en.lproj/InfoPlist.strings36"529B6BD1-F41B-4C39-A09E-239CD1CA4426-
+
+CGenerateDSYMFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app.dSYM" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps"
+s399523249.162518
+e399523249.196413
+r0
+xGenerateDSYMFile
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app.dSYM
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps
+oerror: unable to open executable '/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps'
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Generate /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app.dSYM37c329b13dd0b741^9be532b13dd0b741^-142"error: unable to open executable '/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps'1(21%IDEActivityLogMessage2@142"error: unable to open executable '/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps'-399523249#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#14"Dsymutil Error--0#0#0#-19%DVTDocumentLocation4@117"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app.dSYM000000000080d041^1125"GenerateDSYMFile build/Debug-iphoneos/TCGoogleMaps.app.dSYM build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps" -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app.dSYM"36"3ECEAAE2-0B2F-47C0-8146-8CA7E12AC4ED-
+
+CLd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps" normal armv7
+s399523249.124550
+e399523249.156097
+r0
+xLd
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps
+xnormal
+xarmv7
+old: library not found for -lPods
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Link /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps450f20b13dd0b741^e21d28b13dd0b741^-113"ld: library not found for -lPodsclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@28"Library not found for -lPods-399523249#0#33#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-399523249#33#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#0#--2120"Ld build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps normal armv7    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk "-L/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" -filelist "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Objects-normal/armv7/TCGoogleMaps.LinkFileList" -dead_strip -ObjC -lc++ -licucore -lz -framework AVFoundation -framework CoreData -framework CoreGraphics -framework CoreLocation -framework CoreText -framework GLKit -framework GoogleMaps -framework ImageIO -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework Security -framework SystemConfiguration -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -lxml2.2 -framework MobileCoreServices -framework SystemConfiguration -framework CoreLocation -framework UIKit -framework Foundation -framework CoreGraphics -lPods -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/TCGoogleMaps"36"42459AA4-EB78-4B86-B660-668783F72F2E-
+
+CPhaseScriptExecution "Check Pods Manifest.lock" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-6D9907E031E041BDAF7CD84B.sh"
+s399523247.497403
+e399523247.522784
+r1
+xPhaseScriptExecution
+xCheck Pods Manifest.lock
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-6D9907E031E041BDAF7CD84B.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Run custom shell script 'Check Pods Manifest.lock'c80c80af3dd0b741^f77786af3dd0b741^---0#0#0#--380"PhaseScriptExecution "Check Pods Manifest.lock" build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-6D9907E031E041BDAF7CD84B.sh    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    /bin/sh -c "\"/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-6D9907E031E041BDAF7CD84B.sh\""36"F930AA55-DEC0-4F93-898B-FF5B8228A0DC-
+
+CPhaseScriptExecution "Copy Pods Resources" "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-8A6EB38628A54A9BAA15D00B.sh"
+s399523249.751775
+e399523249.965644
+r1
+xPhaseScriptExecution
+xCopy Pods Resources
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-8A6EB38628A54A9BAA15D00B.sh
+o/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle
+obuilding file list ... done
+oGoogleMaps.bundle/
+oGoogleMaps.bundle/Info.plist
+oGoogleMaps.bundle/bubble_left.png
+oGoogleMaps.bundle/bubble_left@2x.png
+oGoogleMaps.bundle/bubble_right.png
+oGoogleMaps.bundle/bubble_right@2x.png
+oGoogleMaps.bundle/default_marker.png
+oGoogleMaps.bundle/default_marker@2x.png
+oGoogleMaps.bundle/GMSCacheStorage.momd/
+oGoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom
+oGoogleMaps.bundle/GMSCacheStorage.momd/Storage.omo
+oGoogleMaps.bundle/GMSCacheStorage.momd/VersionInfo.plist
+oGoogleMaps.bundle/GMSCoreResources.bundle/
+oGoogleMaps.bundle/GMSCoreResources.bundle/GMSSprites-0.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/GMSSprites-0@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/HybridRoadShader.fsh
+oGoogleMaps.bundle/GMSCoreResources.bundle/Info.plist
+oGoogleMaps.bundle/GMSCoreResources.bundle/button_background.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/button_background@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/button_compass.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/button_compass@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/button_my_location.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/button_my_location@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/compass_pin.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/compass_pin@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/dav_one_way_16_256.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_1-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_128-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_16-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_2-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_256-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_32-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_4-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_64-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_8-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/road_256-1.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/road_256-16.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/road_256-2.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/road_256-32.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/road_256-4.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/road_256-64.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/road_256-8.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/watermark_dark.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/watermark_dark@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/watermark_light.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/watermark_light@2x.png
+oGoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GMSCore.strings
+oGoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/
+oGoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GMSCore.strings
+oGoogleMaps.bundle/en.lproj/
+oGoogleMaps.bundle/en.lproj/InfoPlist.strings
+o
+osent 243143 bytes  received 2008 bytes  490302.00 bytes/sec
+ototal size is 236583  speedup is 0.97
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Run custom shell script 'Copy Pods Resources'8f18c1b13dd0b741^3c31f7b13dd0b741^-7068"/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundlebuilding file list ... doneGoogleMaps.bundle/GoogleMaps.bundle/Info.plistGoogleMaps.bundle/bubble_left.pngGoogleMaps.bundle/bubble_left@2x.pngGoogleMaps.bundle/bubble_right.pngGoogleMaps.bundle/bubble_right@2x.pngGoogleMaps.bundle/default_marker.pngGoogleMaps.bundle/default_marker@2x.pngGoogleMaps.bundle/GMSCacheStorage.momd/GoogleMaps.bundle/GMSCacheStorage.momd/Storage.momGoogleMaps.bundle/GMSCacheStorage.momd/Storage.omoGoogleMaps.bundle/GMSCacheStorage.momd/VersionInfo.plistGoogleMaps.bundle/GMSCoreResources.bundle/GoogleMaps.bundle/GMSCoreResources.bundle/GMSSprites-0.pngGoogleMaps.bundle/GMSCoreResources.bundle/GMSSprites-0@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/HybridRoadShader.fshGoogleMaps.bundle/GMSCoreResources.bundle/Info.plistGoogleMaps.bundle/GMSCoreResources.bundle/button_background.pngGoogleMaps.bundle/GMSCoreResources.bundle/button_background@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/button_compass.pngGoogleMaps.bundle/GMSCoreResources.bundle/button_compass@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/button_my_location.pngGoogleMaps.bundle/GMSCoreResources.bundle/button_my_location@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/compass_pin.pngGoogleMaps.bundle/GMSCoreResources.bundle/compass_pin@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/dav_one_way_16_256.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_1-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_128-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_16-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_2-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_256-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_32-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_4-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_64-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_8-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture.pngGoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/road_256-1.pngGoogleMaps.bundle/GMSCoreResources.bundle/road_256-16.pngGoogleMaps.bundle/GMSCoreResources.bundle/road_256-2.pngGoogleMaps.bundle/GMSCoreResources.bundle/road_256-32.pngGoogleMaps.bundle/GMSCoreResources.bundle/road_256-4.pngGoogleMaps.bundle/GMSCoreResources.bundle/road_256-64.pngGoogleMaps.bundle/GMSCoreResources.bundle/road_256-8.pngGoogleMaps.bundle/GMSCoreResources.bundle/watermark_dark.pngGoogleMaps.bundle/GMSCoreResources.bundle/watermark_dark@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/watermark_light.pngGoogleMaps.bundle/GMSCoreResources.bundle/watermark_light@2x.pngGoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GMSCore.stringsGoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GMSCore.stringsGoogleMaps.bundle/en.lproj/GoogleMaps.bundle/en.lproj/InfoPlist.stringssent 243143 bytes  received 2008 bytes  490302.00 bytes/sectotal size is 236583  speedup is 0.97122(21%IDEActivityLogMessage2@142"/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle-399523249#0#142#-0#-----2@28"building file list ... done-399523249#142#28#-0#-----2@19"GoogleMaps.bundle/-399523249#170#19#-0#-----2@29"GoogleMaps.bundle/Info.plist-399523249#189#29#-0#-----2@34"GoogleMaps.bundle/bubble_left.png-399523249#218#34#-0#-----2@37"GoogleMaps.bundle/bubble_left@2x.png-399523249#252#37#-0#-----2@35"GoogleMaps.bundle/bubble_right.png-399523249#289#35#-0#-----2@38"GoogleMaps.bundle/bubble_right@2x.png-399523249#324#38#-0#-----2@37"GoogleMaps.bundle/default_marker.png-399523249#362#37#-0#-----2@40"GoogleMaps.bundle/default_marker@2x.png-399523249#399#40#-0#-----2@40"GoogleMaps.bundle/GMSCacheStorage.momd/-399523249#439#40#-0#-----2@51"GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom-399523249#479#51#-0#-----2@51"GoogleMaps.bundle/GMSCacheStorage.momd/Storage.omo-399523249#530#51#-0#-----2@57"GoogleMaps.bundle/GMSCacheStorage.momd/VersionInfo.plist-399523249#581#57#-0#-----2@43"GoogleMaps.bundle/GMSCoreResources.bundle/-399523249#638#43#-0#-----2@59"GoogleMaps.bundle/GMSCoreResources.bundle/GMSSprites-0.png-399523249#681#59#-0#-----2@62"GoogleMaps.bundle/GMSCoreResources.bundle/GMSSprites-0@2x.png-399523249#740#62#-0#-----2@63"GoogleMaps.bundle/GMSCoreResources.bundle/HybridRoadShader.fsh-399523249#802#63#-0#-----2@53"GoogleMaps.bundle/GMSCoreResources.bundle/Info.plist-399523249#865#53#-0#-----2@64"GoogleMaps.bundle/GMSCoreResources.bundle/button_background.png-399523249#918#64#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/button_background@2x.png-399523249#982#67#-0#-----2@61"GoogleMaps.bundle/GMSCoreResources.bundle/button_compass.png-399523249#1049#61#-0#-----2@64"GoogleMaps.bundle/GMSCoreResources.bundle/button_compass@2x.png-399523249#1110#64#-0#-----2@65"GoogleMaps.bundle/GMSCoreResources.bundle/button_my_location.png-399523249#1174#65#-0#-----2@68"GoogleMaps.bundle/GMSCoreResources.bundle/button_my_location@2x.png-399523249#1239#68#-0#-----2@58"GoogleMaps.bundle/GMSCoreResources.bundle/compass_pin.png-399523249#1307#58#-0#-----2@61"GoogleMaps.bundle/GMSCoreResources.bundle/compass_pin@2x.png-399523249#1365#61#-0#-----2@65"GoogleMaps.bundle/GMSCoreResources.bundle/dav_one_way_16_256.png-399523249#1426#65#-0#-----2@59"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_1-1.png-399523249#1491#59#-0#-----2@61"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_128-1.png-399523249#1550#61#-0#-----2@60"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_16-1.png-399523249#1611#60#-0#-----2@59"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_2-1.png-399523249#1671#59#-0#-----2@61"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_256-1.png-399523249#1730#61#-0#-----2@60"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_32-1.png-399523249#1791#60#-0#-----2@59"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_4-1.png-399523249#1851#59#-0#-----2@60"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_64-1.png-399523249#1910#60#-0#-----2@59"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_8-1.png-399523249#1970#59#-0#-----2@70"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture.png-399523249#2029#70#-0#-----2@73"GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture@2x.png-399523249#2099#73#-0#-----2@57"GoogleMaps.bundle/GMSCoreResources.bundle/road_256-1.png-399523249#2172#57#-0#-----2@58"GoogleMaps.bundle/GMSCoreResources.bundle/road_256-16.png-399523249#2229#58#-0#-----2@57"GoogleMaps.bundle/GMSCoreResources.bundle/road_256-2.png-399523249#2287#57#-0#-----2@58"GoogleMaps.bundle/GMSCoreResources.bundle/road_256-32.png-399523249#2344#58#-0#-----2@57"GoogleMaps.bundle/GMSCoreResources.bundle/road_256-4.png-399523249#2402#57#-0#-----2@58"GoogleMaps.bundle/GMSCoreResources.bundle/road_256-64.png-399523249#2459#58#-0#-----2@57"GoogleMaps.bundle/GMSCoreResources.bundle/road_256-8.png-399523249#2517#57#-0#-----2@61"GoogleMaps.bundle/GMSCoreResources.bundle/watermark_dark.png-399523249#2574#61#-0#-----2@64"GoogleMaps.bundle/GMSCoreResources.bundle/watermark_dark@2x.png-399523249#2635#64#-0#-----2@62"GoogleMaps.bundle/GMSCoreResources.bundle/watermark_light.png-399523249#2699#62#-0#-----2@65"GoogleMaps.bundle/GMSCoreResources.bundle/watermark_light@2x.png-399523249#2761#65#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/-399523249#2826#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GMSCore.strings-399523249#2878#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/-399523249#2945#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GMSCore.strings-399523249#2997#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/-399523249#3064#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GMSCore.strings-399523249#3116#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/-399523249#3183#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GMSCore.strings-399523249#3235#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/-399523249#3302#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GMSCore.strings-399523249#3354#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/-399523249#3421#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GMSCore.strings-399523249#3473#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/-399523249#3540#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GMSCore.strings-399523249#3592#67#-0#-----2@55"GoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/-399523249#3659#55#-0#-----2@70"GoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GMSCore.strings-399523249#3714#70#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/-399523249#3784#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GMSCore.strings-399523249#3836#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/-399523249#3903#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GMSCore.strings-399523249#3955#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/-399523249#4022#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GMSCore.strings-399523249#4074#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/-399523249#4141#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GMSCore.strings-399523249#4193#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/-399523249#4260#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GMSCore.strings-399523249#4312#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/-399523249#4379#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GMSCore.strings-399523249#4431#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/-399523249#4498#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GMSCore.strings-399523249#4550#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/-399523249#4617#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GMSCore.strings-399523249#4669#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/-399523249#4736#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GMSCore.strings-399523249#4788#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/-399523249#4855#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GMSCore.strings-399523249#4907#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/-399523249#4974#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GMSCore.strings-399523249#5026#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/-399523249#5093#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GMSCore.strings-399523249#5145#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/-399523249#5212#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GMSCore.strings-399523249#5264#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/-399523249#5331#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GMSCore.strings-399523249#5383#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/-399523249#5450#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GMSCore.strings-399523249#5502#67#-0#-----2@55"GoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/-399523249#5569#55#-0#-----2@70"GoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GMSCore.strings-399523249#5624#70#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/-399523249#5694#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GMSCore.strings-399523249#5746#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/-399523249#5813#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GMSCore.strings-399523249#5865#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/-399523249#5932#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GMSCore.strings-399523249#5984#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/-399523249#6051#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GMSCore.strings-399523249#6103#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/-399523249#6170#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GMSCore.strings-399523249#6222#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/-399523249#6289#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GMSCore.strings-399523249#6341#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/-399523249#6408#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GMSCore.strings-399523249#6460#67#-0#-----2@52"GoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/-399523249#6527#52#-0#-----2@67"GoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GMSCore.strings-399523249#6579#67#-0#-----2@55"GoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/-399523249#6646#55#-0#-----2@70"GoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GMSCore.strings-399523249#6701#70#-0#-----2@55"GoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/-399523249#6771#55#-0#-----2@70"GoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GMSCore.strings-399523249#6826#70#-0#-----2@28"GoogleMaps.bundle/en.lproj/-399523249#6896#28#-0#-----2@45"GoogleMaps.bundle/en.lproj/InfoPlist.strings-399523249#6924#45#-0#-----2@60"sent 243143 bytes  received 2008 bytes  490302.00 bytes/sec-399523249#6970#60#-0#-----2@38"total size is 236583  speedup is 0.97-399523249#7030#38#-0#-----0#0#0#--375"PhaseScriptExecution "Copy Pods Resources" build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-8A6EB38628A54A9BAA15D00B.sh    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    /bin/sh -c "\"/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/Script-8A6EB38628A54A9BAA15D00B.sh\""36"5F7511F0-F0A6-4279-9514-56D2A2290C1B-
+
+CProcessInfoPlistFile "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Info.plist" TCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plist
+s399523247.484432
+e399523247.489056
+r1
+xProcessInfoPlistFile
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Info.plist
+xTCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Process TCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plistdb327caf3dd0b741^72327daf3dd0b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plist0000000000000000^1187"ProcessInfoPlistFile build/Debug-iphoneos/TCGoogleMaps.app/Info.plist TCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plist    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility TCGoogleMaps/SupportingFiles/TCGoogleMaps-Info.plist -genpkginfo "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -o "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app/Info.plist"36"8DD08805-71E8-4161-BC50-5166547AE5A6-
+
+CProcessPCH /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.pth TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s399523247.536728
+e399523248.153346
+r1
+xProcessPCH
+x/var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.pth
+xTCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Precompile TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pchcf4e8aaf3dd0b741^bc3e27b03dd0b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/leetzecheun/Documents/XCode%20Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch0000000000000000^4387"ProcessPCH /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.pth TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-generated-files.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-own-target-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-all-target-headers.hmap" -iquote "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/TCGoogleMaps-project-headers.hmap" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/include" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/AFNetworking" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/Google-Maps-iOS-SDK/GoogleMaps" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Headers/OCMock" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources/armv7" "-I/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/TCGoogleMaps.build/Debug-iphoneos/TCGoogleMaps.build/DerivedSources" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos" "-F/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/Pods/Google-Maps-iOS-SDK" --serialize-diagnostics /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.dia -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch" -o /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hj/9gqngcq13qdf6mjnjlbwv7fh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/TCGoogleMaps-Prefix-gfyiefmpeenpcnejigmxtnhmuulr/TCGoogleMaps-Prefix.pch.d36"6E2C88A6-96C9-4253-89A9-C6A93C74D940-
+
+CTouch "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app"
+s399523249.974400
+e399523249.981719
+r1
+xTouch
+x/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Touch /Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app5b94f9b13dd0b741^3751fbb13dd0b741^---0#0#0#--862"Touch build/Debug-iphoneos/TCGoogleMaps.app    cd "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/leetzecheun/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/leetzecheun/.rvm/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/Library/Frameworks/Python.framework/Versions/3.2/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/Users/leetzecheun/pear/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /usr/bin/touch -c "/Users/leetzecheun/Documents/XCode Projects/TCGoogleMaps/build/Debug-iphoneos/TCGoogleMaps.app"36"DA015027-18CE-42CB-96B1-C2CD5C82BC2D-
+

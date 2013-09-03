@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'TCGoogleMaps' target in the 'TCGoogleMaps' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+    #warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    // Google Maps
+    #import <CoreLocation/CoreLocation.h>
+    #import <GoogleMaps/GoogleMaps.h>
+
+    // AFNetworking
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import <AFNetworking/AFNetworking.h>
+#endif

@@ -1,0 +1,24 @@
+{
+    "distance" : {
+        "text" : "0.2 km",
+        "value" : 200
+    },
+    "duration" : {
+        "text" : "1 min",
+        "value" : 47
+    },
+    "end_location" : {
+        "lat" : 45.5085712,
+        "lng" : -73.5537674
+    },
+    "html_instructions" : "Turn right onto Rue Notre-Dame E",
+    "maneuver" : "turn-right",
+    "polyline" : {
+        "points" : "muwtGfv|_MfC`BVNt@n@RNZVt@n@"
+    },
+    "start_location" : {
+        "lat" : 45.5101458,
+        "lng" : -73.55252489999999
+    },
+    "travel_mode" : "DRIVING"
+}

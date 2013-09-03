@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'TCGoogleMapsTests' target in the 'TCGoogleMaps' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+
+    // AFNetworking spews out warnings if we don't add these imports.
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+#endif
