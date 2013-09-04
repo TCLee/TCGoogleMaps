@@ -68,7 +68,7 @@ FOUNDATION_EXPORT NSString * const TCTravelModeTransit;
  *
  * @see TCTravelMode constants
  */
-@property (nonatomic, strong) NSString *travelMode;
+@property (nonatomic, copy) NSString *travelMode;
 
 /**
  * Returns the dictionary representation of this TCDirectionsParameters instance.
