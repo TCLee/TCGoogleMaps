@@ -1,0 +1,176 @@
+
+{
+   "predictions" : [
+      {
+         "description" : "Amoeba Music, Haight Street, San Francisco, CA, United States",
+         "id" : "8c09fd30cd54da6a12ea940abd4677a8cf79645b",
+         "matched_substrings" : [
+            {
+               "length" : 6,
+               "offset" : 0
+            }
+         ],
+         "reference" : "CoQBdgAAAHqXkGxdy-bQeUj9QKf7gt5Oqb2lRuM2zZISwk3TgVtgmPMN65zzP4z-cLSZz3IoYJod1sRJj3SrKh_ylGWQpA43V4ODDmGFoqcOeMrFyl78pUXsU29mnu2GlT_P_QzBchlYi1NbkTRyZFkQM9UUnDl_bZJDbL7IQ_tnazC9gUknEhDrthtLXNHXHO-uvh0w9lTSGhTyi01MDG25LKGEDeyaiKarBWYGtQ",
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Amoeba Music"
+            },
+            {
+               "offset" : 14,
+               "value" : "Haight Street"
+            },
+            {
+               "offset" : 29,
+               "value" : "San Francisco"
+            },
+            {
+               "offset" : 44,
+               "value" : "CA"
+            },
+            {
+               "offset" : 48,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "establishment", "geocode" ]
+      },
+      {
+         "description" : "Amoeba Music, Telegraph Avenue, Berkeley, CA, United States",
+         "id" : "8a40726d6983c2b9f922b0eb72175351527f8f52",
+         "matched_substrings" : [
+            {
+               "length" : 6,
+               "offset" : 0
+            }
+         ],
+         "reference" : "CoQBdAAAAEzVkmrq9ZxQ-YblnLQqDcLIOStpMUSu3wZYbkHyf1z23oD1xbDcwj_cClN1EJ8kFpOrUw-K9DJX7Ahq1Lmrq0UpGkXf1ocQd1tYv3dnYcFxUtieSLBlWHamQISPStUooGjlev8s-avMhS6_t1zcBTDj6CtVfbX6OrWaZNu57pZQEhAJaYmD41Aad9RDuFEU37LfGhQ6xOCKtbOeYwOlNj1KGuMCVfjMdQ",
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Amoeba Music"
+            },
+            {
+               "offset" : 14,
+               "value" : "Telegraph Avenue"
+            },
+            {
+               "offset" : 32,
+               "value" : "Berkeley"
+            },
+            {
+               "offset" : 42,
+               "value" : "CA"
+            },
+            {
+               "offset" : 46,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "establishment" ]
+      },
+      {
+         "description" : "Amoeba Music, San Francisco, CA, United States",
+         "id" : "7faf52b0b6f439578c7f6ad0473de2431f028657",
+         "matched_substrings" : [
+            {
+               "length" : 6,
+               "offset" : 0
+            }
+         ],
+         "reference" : "CnRnAAAAkjKZNd4Lyy7BKK4a8oHN_Tgvfm7fYkcfuYaFGSSbPVsXr9lmAnF4Yhp9FIfoRVSvIk7rHhwsZfT7T3UwMqJtZHW8lhKQwBi3kZ0OOlKNKZwuQRMfLd7Jdtd8glXuB7O03BibBUdEJKlefS0yNHNd3BIQRwSeCNN0MiWx6iFoCSXLURoU9lJLBBwmMOkDRK8-6k2rd1e-MMs",
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Amoeba Music"
+            },
+            {
+               "offset" : 14,
+               "value" : "San Francisco"
+            },
+            {
+               "offset" : 29,
+               "value" : "CA"
+            },
+            {
+               "offset" : 33,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "establishment" ]
+      },
+      {
+         "description" : "Amoeba Music, West Sunset Boulevard, Los Angeles, CA, United States",
+         "id" : "8512d4f54c170be86f4295876acf795f71829757",
+         "matched_substrings" : [
+            {
+               "length" : 6,
+               "offset" : 0
+            }
+         ],
+         "reference" : "CoQBewAAAM87YsPvzn5xmuHyYorAD3qqRlJTeRy2HmBNAsnXxO-G7SwW7RpkS_3tp92xco8AWtO5WoElrahP0aw2QGF1OOWlg49QEFE7Q1hUBDz4ARmwKBgDQbhRGVFsl_PzVftPq-LpW6HlNUQ9TdL_XQbF108Srw6YU-IPiwlqSTobOHcpEhDH-EKV7bEhcv7jEbRZj_SYGhS6q-RkdGKSvwCUYyvEU_5F-fhsBA",
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Amoeba Music"
+            },
+            {
+               "offset" : 14,
+               "value" : "West Sunset Boulevard"
+            },
+            {
+               "offset" : 37,
+               "value" : "Los Angeles"
+            },
+            {
+               "offset" : 50,
+               "value" : "CA"
+            },
+            {
+               "offset" : 54,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "establishment" ]
+      },
+      {
+         "description" : "Amoeba, Shanthala Nagar, Ashok Nagar, Bangalore, Karnataka, India",
+         "id" : "7b023b0eb272ff3b1f2e59ede7c1e5aadfee0cb4",
+         "matched_substrings" : [
+            {
+               "length" : 6,
+               "offset" : 0
+            }
+         ],
+         "reference" : "CoQBeQAAAJyCK_IYUD8wx8NqsLZUMDVyl15r8NvsPjynJukFzM3HwlP8j3LVFiQHFdIUPqSMT7uzrtrrBGuCWbzeiLSQT99k1wDYRBeFP4uQdbApzdqTOSTB26_dEaP_0_YpxWrqf0O_d-NNOG5ByY680OvaExhC7kT9hqQFNSOxs0RjNmVeEhCh-LLwBUuZ1fMQJcmb1DZKGhTnN4WMxo7DOGvFTp6uverziSBUwQ",
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Amoeba"
+            },
+            {
+               "offset" : 8,
+               "value" : "Shanthala Nagar"
+            },
+            {
+               "offset" : 25,
+               "value" : "Ashok Nagar"
+            },
+            {
+               "offset" : 38,
+               "value" : "Bangalore"
+            },
+            {
+               "offset" : 49,
+               "value" : "Karnataka"
+            },
+            {
+               "offset" : 60,
+               "value" : "India"
+            }
+         ],
+         "types" : [ "establishment" ]
+      }
+   ],
+   "status" : "OK"
+}
