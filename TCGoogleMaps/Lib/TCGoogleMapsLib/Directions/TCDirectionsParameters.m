@@ -40,7 +40,7 @@ NSString * const TCTravelModeTransit = @"TRANSIT";
                                  @"destination": [TCGoogleMapsAPIDataMapper stringFromCoordinate:self.destination],
                                  @"sensor": @"false",
                                  @"mode": self.travelMode,
-                                 @"alternatives": [TCDirectionsDataMapper stringFromBool:self.provideRouteAlternatives]};
+                                 @"alternatives": [TCGoogleMapsAPIDataMapper stringFromBool:self.provideRouteAlternatives]};
     
     NSMutableDictionary *mutableParameters = [[NSMutableDictionary alloc] initWithDictionary:parameters];
     

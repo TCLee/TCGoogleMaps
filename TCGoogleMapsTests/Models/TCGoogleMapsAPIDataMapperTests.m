@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Lee Tze Cheun. All rights reserved.
 //
 
-#import "TCDirectionsDataMapperTests.h"
+#import "TCGoogleMapsAPIDataMapperTests.h"
 
 #import "TCGoogleMapsAPIDataMapper.h"
 #import <GoogleMaps/GMSCoordinateBounds.h>
 #import <CoreLocation/CLLocation.h>
 
-@implementation TCDirectionsDataMapperTests
+@implementation TCGoogleMapsAPIDataMapperTests
 
 - (void)testCreateCoordinateFromNilProperties
 {
@@ -68,7 +68,7 @@
 {
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(10.5f, 20.5f);
     NSString *coordinateString = [TCGoogleMapsAPIDataMapper stringFromCoordinate:coordinate];    
-    STAssertEqualObjects(coordinateString, @"10.500000,20.500000", @"String does not represent the CLLocationCoordinate2D value passed to it.");
+    STAssertEqualObjects(coordinateString, @"10.5,20.5", @"String does not represent the CLLocationCoordinate2D value passed to it.");
 }
 
 - (void)testStringFromCoordinateInvalidReturnsNil

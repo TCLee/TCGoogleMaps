@@ -8,6 +8,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+@class TCPlacesAutocompleteParameters;
+
 @interface TCPlacesAutocompleteParametersTests : SenTestCase
+
+@property (nonatomic, strong) TCPlacesAutocompleteParameters *parameters;
 
 @end

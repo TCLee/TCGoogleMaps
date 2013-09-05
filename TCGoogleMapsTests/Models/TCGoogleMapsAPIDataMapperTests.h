@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface TCDirectionsDataMapperTests : SenTestCase
+@interface TCGoogleMapsAPIDataMapperTests : SenTestCase
 
 @end

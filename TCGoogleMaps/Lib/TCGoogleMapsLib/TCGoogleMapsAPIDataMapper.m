@@ -29,9 +29,14 @@
 
 + (NSString *)stringFromCoordinate:(CLLocationCoordinate2D)coordinate
 {
-    return CLLocationCoordinate2DIsValid(coordinate) ?
-           [NSString stringWithFormat:@"%f,%f", coordinate.latitude, coordinate.longitude] :
-           nil;
+    // Returns nil on invalid coordinates.
+    if (!CLLocationCoordinate2DIsValid(coordinate)) {
+        return nil;
+    }
+    
+    NSString *latitudeString = [@(coordinate.latitude) stringValue];
+    NSString *longitudeString = [@(coordinate.longitude) stringValue];
+    return [NSString stringWithFormat:@"%@,%@", latitudeString, longitudeString];
 }
 
 + (NSString *)stringFromBool:(BOOL)boolValue

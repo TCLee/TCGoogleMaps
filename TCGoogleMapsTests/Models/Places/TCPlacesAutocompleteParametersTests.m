@@ -13,24 +13,34 @@
 
 @implementation TCPlacesAutocompleteParametersTests
 
-- (void)testParametersDictionaryRepresentation
+- (void)setUp
+{
+    self.parameters = [[TCPlacesAutocompleteParameters alloc] init];
+}
+
+- (void)tearDown
+{
+    self.parameters = nil;
+}
+
+- (void)testWithAllParameters
 {
     TCPlacesAutocompleteParameters *parameters = [[TCPlacesAutocompleteParameters alloc] init];
     parameters.input = @"Hello World!";
-    parameters.location = CLLocationCoordinate2DMake(10.5, 20.5);
+    parameters.location = CLLocationCoordinate2DMake(10.25, 20.25);
     parameters.radius = (CLLocationDistance)500;
     
     NSDictionary *dictionary = [parameters dictionary];
     
     STAssertEqualObjects(dictionary[@"input"], parameters.input,
                          @"Dictionary's \"input\" key should match object's input property.");
-    STAssertEqualObjects(dictionary[@"location"], @"10.500000,20.500000",
+    STAssertEqualObjects(dictionary[@"location"], @"10.25,20.25",
                          @"Dictionary's \"location\" key's string value was not converted properly from a CLLocationCoordinate2D.");
-    STAssertEqualObjects(dictionary[@"radius"], @"500.000000",
+    STAssertEqualObjects(dictionary[@"radius"], @"500",
                          @"Dictionary's \"radius\" key's string value was not converted properly from a CLLocationDistance.");
 }
 
-- (void)testParametersDictionaryRepresentationWithNoLocationBiasing
+- (void)testParametersWithNoLocationBiasing
 {
     TCPlacesAutocompleteParameters *parameters = [[TCPlacesAutocompleteParameters alloc] init];
     parameters.input = @"Hello World!";
@@ -42,13 +52,27 @@
     STAssertNil(dictionary[@"radius"], @"There should be no \"radius\" key, if no location is given.");
 }
 
-- (void)testParametersDictionaryRepresentationWithNoInput
+- (void)testParametersWithNoInputShouldThrowException
 {
     TCPlacesAutocompleteParameters *parameters = [[TCPlacesAutocompleteParameters alloc] init];
-    NSDictionary *dictionary = [parameters dictionary];
     
-    STAssertEqualObjects(dictionary[@"input"], @"",
-                         @"The \"input\" should be an empty string, even if it's not set to a value.");
+    STAssertThrows([parameters dictionary],
+                   @"If required parameter \"input\" is nil, it should be caught by an NSAssert.");
+}
+
+- (void)testParametersWithEmptyInputShouldThrowException
+{
+    TCPlacesAutocompleteParameters *parameters = [[TCPlacesAutocompleteParameters alloc] init];
+    parameters.input = @"";
+    
+    STAssertThrows([parameters dictionary],
+                   @"If \"input\" parameter is an empty string, it should be caught by an NSAssert.");
+}
+
+- (void)testLocationIsInitializedToInvalidCoordinates
+{
+    STAssertFalse(CLLocationCoordinate2DIsValid(self.parameters.location),
+                  @"location property should be initialized to kCLLocationCoordinate2DInvalid");
 }
 
 @end

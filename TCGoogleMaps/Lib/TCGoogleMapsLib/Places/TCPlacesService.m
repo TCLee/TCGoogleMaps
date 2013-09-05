@@ -7,6 +7,7 @@
 //
 
 #import "TCPlacesService.h"
+#import "TCPlacesAutocompleteParameters.h"
 #import "TCGoogleMapsAPIClient.h"
 
 @implementation TCPlacesService
