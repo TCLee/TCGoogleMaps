@@ -10,4 +10,16 @@
 
 @implementation TCPlacesAutocompletePrediction
 
+- (id)initWithProperties:(NSDictionary *)properties
+{
+    if (!properties) { return nil; }
+    
+    self = [super init];
+    if (self) {
+        _description = [properties[@"description"] copy];
+        _reference = [properties[@"reference"] copy];
+    }
+    return self;
+}
+
 @end
