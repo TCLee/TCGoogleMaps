@@ -11,9 +11,9 @@
 #import <GoogleMaps/GoogleMaps.h>
 
 /**
- * Contains methods to convert values to and from Google Directions API services.
+ * Contains methods to convert values to and from Google Maps APIs.
  */
-@interface TCDirectionsDataMapper : NSObject
+@interface TCGoogleMapsAPIDataMapper : NSObject
 
 /**
  * Returns a GMSCoordinateBounds instance from the given properties dictionary.

@@ -10,4 +10,9 @@
 
 @implementation TCPlacesAutocompleteParameters
 
+- (NSDictionary *)dictionary
+{
+    return nil;
+}
+
 @end

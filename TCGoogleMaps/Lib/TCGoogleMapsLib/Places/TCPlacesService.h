@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class TCGoogleMapsAPIClient;
 @class TCPlacesAutocompleteParameters;
 
 /**
@@ -22,6 +23,14 @@ typedef void (^TCPlacesAutocompleteServiceCallback)(NSArray *predictions, NSErro
  * Provides methods to access the Google Places API.
  */
 @interface TCPlacesService : NSObject
+
+/**
+ * A custom `TCGoogleMapsAPIClient` instance that will be used to send
+ * HTTP requests to Google Maps APIs.
+ * If this property is nil, then the default `TCGoogleMapsAPIClient`
+ * shared instance will be used.
+ */
+@property (nonatomic, strong) TCGoogleMapsAPIClient *APIClient;
 
 /**
  * Returns a shared `TCPlacesService` instance to access Google Placess API.

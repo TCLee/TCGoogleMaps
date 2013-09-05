@@ -1,5 +1,5 @@
 //
-//  TCPlacesAutocompleteServiceTests.h
+//  TCPlacesServiceTests.h
 //  TCGoogleMaps
 //
 //  Created by Lee Tze Cheun on 9/3/13.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface TCPlacesAutocompleteServiceTests : SenTestCase
+@interface TCPlacesServiceTests : SenTestCase
 
 @end

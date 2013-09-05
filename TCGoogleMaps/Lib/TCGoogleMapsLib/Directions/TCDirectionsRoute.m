@@ -8,7 +8,7 @@
 
 #import "TCDirectionsRoute.h"
 #import "TCDirectionsLeg.h"
-#import "TCDirectionsDataMapper.h"
+#import "TCGoogleMapsAPIDataMapper.h"
 
 @implementation TCDirectionsRoute
 
@@ -20,7 +20,7 @@
     if (self) {
         _summary = properties[@"summary"];
         _overviewPath = [GMSPath pathFromEncodedPath:properties[@"overview_polyline"][@"points"]];
-        _bounds = [TCDirectionsDataMapper coordinateBoundsFromProperties:properties[@"bounds"]];
+        _bounds = [TCGoogleMapsAPIDataMapper coordinateBoundsFromProperties:properties[@"bounds"]];
         _legs = [self legsFromProperties:properties[@"legs"]];
     }
     return self;

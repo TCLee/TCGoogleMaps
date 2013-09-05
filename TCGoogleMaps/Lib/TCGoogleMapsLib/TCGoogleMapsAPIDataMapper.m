@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 Lee Tze Cheun. All rights reserved.
 //
 
-#import "TCDirectionsDataMapper.h"
+#import "TCGoogleMapsAPIDataMapper.h"
 
-@implementation TCDirectionsDataMapper
+@implementation TCGoogleMapsAPIDataMapper
 
 + (GMSCoordinateBounds *)coordinateBoundsFromProperties:(NSDictionary *)properties
 {
-    CLLocationCoordinate2D northEastCoordinate = [TCDirectionsDataMapper coordinateFromProperties:properties[@"northeast"]];
-    CLLocationCoordinate2D southWestCoordinate = [TCDirectionsDataMapper coordinateFromProperties:properties[@"southwest"]];
+    CLLocationCoordinate2D northEastCoordinate = [TCGoogleMapsAPIDataMapper coordinateFromProperties:properties[@"northeast"]];
+    CLLocationCoordinate2D southWestCoordinate = [TCGoogleMapsAPIDataMapper coordinateFromProperties:properties[@"southwest"]];
     GMSCoordinateBounds *coordinateBounds = [[GMSCoordinateBounds alloc] initWithCoordinate:northEastCoordinate coordinate:southWestCoordinate];
     return coordinateBounds;
 }

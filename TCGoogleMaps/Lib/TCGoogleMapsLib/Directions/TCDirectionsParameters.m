@@ -7,7 +7,7 @@
 //
 
 #import "TCDirectionsParameters.h"
-#import "TCDirectionsDataMapper.h"
+#import "TCGoogleMapsAPIDataMapper.h"
 
 NSString * const TCTravelModeDriving = @"DRIVING";
 NSString * const TCTravelModeWalking = @"WALKING";
@@ -36,8 +36,8 @@ NSString * const TCTravelModeTransit = @"TRANSIT";
     NSAssert(CLLocationCoordinate2DIsValid(self.origin), @"Origin must be set to valid coordinates.");
     NSAssert(CLLocationCoordinate2DIsValid(self.destination), @"Destination must be set to valid coordinates.");
     
-    NSDictionary *parameters = @{@"origin": [TCDirectionsDataMapper stringFromCoordinate:self.origin],
-                                 @"destination": [TCDirectionsDataMapper stringFromCoordinate:self.destination],
+    NSDictionary *parameters = @{@"origin": [TCGoogleMapsAPIDataMapper stringFromCoordinate:self.origin],
+                                 @"destination": [TCGoogleMapsAPIDataMapper stringFromCoordinate:self.destination],
                                  @"sensor": @"false",
                                  @"mode": self.travelMode,
                                  @"alternatives": [TCDirectionsDataMapper stringFromBool:self.provideRouteAlternatives]};

@@ -9,8 +9,19 @@
 #import <Foundation/Foundation.h>
 
 /**
- * <#Description#>
+ * A place prediction object returned by Google Places Autocomplete API.
  */
 @interface TCPlacesAutocompletePrediction : NSObject
+
+/**
+ * Contains the human-readable name for the returned result.
+ */
+@property (nonatomic, readonly) NSString *description;
+
+/**
+ * A reference that can be used to retrieve details about this place 
+ * using the place details service.
+ */
+@property (nonatomic, readonly) NSString *reference;
 
 @end

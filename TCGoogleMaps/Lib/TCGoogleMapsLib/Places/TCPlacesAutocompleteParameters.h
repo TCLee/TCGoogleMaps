@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CLLocation.h>
 
 /**
  * The request parameters to be sent to Google Places Autocomplete API.
@@ -32,5 +33,12 @@
  * `location` property. Optional.
  */
 @property (nonatomic, assign) CLLocationDistance radius;
+
+/**
+ * Creates and returns a dictionary representation of the receiver.
+ *
+ * @return a dictionary representation of this receiver
+ */
+- (NSDictionary *)dictionary;
 
 @end

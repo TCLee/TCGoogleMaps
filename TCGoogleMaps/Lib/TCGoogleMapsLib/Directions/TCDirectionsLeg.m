@@ -10,7 +10,7 @@
 #import "TCDirectionsStep.h"
 #import "TCDistance.h"
 #import "TCDuration.h"
-#import "TCDirectionsDataMapper.h"
+#import "TCGoogleMapsAPIDataMapper.h"
 
 @implementation TCDirectionsLeg
 
@@ -23,9 +23,9 @@
         _steps = [self stepsFromProperties:properties[@"steps"]];
         _distance = [[TCDistance alloc] initWithProperties:properties[@"distance"]];
         _duration = [[TCDuration alloc] initWithProperties:properties[@"duration"]];
-        _startLocation = [TCDirectionsDataMapper coordinateFromProperties:properties[@"start_location"]];
+        _startLocation = [TCGoogleMapsAPIDataMapper coordinateFromProperties:properties[@"start_location"]];
         _startAddress = properties[@"start_address"];
-        _endLocation = [TCDirectionsDataMapper coordinateFromProperties:properties[@"end_location"]];
+        _endLocation = [TCGoogleMapsAPIDataMapper coordinateFromProperties:properties[@"end_location"]];
         _endAddress = properties[@"end_address"];
     }
     return self;

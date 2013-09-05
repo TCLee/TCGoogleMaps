@@ -16,7 +16,7 @@
 
 - (void)testInitWithValidProperties
 {
-    NSDictionary *properties = [TCTestData JSONObjectFromFilename:@"TCDirectionStepTestData"];
+    NSDictionary *properties = [TCTestData JSONObjectFromFilename:@"TCDirectionsStepTestData"];
     TCDirectionsStep *step = [[TCDirectionsStep alloc] initWithProperties:properties];
 
     STAssertEquals(step.distance.value, (CLLocationDistance)200, @"The step's distance value does not match test data.");

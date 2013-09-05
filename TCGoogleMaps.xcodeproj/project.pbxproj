@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		810E4FAB17D6E17B00B69AF3 /* TCPlacesAutocompletePrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FAA17D6E17B00B69AF3 /* TCPlacesAutocompletePrediction.m */; };
+		810E4FB117D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAD17D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json */; };
+		810E4FB217D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAE17D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json */; };
+		810E4FB317D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAF17D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json */; };
+		810E4FB417D70C3F00B69AF3 /* TCDirectionsServiceTests_OneRoute.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FB017D70C3F00B69AF3 /* TCDirectionsServiceTests_OneRoute.json */; };
+		810E4FB717D70CCD00B69AF3 /* TCPlacesAutocomplete_Success.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FB617D70CCD00B69AF3 /* TCPlacesAutocomplete_Success.json */; };
+		810E4FB917D70D1600B69AF3 /* TCDirectionsStepTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FB817D70D1600B69AF3 /* TCDirectionsStepTestData.json */; };
+		810E4FBC17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FBB17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m */; };
+		810E4FBF17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FBE17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m */; };
+		810E4FC217D82D7100B69AF3 /* TCGoogleMapsAPIDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FC117D82D6F00B69AF3 /* TCGoogleMapsAPIDataMapper.m */; };
 		8152489017D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */; };
 		815CF88017D071CA00FFFA83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 815CF87B17D071CA00FFFA83 /* InfoPlist.strings */; };
-		815CF88717D075D500FFFA83 /* TCDirectionsServiceTests_InvalidRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 815CF88417D075D500FFFA83 /* TCDirectionsServiceTests_InvalidRequest.json */; };
-		815CF88817D075D500FFFA83 /* TCDirectionsServiceTests_NotFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 815CF88517D075D500FFFA83 /* TCDirectionsServiceTests_NotFound.json */; };
-		815CF88917D075D500FFFA83 /* TCDirectionsServiceTests_OneRoute.json in Resources */ = {isa = PBXBuildFile; fileRef = 815CF88617D075D500FFFA83 /* TCDirectionsServiceTests_OneRoute.json */; };
 		815CF88D17D0794200FFFA83 /* TCTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 815CF88C17D0794200FFFA83 /* TCTestData.m */; };
-		815CF89E17D339E100FFFA83 /* TCDirectionStepTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 815CF89D17D339E000FFFA83 /* TCDirectionStepTestData.json */; };
-		815CF8A317D5B6BB00FFFA83 /* TCDirectionsServiceTests_AlternativeRoutes.json in Resources */ = {isa = PBXBuildFile; fileRef = 815CF8A217D5B6BB00FFFA83 /* TCDirectionsServiceTests_AlternativeRoutes.json */; };
 		81718ED317CB40940082F631 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81718ED217CB40940082F631 /* libxml2.2.dylib */; };
 		81AA9B9017D5D86B00B45089 /* TCDirectionsDataMapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B8117D5D86B00B45089 /* TCDirectionsDataMapperTests.m */; };
 		81AA9B9117D5D86B00B45089 /* TCDirectionsLegTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B8317D5D86B00B45089 /* TCDirectionsLegTests.m */; };
@@ -25,7 +29,7 @@
 		81AA9B9517D5D86B00B45089 /* TCDirectionsStepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B8B17D5D86B00B45089 /* TCDirectionsStepTests.m */; };
 		81AA9B9617D5D86B00B45089 /* TCDistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B8D17D5D86B00B45089 /* TCDistanceTests.m */; };
 		81AA9B9717D5D86B00B45089 /* TCDurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B8F17D5D86B00B45089 /* TCDurationTests.m */; };
-		81AA9B9B17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */; };
+		81AA9B9B17D5DC4F00B45089 /* TCPlacesServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9A17D5DC4F00B45089 /* TCPlacesServiceTests.m */; };
 		81AA9B9E17D5E46400B45089 /* TCPlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9D17D5E46400B45089 /* TCPlacesService.m */; };
 		81AA9BA117D5E4C600B45089 /* TCPlacesAutocompleteParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9BA017D5E4C600B45089 /* TCPlacesAutocompleteParameters.m */; };
 		81C1BAED17CEF6900032BA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BAE817CEF6900032BA8F /* InfoPlist.strings */; };
@@ -49,7 +53,6 @@
 		81C1BB3D17CF04AC0032BA8F /* TCGoogleMapsAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB3317CF04AC0032BA8F /* TCGoogleMapsAPIClient.m */; };
 		81C1BB4117CF162D0032BA8F /* TCDirectionsStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB4017CF162D0032BA8F /* TCDirectionsStatus.m */; };
 		81C1BB4517CF1FF30032BA8F /* TCGoogleAPIKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB4417CF1FF30032BA8F /* TCGoogleAPIKeys.m */; };
-		81C1BB6517CF21D70032BA8F /* TCDirectionsDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB6417CF21D70032BA8F /* TCDirectionsDataMapper.m */; };
 		81C1BB8F17D04A570032BA8F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DA0AE417BF91FF0059ADA7 /* SenTestingKit.framework */; };
 		81C1BB9017D04A570032BA8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DA0AC017BF91FE0059ADA7 /* UIKit.framework */; };
 		81C1BB9117D04A570032BA8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DA0AC217BF91FE0059ADA7 /* Foundation.framework */; };
@@ -76,17 +79,24 @@
 /* Begin PBXFileReference section */
 		810E4FA917D6E17A00B69AF3 /* TCPlacesAutocompletePrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompletePrediction.h; sourceTree = "<group>"; };
 		810E4FAA17D6E17B00B69AF3 /* TCPlacesAutocompletePrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompletePrediction.m; sourceTree = "<group>"; };
+		810E4FAD17D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_AlternativeRoutes.json; sourceTree = "<group>"; };
+		810E4FAE17D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_InvalidRequest.json; sourceTree = "<group>"; };
+		810E4FAF17D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_NotFound.json; sourceTree = "<group>"; };
+		810E4FB017D70C3F00B69AF3 /* TCDirectionsServiceTests_OneRoute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_OneRoute.json; sourceTree = "<group>"; };
+		810E4FB617D70CCD00B69AF3 /* TCPlacesAutocomplete_Success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCPlacesAutocomplete_Success.json; sourceTree = "<group>"; };
+		810E4FB817D70D1600B69AF3 /* TCDirectionsStepTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsStepTestData.json; sourceTree = "<group>"; };
+		810E4FBA17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompletePredictionTests.h; sourceTree = "<group>"; };
+		810E4FBB17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompletePredictionTests.m; sourceTree = "<group>"; };
+		810E4FBD17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompleteParametersTests.h; sourceTree = "<group>"; };
+		810E4FBE17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompleteParametersTests.m; sourceTree = "<group>"; };
+		810E4FC017D82D6E00B69AF3 /* TCGoogleMapsAPIDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleMapsAPIDataMapper.h; sourceTree = "<group>"; };
+		810E4FC117D82D6F00B69AF3 /* TCGoogleMapsAPIDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoogleMapsAPIDataMapper.m; sourceTree = "<group>"; };
 		8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-TCGoogleMapsTests.xcconfig"; path = "Pods/Pods-TCGoogleMapsTests.xcconfig"; sourceTree = "<group>"; };
 		815CF87C17D071CA00FFFA83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		815CF87D17D071CA00FFFA83 /* TCGoogleMapsTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMapsTests-Info.plist"; sourceTree = "<group>"; };
 		815CF87E17D071CA00FFFA83 /* TCGoogleMapsTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCGoogleMapsTests-Prefix.pch"; sourceTree = "<group>"; };
-		815CF88417D075D500FFFA83 /* TCDirectionsServiceTests_InvalidRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_InvalidRequest.json; sourceTree = "<group>"; };
-		815CF88517D075D500FFFA83 /* TCDirectionsServiceTests_NotFound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_NotFound.json; sourceTree = "<group>"; };
-		815CF88617D075D500FFFA83 /* TCDirectionsServiceTests_OneRoute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_OneRoute.json; sourceTree = "<group>"; };
 		815CF88B17D0794200FFFA83 /* TCTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTestData.h; sourceTree = "<group>"; };
 		815CF88C17D0794200FFFA83 /* TCTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTestData.m; sourceTree = "<group>"; };
-		815CF89D17D339E000FFFA83 /* TCDirectionStepTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionStepTestData.json; sourceTree = "<group>"; };
-		815CF8A217D5B6BB00FFFA83 /* TCDirectionsServiceTests_AlternativeRoutes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_AlternativeRoutes.json; sourceTree = "<group>"; };
 		81718ED217CB40940082F631 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		81AA9B8017D5D86B00B45089 /* TCDirectionsDataMapperTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDirectionsDataMapperTests.h; sourceTree = "<group>"; };
 		81AA9B8117D5D86B00B45089 /* TCDirectionsDataMapperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDirectionsDataMapperTests.m; sourceTree = "<group>"; };
@@ -104,8 +114,8 @@
 		81AA9B8D17D5D86B00B45089 /* TCDistanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDistanceTests.m; sourceTree = "<group>"; };
 		81AA9B8E17D5D86B00B45089 /* TCDurationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDurationTests.h; sourceTree = "<group>"; };
 		81AA9B8F17D5D86B00B45089 /* TCDurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDurationTests.m; sourceTree = "<group>"; };
-		81AA9B9917D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompleteServiceTests.h; sourceTree = "<group>"; };
-		81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompleteServiceTests.m; sourceTree = "<group>"; };
+		81AA9B9917D5DC4F00B45089 /* TCPlacesServiceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceTests.h; sourceTree = "<group>"; };
+		81AA9B9A17D5DC4F00B45089 /* TCPlacesServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceTests.m; sourceTree = "<group>"; };
 		81AA9B9C17D5E46400B45089 /* TCPlacesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesService.h; sourceTree = "<group>"; };
 		81AA9B9D17D5E46400B45089 /* TCPlacesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesService.m; sourceTree = "<group>"; };
 		81AA9B9F17D5E4C600B45089 /* TCPlacesAutocompleteParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompleteParameters.h; sourceTree = "<group>"; };
@@ -149,8 +159,6 @@
 		81C1BB4017CF162D0032BA8F /* TCDirectionsStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDirectionsStatus.m; sourceTree = "<group>"; };
 		81C1BB4317CF1FF30032BA8F /* TCGoogleAPIKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleAPIKeys.h; sourceTree = "<group>"; };
 		81C1BB4417CF1FF30032BA8F /* TCGoogleAPIKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoogleAPIKeys.m; sourceTree = "<group>"; };
-		81C1BB6317CF21D70032BA8F /* TCDirectionsDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDirectionsDataMapper.h; sourceTree = "<group>"; };
-		81C1BB6417CF21D70032BA8F /* TCDirectionsDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDirectionsDataMapper.m; sourceTree = "<group>"; };
 		81C1BB8E17D04A570032BA8F /* TCGoogleMapsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCGoogleMapsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DA0ABD17BF91FE0059ADA7 /* TCGoogleMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCGoogleMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DA0AC017BF91FE0059ADA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -195,6 +203,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810E4FAC17D70C3F00B69AF3 /* Directions */ = {
+			isa = PBXGroup;
+			children = (
+				810E4FB817D70D1600B69AF3 /* TCDirectionsStepTestData.json */,
+				810E4FAD17D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json */,
+				810E4FAE17D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json */,
+				810E4FAF17D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json */,
+				810E4FB017D70C3F00B69AF3 /* TCDirectionsServiceTests_OneRoute.json */,
+			);
+			path = Directions;
+			sourceTree = "<group>";
+		};
+		810E4FB517D70CCD00B69AF3 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				810E4FB617D70CCD00B69AF3 /* TCPlacesAutocomplete_Success.json */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
 		815CF87717D071CA00FFFA83 /* TCGoogleMapsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,11 +264,8 @@
 		815CF88317D075D500FFFA83 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				815CF89D17D339E000FFFA83 /* TCDirectionStepTestData.json */,
-				815CF88617D075D500FFFA83 /* TCDirectionsServiceTests_OneRoute.json */,
-				815CF8A217D5B6BB00FFFA83 /* TCDirectionsServiceTests_AlternativeRoutes.json */,
-				815CF88517D075D500FFFA83 /* TCDirectionsServiceTests_NotFound.json */,
-				815CF88417D075D500FFFA83 /* TCDirectionsServiceTests_InvalidRequest.json */,
+				810E4FB517D70CCD00B69AF3 /* Places */,
+				810E4FAC17D70C3F00B69AF3 /* Directions */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -280,8 +305,12 @@
 		81AA9B9817D5D8D700B45089 /* Places */ = {
 			isa = PBXGroup;
 			children = (
-				81AA9B9917D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.h */,
-				81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */,
+				81AA9B9917D5DC4F00B45089 /* TCPlacesServiceTests.h */,
+				81AA9B9A17D5DC4F00B45089 /* TCPlacesServiceTests.m */,
+				810E4FBD17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.h */,
+				810E4FBE17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m */,
+				810E4FBA17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.h */,
+				810E4FBB17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -392,6 +421,8 @@
 				81C1BB3117CF04AC0032BA8F /* Places */,
 				81C1BB3217CF04AC0032BA8F /* TCGoogleMapsAPIClient.h */,
 				81C1BB3317CF04AC0032BA8F /* TCGoogleMapsAPIClient.m */,
+				810E4FC017D82D6E00B69AF3 /* TCGoogleMapsAPIDataMapper.h */,
+				810E4FC117D82D6F00B69AF3 /* TCGoogleMapsAPIDataMapper.m */,
 			);
 			path = TCGoogleMapsLib;
 			sourceTree = "<group>";
@@ -416,8 +447,6 @@
 				81C1BB2E17CF04AC0032BA8F /* TCDistance.m */,
 				81C1BB2F17CF04AC0032BA8F /* TCDuration.h */,
 				81C1BB3017CF04AC0032BA8F /* TCDuration.m */,
-				81C1BB6317CF21D70032BA8F /* TCDirectionsDataMapper.h */,
-				81C1BB6417CF21D70032BA8F /* TCDirectionsDataMapper.m */,
 			);
 			path = Directions;
 			sourceTree = "<group>";
@@ -575,11 +604,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				815CF88017D071CA00FFFA83 /* InfoPlist.strings in Resources */,
-				815CF88717D075D500FFFA83 /* TCDirectionsServiceTests_InvalidRequest.json in Resources */,
-				815CF88817D075D500FFFA83 /* TCDirectionsServiceTests_NotFound.json in Resources */,
-				815CF88917D075D500FFFA83 /* TCDirectionsServiceTests_OneRoute.json in Resources */,
-				815CF89E17D339E100FFFA83 /* TCDirectionStepTestData.json in Resources */,
-				815CF8A317D5B6BB00FFFA83 /* TCDirectionsServiceTests_AlternativeRoutes.json in Resources */,
+				810E4FB117D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json in Resources */,
+				810E4FB217D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json in Resources */,
+				810E4FB317D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json in Resources */,
+				810E4FB417D70C3F00B69AF3 /* TCDirectionsServiceTests_OneRoute.json in Resources */,
+				810E4FB717D70CCD00B69AF3 /* TCPlacesAutocomplete_Success.json in Resources */,
+				810E4FB917D70D1600B69AF3 /* TCDirectionsStepTestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,7 +718,9 @@
 				81AA9B9517D5D86B00B45089 /* TCDirectionsStepTests.m in Sources */,
 				81AA9B9617D5D86B00B45089 /* TCDistanceTests.m in Sources */,
 				81AA9B9717D5D86B00B45089 /* TCDurationTests.m in Sources */,
-				81AA9B9B17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m in Sources */,
+				81AA9B9B17D5DC4F00B45089 /* TCPlacesServiceTests.m in Sources */,
+				810E4FBC17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m in Sources */,
+				810E4FBF17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,10 +744,10 @@
 				81C1BB3D17CF04AC0032BA8F /* TCGoogleMapsAPIClient.m in Sources */,
 				81C1BB4117CF162D0032BA8F /* TCDirectionsStatus.m in Sources */,
 				81C1BB4517CF1FF30032BA8F /* TCGoogleAPIKeys.m in Sources */,
-				81C1BB6517CF21D70032BA8F /* TCDirectionsDataMapper.m in Sources */,
 				81AA9B9E17D5E46400B45089 /* TCPlacesService.m in Sources */,
 				81AA9BA117D5E4C600B45089 /* TCPlacesAutocompleteParameters.m in Sources */,
 				810E4FAB17D6E17B00B69AF3 /* TCPlacesAutocompletePrediction.m in Sources */,
+				810E4FC217D82D7100B69AF3 /* TCGoogleMapsAPIDataMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
