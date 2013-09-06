@@ -22,6 +22,7 @@
 		810E4FCA17D8755300B69AF3 /* TCPlacesAutocomplete_Error.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FC917D8755300B69AF3 /* TCPlacesAutocomplete_Error.json */; };
 		810E4FCD17D87D3200B69AF3 /* TCPlacesServiceStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FCC17D87D3100B69AF3 /* TCPlacesServiceStatus.m */; };
 		810E4FD017D8845000B69AF3 /* TCPlacesServiceError.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FCF17D8844E00B69AF3 /* TCPlacesServiceError.m */; };
+		810E4FD717D9B2E700B69AF3 /* TCPlacesServiceErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FD617D9B2E700B69AF3 /* TCPlacesServiceErrorTests.m */; };
 		8152489017D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */; };
 		815CF88017D071CA00FFFA83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 815CF87B17D071CA00FFFA83 /* InfoPlist.strings */; };
 		815CF88D17D0794200FFFA83 /* TCTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 815CF88C17D0794200FFFA83 /* TCTestData.m */; };
@@ -104,6 +105,9 @@
 		810E4FCC17D87D3100B69AF3 /* TCPlacesServiceStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceStatus.m; sourceTree = "<group>"; };
 		810E4FCE17D8844E00B69AF3 /* TCPlacesServiceError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceError.h; sourceTree = "<group>"; };
 		810E4FCF17D8844E00B69AF3 /* TCPlacesServiceError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceError.m; sourceTree = "<group>"; };
+		810E4FD417D97E6800B69AF3 /* TCGooglePlaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCGooglePlaces.h; sourceTree = "<group>"; };
+		810E4FD517D9B2E700B69AF3 /* TCPlacesServiceErrorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceErrorTests.h; sourceTree = "<group>"; };
+		810E4FD617D9B2E700B69AF3 /* TCPlacesServiceErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceErrorTests.m; sourceTree = "<group>"; };
 		8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-TCGoogleMapsTests.xcconfig"; path = "Pods/Pods-TCGoogleMapsTests.xcconfig"; sourceTree = "<group>"; };
 		815CF87C17D071CA00FFFA83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		815CF87D17D071CA00FFFA83 /* TCGoogleMapsTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMapsTests-Info.plist"; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 				810E4FBE17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m */,
 				810E4FBA17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.h */,
 				810E4FBB17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m */,
+				810E4FD517D9B2E700B69AF3 /* TCPlacesServiceErrorTests.h */,
+				810E4FD617D9B2E700B69AF3 /* TCPlacesServiceErrorTests.m */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -468,6 +474,7 @@
 		81C1BB3117CF04AC0032BA8F /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				810E4FD417D97E6800B69AF3 /* TCGooglePlaces.h */,
 				81AA9B9C17D5E46400B45089 /* TCPlacesService.h */,
 				81AA9B9D17D5E46400B45089 /* TCPlacesService.m */,
 				810E4FCE17D8844E00B69AF3 /* TCPlacesServiceError.h */,
@@ -741,6 +748,7 @@
 				810E4FBF17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m in Sources */,
 				810E4FC517D83F8A00B69AF3 /* TCGoogleMapsAPIDataMapperTests.m in Sources */,
 				810E4FC817D8646B00B69AF3 /* TCMockAPIClient.m in Sources */,
+				810E4FD717D9B2E700B69AF3 /* TCPlacesServiceErrorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

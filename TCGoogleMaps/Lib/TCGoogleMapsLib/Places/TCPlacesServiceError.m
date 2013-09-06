@@ -16,8 +16,11 @@ NSString * const TCPlacesServiceStatusCodeErrorKey = @"TCPlacesServiceStatusCode
 
 + (NSError *)errorWithStatusCode:(NSString *)statusCode
 {
+    NSString *description = [TCPlacesServiceStatus descriptionFromStatusCode:statusCode];
+    NSAssert(description, @"Cannot create NSError object from an invalid status code.");
+    
     NSDictionary *userInfo = @{
-        NSLocalizedDescriptionKey: [TCPlacesServiceStatus descriptionFromStatusCode:statusCode],
+        NSLocalizedDescriptionKey: description,
         TCPlacesServiceStatusCodeErrorKey: statusCode
     };    
     NSError *error = [[NSError alloc] initWithDomain:TCPlacesServiceErrorDomain
