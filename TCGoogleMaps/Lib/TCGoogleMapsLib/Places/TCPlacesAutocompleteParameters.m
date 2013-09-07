@@ -7,6 +7,7 @@
 //
 
 #import "TCPlacesAutocompleteParameters.h"
+#import "TCPlacesAutocompleteParametersPrivate.h"
 #import "TCGoogleMapsAPIDataMapper.h"
 
 @implementation TCPlacesAutocompleteParameters
@@ -23,18 +24,22 @@
 
 - (NSDictionary *)dictionary
 {
+    NSAssert([self.key length] > 0,
+             @"You must provide an API key to use the Google Places APIs.");
+    NSAssert([self.input length] > 0,
+             @"Google Places Autocomplete API requires a non-empty input string.");
+
     NSMutableDictionary *mutableDictionary = [[NSMutableDictionary alloc] init];
     
-    NSAssert(nil != self.input && [self.input length] > 0,
-             @"Input is a required parameter. "
-             "It cannot be nil or an empty string.");
-    
+    // Required parameters for Google Places Autocomplete API.
     mutableDictionary[@"input"] = self.input;
+    mutableDictionary[@"key"] = self.key;
+    mutableDictionary[@"sensor"] = [TCGoogleMapsAPIDataMapper stringFromBool:self.sensor];
     
+    // Optional parameters for searching nearby a given location.
     if (CLLocationCoordinate2DIsValid(self.location)) {
         mutableDictionary[@"location"] = [TCGoogleMapsAPIDataMapper stringFromCoordinate:self.location];
     }
-    
     if (self.radius > 0) {
         mutableDictionary[@"radius"] = [@(self.radius) stringValue];
     }
