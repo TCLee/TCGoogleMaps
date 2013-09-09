@@ -9,6 +9,7 @@
 #import "TCPlacesAutocompleteService.h"
 #import "TCPlacesAutocompleteParameters.h"
 #import "TCPlacesAutocompletePrediction.h"
+#import "TCPlacesAutocompletePredictionPrivate.h"
 #import "TCPlacesServiceStatus.h"
 #import "TCPlacesServiceError.h"
 #import "TCGoogleMapsAPIClient.h"

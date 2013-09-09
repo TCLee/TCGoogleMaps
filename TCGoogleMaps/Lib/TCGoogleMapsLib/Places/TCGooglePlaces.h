@@ -9,9 +9,10 @@
 #ifndef _TCGOOGLEPLACES_
     #define _TCGOOGLEPLACES_
 
+    // Public interfaces
     #import "TCPlacesService.h"
-    #import "TCPlacesServiceError.h"
-    #import "TCPlacesServiceStatus.h"
+    #import "TCPlacesServiceErrorConstants.h"
+    #import "TCPlacesServiceStatusConstants.h"
     #import "TCPlacesAutocompleteParameters.h"
     #import "TCPlacesAutocompletePrediction.h"
 

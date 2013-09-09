@@ -7,13 +7,7 @@
 //
 
 #import "TCPlacesServiceStatus.h"
-
-NSString * const TCPlacesServiceStatusOK = @"OK";
-NSString * const TCPlacesServiceStatusZeroResults = @"ZERO_RESULTS";
-NSString * const TCPlacesServiceStatusOverQueryLimit = @"OVER_QUERY_LIMIT";
-NSString * const TCPlacesServiceStatusRequestDenied = @"REQUEST_DENIED";
-NSString * const TCPlacesServiceStatusInvalidRequest = @"INVALID_REQUEST";
-NSString * const TCPlacesServiceStatusUnknownError = @"UNKNOWN_ERROR";
+#import "TCPlacesServiceStatusConstants.h"
 
 @implementation TCPlacesServiceStatus
 

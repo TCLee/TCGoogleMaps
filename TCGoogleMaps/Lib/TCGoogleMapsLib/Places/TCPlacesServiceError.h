@@ -7,9 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
-FOUNDATION_EXPORT NSString * const TCPlacesServiceErrorDomain;
-FOUNDATION_EXPORT NSString * const TCPlacesServiceStatusCodeErrorKey;
     
 @interface TCPlacesServiceError : NSObject
 

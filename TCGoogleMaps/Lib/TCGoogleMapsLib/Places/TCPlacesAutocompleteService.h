@@ -25,13 +25,11 @@ typedef void (^TCPlacesAutocompleteServiceCallback)(NSArray *predictions, NSErro
 @interface TCPlacesAutocompleteService : NSObject
 
 /**
- * <#Description#>
+ * Returns an initialized `TCPlacesAutocompleteService` instance.
  *
- * @param APIClient <#APIClient description#>
- * @param key       <#key description#>
- * @param sensor    <#sensor description#>
- *
- * @return <#return value description#>
+ * @param APIClient the API client object used to send the HTTP requests
+ * @param key       the API key parameter
+ * @param sensor    the sensor parameter
  */
 - (id)initWithAPIClient:(TCGoogleMapsAPIClient *)APIClient key:(NSString *)key sensor:(BOOL)sensor;
 

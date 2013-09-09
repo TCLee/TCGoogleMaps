@@ -8,13 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-FOUNDATION_EXPORT NSString * const TCPlacesServiceStatusOK;
-FOUNDATION_EXPORT NSString * const TCPlacesServiceStatusZeroResults;
-FOUNDATION_EXPORT NSString * const TCPlacesServiceStatusOverQueryLimit;
-FOUNDATION_EXPORT NSString * const TCPlacesServiceStatusRequestDenied;
-FOUNDATION_EXPORT NSString * const TCPlacesServiceStatusInvalidRequest;
-FOUNDATION_EXPORT NSString * const TCPlacesServiceStatusUnknownError;
-
 @interface TCPlacesServiceStatus : NSObject
 
 /**

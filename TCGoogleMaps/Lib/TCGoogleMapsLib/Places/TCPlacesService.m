@@ -22,6 +22,9 @@
  */
 @property (nonatomic, assign) BOOL sensor;
 
+/**
+ * The service object to access Google Places Autocomplete API.
+ */
 @property (nonatomic, strong, readonly) TCPlacesAutocompleteService *autocompleteService;
 
 @end
