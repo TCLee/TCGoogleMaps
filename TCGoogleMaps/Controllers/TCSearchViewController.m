@@ -8,13 +8,14 @@
 
 #import "TCSearchViewController.h"
 #import "TCMapViewController.h"
-#import "TCGooglePlacesAPI.h"
+#import "TCGooglePlaces.h"
 
 @interface TCSearchViewController ()
 
 @property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSArray *autocompleteResults;
+
+@property (nonatomic, strong) NSArray *placePredictions;
 
 @property (nonatomic, strong, readonly) CLLocationManager *locationManager;
 @property (nonatomic, strong) CLLocation *myLocation;
@@ -22,7 +23,7 @@
 @end
 
 // Google Places Autocomplete API uses the radius to determine the area to search places in.
-static CLLocationDistance const kRadiusInMeters = 15000.0f;
+static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 @implementation TCSearchViewController
 
@@ -66,7 +67,7 @@ static CLLocationDistance const kRadiusInMeters = 15000.0f;
     [super didReceiveMemoryWarning];
     
     // Dispose of any resources that can be recreated.
-    self.autocompleteResults = nil;
+    self.placePredictions = nil;
 }
 
 #pragma mark - UISearchBar Delegate
@@ -79,41 +80,56 @@ static CLLocationDistance const kRadiusInMeters = 15000.0f;
 {
     // If user deleted the search text, we should not waste resources sending an
     // empty input string to Google Places Autocomplete API.
-    if (!searchText || 0 == [searchText length]) {
-        self.autocompleteResults = nil;
+    if (nil == searchText || 0 == [searchText length]) {
+        self.placePredictions = nil;
         [self.tableView reloadData];
         return;
     }
     
-    // Fetch a list of suggested places for the user's text input.
-    [[TCGooglePlacesAPI sharedAPI] placesAutocompleteForInput:searchText location:self.myLocation.coordinate radius:kRadiusInMeters completion:^(NSArray *results, NSError *error) {
+    // Request parameters to be send to Google Places Autocomplete API.
+    TCPlacesAutocompleteParameters *parameters = [[TCPlacesAutocompleteParameters alloc] init];
+    parameters.input = searchText;
+    parameters.location = self.myLocation.coordinate;
+    parameters.radius = kSearchRadiusInMeters;
+    
+    // Asynchronously fetches the place autocomplete predictions from user's search text.
+    [[TCPlacesService sharedService] placePredictionsWithParameters:parameters completion:^(NSArray *predictions, NSError *error) {
+        // It is possible that the UISearchBar's text has changed when we return
+        // from the network with the results. If it has changed, we should not
+        // display stale results on the table view.
+        if (predictions && [parameters.input isEqualToString:searchBar.text]) {
+            self.placePredictions = predictions;
+            [self.tableView reloadData];
+            return;
+        }
+        
+        // Google Places Autocomplete API error handling.
         if (error) {
-            if ([error code] == NSURLErrorCancelled) {
-                NSLog(@"Google Places Autocomplete API cancelled for input \"%@\"", searchText);
+            if (NSURLErrorCancelled == error.code) {
+                NSLog(@"[Google Places Autocomplete API] - Cancelled request for input \"%@\".", parameters.input);
             } else {
-                NSLog(@"Google Places Autocomplete API Error: %@", [error localizedDescription]);
-            }
-        } else if (results) {
-            // It is possible that the UISearchBar's text has changed when we return
-            // from the network with the results. If it has changed, we should not
-            // display stale results on the table view.
-            if ([searchText isEqualToString:searchBar.text]) {
-                self.autocompleteResults = results;
-                [self.tableView reloadData];
+                NSString *statusCode = error.userInfo[TCPlacesServiceStatusCodeErrorKey];
+                NSString *description = [error localizedDescription];
+                
+                if (statusCode) {
+                    NSLog(@"[Google Places Autocomplete API] - Status Code: %@, Error: %@", statusCode, description);
+                } else {
+                    NSLog(@"[Google Places Autocomplete API] - Error: %@", description);
+                }
             }
         }
-    }];
+    }];        
 }
 
 #pragma mark - UITableView Data Source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (!self.autocompleteResults) {
+    if (!self.placePredictions) {
         return 0;
     }
 
-    return [self.autocompleteResults count];
+    return [self.placePredictions count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -121,8 +137,8 @@ static CLLocationDistance const kRadiusInMeters = 15000.0f;
     static NSString * const CellIdentifier = @"SearchResultCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    TCGooglePlacesAutocomplete *autocomplete = self.autocompleteResults[indexPath.row];
-    cell.textLabel.text = autocomplete.description;
+    TCPlacesAutocompletePrediction *prediction = self.placePredictions[indexPath.row];
+    cell.textLabel.text = prediction.description;    
     return cell;
 }
 
@@ -133,11 +149,11 @@ static CLLocationDistance const kRadiusInMeters = 15000.0f;
     if ([[segue identifier] isEqualToString:@"showMap"]) {
         // Get the selected place.
         NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-        TCGooglePlacesAutocomplete *autocomplete = self.autocompleteResults[selectedIndexPath.row];
+        TCPlacesAutocompletePrediction *prediction = self.placePredictions[selectedIndexPath.row];
         
         // Display it on the map with directions.
         TCMapViewController *mapViewController = (TCMapViewController *) [segue destinationViewController];
-        mapViewController.placeReference = autocomplete.reference;
+        mapViewController.placeReference = prediction.reference;
     }
 }
 

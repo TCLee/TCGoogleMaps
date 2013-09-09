@@ -6,9 +6,13 @@
 //  Copyright (c) 2013 Lee Tze Cheun. All rights reserved.
 //
 
-#ifndef TCGoogleMaps_TCGooglePlaces_h
-#define TCGoogleMaps_TCGooglePlaces_h
+#ifndef _TCGOOGLEPLACES_
+    #define _TCGOOGLEPLACES_
 
+    #import "TCPlacesService.h"
+    #import "TCPlacesServiceError.h"
+    #import "TCPlacesServiceStatus.h"
+    #import "TCPlacesAutocompleteParameters.h"
+    #import "TCPlacesAutocompletePrediction.h"
 
-
-#endif
+#endif /* _TCGOOGLEPLACES_ */

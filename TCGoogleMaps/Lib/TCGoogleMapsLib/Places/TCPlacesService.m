@@ -7,20 +7,28 @@
 //
 
 #import "TCPlacesService.h"
-#import "TCPlacesServiceError.h"
-#import "TCPlacesServiceStatus.h"
-#import "TCPlacesAutocompleteParameters.h"
-#import "TCPlacesAutocompletePrediction.h"
+#import "TCPlacesServicePrivate.h"
 #import "TCGoogleMapsAPIClient.h"
 
 @interface TCPlacesService ()
 
-// Keep a strong reference to the request operation, so that we can cancel it later.
-@property (nonatomic, strong) AFHTTPRequestOperation *requestOperation;
+/**
+ * The API key parameter used for all Google Places API requests.
+ */
+@property (nonatomic, copy) NSString *APIKey;
+
+/**
+ * The sensor parameter used for all Google Places API requests.
+ */
+@property (nonatomic, assign) BOOL sensor;
+
+@property (nonatomic, strong, readonly) TCPlacesAutocompleteService *autocompleteService;
 
 @end
 
 @implementation TCPlacesService
+
+@synthesize autocompleteService = _autocompleteService;
 
 + (TCPlacesService *)sharedService
 {
@@ -32,47 +40,30 @@
     return _sharedService;
 }
 
-- (void)placePredictionsWithParameters:(TCPlacesAutocompleteParameters *)parameters
-                            completion:(TCPlacesAutocompleteServiceCallback)completion
++ (void)setAPIKey:(NSString *)APIKey sensor:(BOOL)sensor
 {
-    NSParameterAssert(parameters);
-    NSParameterAssert(completion);
-    
-    // Use the default shared API client, if no custom API client is given.
-    TCGoogleMapsAPIClient *client = self.APIClient ? self.APIClient : [TCGoogleMapsAPIClient sharedClient];
-    
-    // Cancel any existing request operation before we begin a new one.
-    [self.requestOperation cancel];
-    
-    self.requestOperation = [client getPath:@"place/autocomplete/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
-        // If response is nil, it means an error has occured at the AFNetworking level.
-        if (!responseObject) {
-            completion(nil, error);
-        }
-        
-        NSString *statusCode = responseObject[@"status"];
-
-        // If Google Places API response's status is OK, then it means we
-        // have a valid result to parse.
-        // Otherwise, we will report it as an error.
-        if ([statusCode isEqualToString:TCPlacesServiceStatusOK]) {
-            completion([self predictionsFromResponse:responseObject[@"predictions"]], nil);
-        } else {
-            completion(nil, [TCPlacesServiceError errorWithStatusCode:statusCode]);
-        }
-    }];
+    TCPlacesService *sharedService = [[self class] sharedService];
+    sharedService.APIKey = APIKey;
+    sharedService.sensor = sensor;
 }
 
-// Returns an array of TCPlacesAutocompletePrediction objects from
-// the response data.
-- (NSArray *)predictionsFromResponse:(NSArray *)predictionsResponse
+- (TCGoogleMapsAPIClient *)APIClient
 {
-    NSMutableArray *predictions = [[NSMutableArray alloc] initWithCapacity:[predictionsResponse count]];
-    for (NSDictionary *predictionResponse in predictionsResponse) {
-        TCPlacesAutocompletePrediction *prediction = [[TCPlacesAutocompletePrediction alloc] initWithProperties:predictionResponse];
-        [predictions addObject:prediction];
+    // Use the default shared API client, if no custom API client is given.
+    return _APIClient ?: [TCGoogleMapsAPIClient sharedClient];
+}
+
+- (TCPlacesAutocompleteService *)autocompleteService
+{
+    if (!_autocompleteService) {
+        _autocompleteService = [[TCPlacesAutocompleteService alloc] initWithAPIClient:self.APIClient key:self.APIKey sensor:self.sensor];
     }
-    return [predictions copy];
+    return _autocompleteService;
+}
+
+- (void)placePredictionsWithParameters:(TCPlacesAutocompleteParameters *)parameters completion:(TCPlacesAutocompleteServiceCallback)completion
+{
+    [self.autocompleteService placePredictionsWithParameters:parameters completion:completion];
 }
 
 @end

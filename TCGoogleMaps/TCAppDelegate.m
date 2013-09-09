@@ -8,13 +8,16 @@
 
 #import "TCAppDelegate.h"
 #import "TCGoogleAPIKeys.h"
+#import "TCGooglePlaces.h"
 
 @implementation TCAppDelegate
 
 // Override point for customization after application launch.
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [GMSServices provideAPIKey:kTCGoogleMapsAPIKey];    
+    [GMSServices provideAPIKey:kTCGoogleMapsAPIKey];
+    
+    [TCPlacesService setAPIKey:kTCGooglePlacesAPIKey sensor:NO];
         
     return YES;
 }

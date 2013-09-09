@@ -7,17 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TCPlacesAutocompleteService.h"
 
-@class TCGoogleMapsAPIClient;
 @class TCPlacesAutocompleteParameters;
-
-/**
- * Callback block for when Google Places Autocomplete API has returned the results.
- *
- * @param predictions the array of `TCPlacesAutocompletePrediction` objects representing the autocomplete results
- * @param error a `NSError` object describing why the service request failed
- */
-typedef void (^TCPlacesAutocompleteServiceCallback)(NSArray *predictions, NSError *error);
 
 /**
  * Provides methods to access the Google Places API.
@@ -25,24 +17,28 @@ typedef void (^TCPlacesAutocompleteServiceCallback)(NSArray *predictions, NSErro
 @interface TCPlacesService : NSObject
 
 /**
- * A custom `TCGoogleMapsAPIClient` instance that will be used to send
- * HTTP requests to Google Maps APIs.
- * If this property is nil, then the default `TCGoogleMapsAPIClient`
- * shared instance will be used.
- */
-@property (nonatomic, strong) TCGoogleMapsAPIClient *APIClient;
-
-/**
  * Returns a shared `TCPlacesService` instance to access Google Placess API.
  */
 + (TCPlacesService *)sharedService;
+
+/**
+ * Sets the API key and sensor parameter for all requests to Google Places API.
+ * This should be called exactly once by your application, e.g., 
+ * in application: didFinishLaunchingWithOptions:
+ *
+ * @param APIKey your application's API key 
+ * @param sensor indicates whether the request came from a device using
+ *               a location sensor (e.g. a GPS)
+ */
++ (void)setAPIKey:(NSString *)APIKey sensor:(BOOL)sensor;
 
 /**
  * Retrieves place autocomplete predictions based on the supplied 
  * autocomplete request parameters.
  *
  * @param parameters the autocomplete request parameters. Cannot be nil.
- * @param completion the block to execute when autocomplete prediction results are returned.
+ * @param completion the block to execute when autocomplete prediction results are returned. 
+ *                   Pass in nil, if you don't need to be notified of completion.
  */
 - (void)placePredictionsWithParameters:(TCPlacesAutocompleteParameters *)parameters completion:(TCPlacesAutocompleteServiceCallback)completion;
 
