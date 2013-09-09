@@ -8,5 +8,5 @@
 
 #import "TCPlacesServiceErrorConstants.h"
 
-NSString * const TCPlacesServiceErrorDomain = @"com.tclee.TCGoogleMapsLib.TCPlacesServiceErrorDomain";
+NSString * const TCPlacesServiceErrorDomain = @"com.tclee.GoogleMaps.Places.TCPlacesServiceErrorDomain";
 NSString * const TCPlacesServiceStatusCodeErrorKey = @"TCPlacesServiceStatusCode";

@@ -7,16 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-/*
- View Controller to display the Google Maps view.
+/**
+ * View Controller to display the Google Maps view.
  */
 @interface TCMapViewController : UIViewController
 
-/*
- A unique token that you can use to retrieve additional information about 
- this place in a Place Details request.
+/**
+ * A unique token that you can use to retrieve additional information
+ * about this place in a Place Details request.
  */
 @property (nonatomic, copy) NSString *placeReference;
+
+/**
+ * The user's current location.
+ */
+@property (nonatomic, strong) CLLocation *myLocation;
 
 @end

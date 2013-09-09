@@ -8,7 +8,10 @@
 
 #import "TCSearchViewController.h"
 #import "TCMapViewController.h"
+#import "TCUserLocationManager.h"
 #import "TCGooglePlaces.h"
+
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface TCSearchViewController ()
 
@@ -17,7 +20,7 @@
 
 @property (nonatomic, strong) NSArray *placePredictions;
 
-@property (nonatomic, strong, readonly) CLLocationManager *locationManager;
+@property (nonatomic, strong, readonly) TCUserLocationManager *userLocationManager;
 @property (nonatomic, strong) CLLocation *myLocation;
 
 @end
@@ -27,7 +30,17 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 @implementation TCSearchViewController
 
-@synthesize locationManager = _locationManager;
+@synthesize userLocationManager = _userLocationManager;
+
+#pragma mark - User Location Manager
+
+- (TCUserLocationManager *)userLocationManager
+{
+    if (!_userLocationManager) {
+        _userLocationManager = [[TCUserLocationManager alloc] init];
+    }
+    return _userLocationManager;
+}
 
 #pragma mark - View Events
 
@@ -38,18 +51,29 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
     // Hide the navigation bar for the search view.
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
+    // Show progress HUD while we find the user's location.
+    MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    progressHUD.dimBackground = YES;
+    progressHUD.labelText = @"Finding My Location";
+    
+    // Make progress HUD consume all touches to disable interaction on
+    // background views.
+    progressHUD.userInteractionEnabled = YES;
+    
     // Get the user's current location. Google Places API uses the user's
     // current location to find relevant places.
-    [self startLocatingUser];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-        
-    // Set focus to the UISearchBar, so that user can start
-    // entering their query right away.
-    [self.searchBar becomeFirstResponder];
+    [self.userLocationManager startLocatingUserWithCompletion:^(CLLocation *userLocation, NSError *error) {
+        if (userLocation) {
+            self.myLocation = userLocation;
+            [progressHUD hide:YES];
+            
+            // Set focus to the UISearchBar, so that user can start
+            // entering their query right away.
+            [self.searchBar becomeFirstResponder];
+        } else {
+            NSLog(@"[TCUserLocationManager] - Error: %@", [error localizedDescription]);
+        }
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -57,7 +81,7 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
     [super viewWillDisappear:animated];
     
     // Stop location services when this view disappears to save power consumption.
-    [self stopLocatingUser];
+    [self.userLocationManager stopLocatingUser];
 }
 
 #pragma mark - Memory Management
@@ -153,65 +177,9 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
         
         // Display it on the map with directions.
         TCMapViewController *mapViewController = (TCMapViewController *) [segue destinationViewController];
+        mapViewController.myLocation = self.myLocation;
         mapViewController.placeReference = prediction.reference;
     }
-}
-
-#pragma mark - Location Services
-
-- (CLLocationManager *)locationManager
-{
-    if (!_locationManager) {
-        _locationManager = [[CLLocationManager alloc] init];
-        _locationManager.delegate = self;
-    }
-    return _locationManager;
-}
-
-- (void)startLocatingUser
-{
-    NSLog(@"Start Locating User");
-    
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-    [self.locationManager startUpdatingLocation];
-}
-
-- (void)stopLocatingUser
-{
-    NSLog(@"Stop Locating User");
-    
-    [self.locationManager stopUpdatingLocation];
-    self.locationManager.delegate = nil;
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    CLLocation *newLocation = [locations lastObject];
-    
-    // We don't want a cached location that is too out of date.
-    NSTimeInterval locationAge = abs([newLocation.timestamp timeIntervalSinceNow]);
-    if (locationAge > 15.0f) { return; }
-    
-    // Horizontal accuracy returns a negative value to indicate that the location's
-    // longitude and latitude are invalid.
-    if (newLocation.horizontalAccuracy < 0) { return; }
-    
-    // Only save the new location if it's more accurate than previous locations.
-    if (nil == self.myLocation || self.myLocation.horizontalAccuracy > newLocation.horizontalAccuracy) {
-        self.myLocation = newLocation;
-        
-        // If we have a measurement that meets our requirements, we can stop updating the location.
-        if (newLocation.horizontalAccuracy <= self.locationManager.desiredAccuracy) {
-            [self stopLocatingUser];
-        }
-    }
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    if ([error code] != kCLErrorLocationUnknown) {
-        NSLog(@"CLLocationManager Error: %@", [error localizedDescription]);
-    }    
 }
 
 @end

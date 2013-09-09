@@ -12,7 +12,6 @@
  View Controller to search for nearby places using Google Places API.
  */
 @interface TCSearchViewController : UIViewController
-    <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate,
-     CLLocationManagerDelegate>
+    <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @end

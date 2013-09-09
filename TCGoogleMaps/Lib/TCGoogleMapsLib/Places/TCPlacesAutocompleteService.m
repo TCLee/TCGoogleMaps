@@ -10,7 +10,7 @@
 #import "TCPlacesAutocompleteParameters.h"
 #import "TCPlacesAutocompletePrediction.h"
 #import "TCPlacesAutocompletePredictionPrivate.h"
-#import "TCPlacesServiceStatus.h"
+#import "TCPlacesServiceStatusConstants.h"
 #import "TCPlacesServiceError.h"
 #import "TCGoogleMapsAPIClient.h"
 #import "TCGoogleMapsAPIDataMapper.h"

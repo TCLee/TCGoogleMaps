@@ -26,6 +26,7 @@
 		810E4FE117DD727D00B69AF3 /* TCPlacesAutocompleteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FE017DD727D00B69AF3 /* TCPlacesAutocompleteService.m */; };
 		810E4FE517DD7E7100B69AF3 /* TCPlacesServiceStatusConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FE417DD7E6F00B69AF3 /* TCPlacesServiceStatusConstants.m */; };
 		810E4FE817DD948F00B69AF3 /* TCPlacesServiceErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FE717DD948D00B69AF3 /* TCPlacesServiceErrorConstants.m */; };
+		810E4FEB17DD98AD00B69AF3 /* TCUserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FEA17DD98AD00B69AF3 /* TCUserLocationManager.m */; };
 		8152489017D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */; };
 		815CF88017D071CA00FFFA83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 815CF87B17D071CA00FFFA83 /* InfoPlist.strings */; };
 		815CF88D17D0794200FFFA83 /* TCTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 815CF88C17D0794200FFFA83 /* TCTestData.m */; };
@@ -119,6 +120,8 @@
 		810E4FE417DD7E6F00B69AF3 /* TCPlacesServiceStatusConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceStatusConstants.m; sourceTree = "<group>"; };
 		810E4FE617DD948B00B69AF3 /* TCPlacesServiceErrorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceErrorConstants.h; sourceTree = "<group>"; };
 		810E4FE717DD948D00B69AF3 /* TCPlacesServiceErrorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceErrorConstants.m; sourceTree = "<group>"; };
+		810E4FE917DD98AD00B69AF3 /* TCUserLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUserLocationManager.h; sourceTree = "<group>"; };
+		810E4FEA17DD98AD00B69AF3 /* TCUserLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUserLocationManager.m; sourceTree = "<group>"; };
 		8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-TCGoogleMapsTests.xcconfig"; path = "Pods/Pods-TCGoogleMapsTests.xcconfig"; sourceTree = "<group>"; };
 		815CF87C17D071CA00FFFA83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		815CF87D17D071CA00FFFA83 /* TCGoogleMapsTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMapsTests-Info.plist"; sourceTree = "<group>"; };
@@ -360,10 +363,10 @@
 		81C1BAF017CEF7230032BA8F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				81C1BAF117CEF7230032BA8F /* TCMapViewController.h */,
-				81C1BAF217CEF7230032BA8F /* TCMapViewController.m */,
 				81C1BAF317CEF7230032BA8F /* TCSearchViewController.h */,
 				81C1BAF417CEF7230032BA8F /* TCSearchViewController.m */,
+				81C1BAF117CEF7230032BA8F /* TCMapViewController.h */,
+				81C1BAF217CEF7230032BA8F /* TCMapViewController.m */,
 				81C1BAF517CEF7230032BA8F /* TCStepsViewController.h */,
 				81C1BAF617CEF7230032BA8F /* TCStepsViewController.m */,
 			);
@@ -375,6 +378,8 @@
 			children = (
 				81C1BAFF17CEF85B0032BA8F /* TCGooglePlacesAPI.h */,
 				81C1BB0017CEF85B0032BA8F /* TCGooglePlacesAPI.m */,
+				810E4FE917DD98AD00B69AF3 /* TCUserLocationManager.h */,
+				810E4FEA17DD98AD00B69AF3 /* TCUserLocationManager.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -800,6 +805,7 @@
 				810E4FE117DD727D00B69AF3 /* TCPlacesAutocompleteService.m in Sources */,
 				810E4FE517DD7E7100B69AF3 /* TCPlacesServiceStatusConstants.m in Sources */,
 				810E4FE817DD948F00B69AF3 /* TCPlacesServiceErrorConstants.m in Sources */,
+				810E4FEB17DD98AD00B69AF3 /* TCUserLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

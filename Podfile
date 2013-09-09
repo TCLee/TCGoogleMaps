@@ -13,6 +13,7 @@ link_with 'TCGoogleMaps'
 # List of pods that our project links with.
 pod 'Google-Maps-iOS-SDK', '~> 1.4.3'
 pod 'AFNetworking', '~> 1.3.2'
+pod 'MBProgressHUD', '~> 0.7'
   
 # Add OCMock as a dependency for the Unit Tests target only.
 target :TCGoogleMapsTests do
