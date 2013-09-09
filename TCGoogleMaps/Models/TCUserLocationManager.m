@@ -25,8 +25,7 @@
 - (CLLocationManager *)locationManager
 {
     if (!_locationManager) {
-        _locationManager = [[CLLocationManager alloc] init];
-        _locationManager.delegate = self;
+        _locationManager = [[CLLocationManager alloc] init];        
     }
     return _locationManager;
 }
@@ -35,6 +34,7 @@
 {
     self.completionBlock = completion;
     
+    self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     [self.locationManager startUpdatingLocation];
 }
