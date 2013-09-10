@@ -34,18 +34,6 @@ NSString * const TCDirectionsStatusCodeErrorKey = @"TCDirectionsStatusCode";
     return _sharedService;
 }
 
-/**
- * Returns a TCGoogleMapsAPIClient instance that is used to access
- * with Google Maps API web services.
- *
- * This is a "private" method that can be overridden by unit test classes
- * to return a mock API client.
- */
-- (TCGoogleMapsAPIClient *)APIClient
-{
-    return [TCGoogleMapsAPIClient sharedClient];
-}
-
 - (void)routeWithParameters:(TCDirectionsParameters *)parameters
                  completion:(TCDirectionsServiceCallback)completion
 {
@@ -55,7 +43,7 @@ NSString * const TCDirectionsStatusCodeErrorKey = @"TCDirectionsStatusCode";
     // Cancel any ongoing directions request operation before we begin a new one.
     [self.directionsRequestOperation cancel];        
     
-    self.directionsRequestOperation = [[self APIClient] getPath:@"directions/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
+    self.directionsRequestOperation = [[TCGoogleMapsAPIClient sharedClient] getPath:@"directions/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
         if (responseObject) {
             [self parseResponse:responseObject completion:completion];
         } else {

@@ -8,6 +8,5 @@
 
 #import "TCGoogleAPIKeys.h"
 
-// TODO: Replace these placeholders with your own API keys.
 NSString * const kTCGoogleMapsAPIKey = @"AIzaSyD7bKmFkhRWKdAKkASeccZB3D4LrRj0yAY";
 NSString * const kTCGooglePlacesAPIKey = @"AIzaSyBDNqerk86QTl8UV-lz2l5y1vga9OsItq8";

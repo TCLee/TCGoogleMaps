@@ -38,7 +38,6 @@ NSString * const TCTravelModeTransit = @"TRANSIT";
     
     NSDictionary *parameters = @{@"origin": [TCGoogleMapsAPIDataMapper stringFromCoordinate:self.origin],
                                  @"destination": [TCGoogleMapsAPIDataMapper stringFromCoordinate:self.destination],
-                                 @"sensor": @"false",
                                  @"mode": self.travelMode,
                                  @"alternatives": [TCGoogleMapsAPIDataMapper stringFromBool:self.provideRouteAlternatives]};
     

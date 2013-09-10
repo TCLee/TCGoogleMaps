@@ -10,7 +10,7 @@
 #import "TCPlace.h"
 #import "TCPlacesServiceStatusConstants.h"
 #import "TCPlacesServiceError.h"
-#import "TCGoogleMapsAPIClient.h"
+#import "TCGooglePlacesAPIClient.h"
 
 @interface TCPlaceDetailsService ()
 
@@ -25,7 +25,7 @@
     // Cancel previous request (if any) before we begin a new one.
     [self.placesDetailsRequest cancel];
     
-    self.placesDetailsRequest = [[TCGoogleMapsAPIClient sharedClient] getPath:@"place/details/json" parameters:@{@"reference": reference} completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
+    self.placesDetailsRequest = [[TCGooglePlacesAPIClient sharedClient] getPath:@"details/json" parameters:@{@"reference": reference} completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
         if (responseObject) {
             ParseResponse(responseObject, completion);
         } else {

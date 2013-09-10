@@ -43,6 +43,7 @@
 		81AA9B9717D5D86B00B45089 /* TCDurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B8F17D5D86B00B45089 /* TCDurationTests.m */; };
 		81AA9B9B17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */; };
 		81AA9B9E17D5E46400B45089 /* TCPlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9D17D5E46400B45089 /* TCPlacesService.m */; };
+		81C1820917DF0FB4009AF620 /* TCGooglePlacesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */; };
 		81C1BAED17CEF6900032BA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BAE817CEF6900032BA8F /* InfoPlist.strings */; };
 		81C1BAEE17CEF6900032BA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAEA17CEF6900032BA8F /* main.m */; };
 		81C1BAF717CEF7230032BA8F /* TCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF217CEF7230032BA8F /* TCMapViewController.m */; };
@@ -154,6 +155,8 @@
 		81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompleteServiceTests.m; sourceTree = "<group>"; };
 		81AA9B9C17D5E46400B45089 /* TCPlacesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesService.h; sourceTree = "<group>"; };
 		81AA9B9D17D5E46400B45089 /* TCPlacesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesService.m; sourceTree = "<group>"; };
+		81C1820717DF0FB2009AF620 /* TCGooglePlacesAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGooglePlacesAPIClient.h; sourceTree = "<group>"; };
+		81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGooglePlacesAPIClient.m; sourceTree = "<group>"; };
 		81C1BAE917CEF6900032BA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81C1BAEA17CEF6900032BA8F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81C1BAEB17CEF6900032BA8F /* TCGoogleMaps-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMaps-Info.plist"; sourceTree = "<group>"; };
@@ -520,6 +523,8 @@
 			isa = PBXGroup;
 			children = (
 				810E4FD417D97E6800B69AF3 /* TCGooglePlaces.h */,
+				81C1820717DF0FB2009AF620 /* TCGooglePlacesAPIClient.h */,
+				81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */,
 				810E500617DEABCF00B69AF3 /* TCPlacesServiceBlocks.h */,
 				81AA9B9C17D5E46400B45089 /* TCPlacesService.h */,
 				81AA9B9D17D5E46400B45089 /* TCPlacesService.m */,
@@ -832,6 +837,7 @@
 				810E500117DDBEAD00B69AF3 /* TCPlacesAutocompleteService.m in Sources */,
 				810E500217DDBEAD00B69AF3 /* TCPlace.m in Sources */,
 				810E500317DDBEAD00B69AF3 /* TCPlaceDetailsService.m in Sources */,
+				81C1820917DF0FB4009AF620 /* TCGooglePlacesAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,6 @@
 #import "TCGoogleMapsAPIClient.h"
 
 static NSString * const kTCGoogleMapsAPIBaseURLString = @"https://maps.googleapis.com/maps/api/";
-static NSString * const kTCGoogleMapsAPIKey = @"AIzaSyBDNqerk86QTl8UV-lz2l5y1vga9OsItq8";
 
 @implementation TCGoogleMapsAPIClient
 
@@ -42,18 +41,21 @@ static NSString * const kTCGoogleMapsAPIKey = @"AIzaSyBDNqerk86QTl8UV-lz2l5y1vga
                          parameters:(NSDictionary *)parameters
                          completion:(TCGoogleMapsAPIClientCallback)completion
 {
-    // Add the "sensor" and "key" parameters to the list of other parameters.
-    NSMutableDictionary *modifiedParameters = [parameters mutableCopy];
-    modifiedParameters[@"sensor"] = @"false";
-    modifiedParameters[@"key"] = kTCGoogleMapsAPIKey;
+    // Add the "sensor" parameter to the list of other parameters.
+    NSMutableDictionary *mutableParameters = [[NSMutableDictionary alloc] initWithDictionary:parameters];
+    mutableParameters[@"sensor"] = @"false";
     
     // Create the HTTP request with the given path and parameters.
     NSURLRequest *request = [self requestWithMethod:@"GET"
                                                path:path
-                                         parameters:[modifiedParameters copy]];
+                                         parameters:mutableParameters];
+    
+    NSLog(@"Request URL: %@", [[request URL] absoluteString]);
     
     // Create the HTTP request operation and add it to the queue.
     AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Response: %@", responseObject);
+        
         completion(operation, responseObject, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(operation, nil, error);

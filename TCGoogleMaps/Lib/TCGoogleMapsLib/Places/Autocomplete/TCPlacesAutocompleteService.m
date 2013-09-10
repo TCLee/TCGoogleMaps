@@ -11,7 +11,7 @@
 #import "TCPlacesAutocompletePrediction.h"
 #import "TCPlacesServiceStatusConstants.h"
 #import "TCPlacesServiceError.h"
-#import "TCGoogleMapsAPIClient.h"
+#import "TCGooglePlacesAPIClient.h"
 #import "TCGoogleMapsAPIDataMapper.h"
 
 @interface TCPlacesAutocompleteService ()
@@ -39,7 +39,7 @@
     // We don't want to overwhelm Google's servers with too many requests at a time.
     [self.placesAutocompleteRequest cancel];
     
-    self.placesAutocompleteRequest = [[TCGoogleMapsAPIClient sharedClient] getPath:@"place/autocomplete/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
+    self.placesAutocompleteRequest = [[TCGooglePlacesAPIClient sharedClient] getPath:@"autocomplete/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
         if (responseObject) {
             ParseResponse(responseObject, completion);
         } else if (error) {
@@ -48,10 +48,6 @@
     }];
 }
 
-/**
- * Invokes the `completion` block with the given parameters.
- * If `completion` block is nil, then nothing will happen.
- */
 FOUNDATION_STATIC_INLINE void Callback(TCPlacesAutocompleteServiceCallback completion, NSArray *predictions, NSError *error)
 {
     if (completion) {
