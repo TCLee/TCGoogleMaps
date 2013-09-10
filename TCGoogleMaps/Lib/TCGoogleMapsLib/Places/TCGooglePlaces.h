@@ -11,9 +11,11 @@
 
     // Public interfaces
     #import "TCPlacesService.h"
+    #import "TCPlacesServiceBlocks.h"
     #import "TCPlacesServiceErrorConstants.h"
     #import "TCPlacesServiceStatusConstants.h"
     #import "TCPlacesAutocompleteParameters.h"
     #import "TCPlacesAutocompletePrediction.h"
+    #import "TCPlace.h"
 
 #endif /* _TCGOOGLEPLACES_ */

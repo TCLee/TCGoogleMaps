@@ -32,16 +32,6 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 @synthesize userLocationManager = _userLocationManager;
 
-#pragma mark - User Location Manager
-
-- (TCUserLocationManager *)userLocationManager
-{
-    if (!_userLocationManager) {
-        _userLocationManager = [[TCUserLocationManager alloc] init];
-    }
-    return _userLocationManager;
-}
-
 #pragma mark - View Events
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,29 +41,10 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
     // Hide the navigation bar for the search view.
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
-    // Show progress HUD while we find the user's location.
-    MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    progressHUD.dimBackground = YES;
-    progressHUD.labelText = @"Finding My Location";
-    
-    // Make progress HUD consume all touches to disable interaction on
-    // background views.
-    progressHUD.userInteractionEnabled = YES;
-    
-    // Get the user's current location. Google Places API uses the user's
-    // current location to find relevant places.
-    [self.userLocationManager startLocatingUserWithCompletion:^(CLLocation *userLocation, NSError *error) {
-        if (userLocation) {
-            self.myLocation = userLocation;
-            [progressHUD hide:YES];
-            
-            // Set focus to the UISearchBar, so that user can start
-            // entering their query right away.
-            [self.searchBar becomeFirstResponder];
-        } else {
-            NSLog(@"[TCUserLocationManager] - Error: %@", [error localizedDescription]);
-        }
-    }];
+    // Attempt to get the user's location, if we have not located the user yet.
+    if (!self.myLocation) {
+        [self startLocatingUser];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -180,6 +151,43 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
         mapViewController.myLocation = self.myLocation;
         mapViewController.placeReference = prediction.reference;
     }
+}
+
+#pragma mark - User Location Manager
+
+- (TCUserLocationManager *)userLocationManager
+{
+    if (!_userLocationManager) {
+        _userLocationManager = [[TCUserLocationManager alloc] init];
+    }
+    return _userLocationManager;
+}
+
+- (void)startLocatingUser
+{
+    // Show progress HUD while we find the user's location.
+    MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    progressHUD.dimBackground = YES;
+    progressHUD.labelText = @"Finding My Location";
+    
+    // Make progress HUD consume all touches to disable interaction on
+    // background views.
+    progressHUD.userInteractionEnabled = YES;
+    
+    // Get the user's current location. Google Places API uses the user's
+    // current location to find relevant places.
+    [self.userLocationManager startLocatingUserWithCompletion:^(CLLocation *userLocation, NSError *error) {
+        if (userLocation) {
+            self.myLocation = userLocation;
+            [progressHUD hide:YES];
+            
+            // Set focus to the UISearchBar, so that user can start
+            // entering their query right away.
+            [self.searchBar becomeFirstResponder];
+        } else {
+            NSLog(@"[TCUserLocationManager] - Error: %@", [error localizedDescription]);
+        }
+    }];    
 }
 
 @end

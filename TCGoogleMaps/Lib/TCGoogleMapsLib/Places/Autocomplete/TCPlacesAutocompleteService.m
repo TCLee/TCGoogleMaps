@@ -17,21 +17,8 @@
 
 @interface TCPlacesAutocompleteService ()
 
-/**
- * The `TCGoogleMapsAPIClient` instance that will be used to send
- * HTTP requests to Google Maps APIs. This allows us to set a mock API
- * client that doesn't connect to the network for unit testing.
- */
 @property (nonatomic, strong) TCGoogleMapsAPIClient *APIClient;
-
-/**
- * The sensor parameter used for all Google Places API requests.
- */
 @property (nonatomic, assign) BOOL sensor;
-
-/**
- * The API key parameter used for all Google Places API requests.
- */
 @property (nonatomic, copy) NSString *key;
 
 /**
@@ -59,18 +46,17 @@
 - (void)placePredictionsWithParameters:(TCPlacesAutocompleteParameters *)parameters
                             completion:(TCPlacesAutocompleteServiceCallback)completion
 {
-    NSParameterAssert(parameters);
-    
-    NSAssert([self.key length] > 0,
-             @"You must provide the API key to use Google Places service. "
-             "Call setAPIKey:sensor: to provide the required API key and sensor parameters.");
+    NSAssert(nil != parameters,
+             @"Parameters are required to send a request to Google Places Autocomplete API.");
+    NSAssert([parameters.input length] > 0,
+             @"Google Places Autocomplete API requires a non-empty input string.");
     
     // Cancel any existing request operation before we begin a new one.
     // We don't want to overwhelm Google's servers with too many requests at a time.
     [self.placesAutocompleteRequest cancel];
     
     self.placesAutocompleteRequest = [self.APIClient getPath:@"place/autocomplete/json"
-                                                  parameters:[self dictionaryFromParameters:parameters]
+                                                  parameters:DictionaryFromParameters(parameters, self.key, self.sensor)
                                                   completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
         if (responseObject) {
             NSString *statusCode = responseObject[@"status"];
@@ -78,12 +64,12 @@
             // If Google Places API response's status is OK, then it means we
             // have a valid result to parse. Otherwise, we will report it as an error.
             if ([statusCode isEqualToString:TCPlacesServiceStatusOK]) {
-                invokeCompletion(completion, [self predictionsFromResponse:responseObject[@"predictions"]], nil);
+                Callback(completion, AutocompletePredictionsFromResponse(responseObject), nil);
             } else {
-                invokeCompletion(completion, nil, [TCPlacesServiceError errorWithStatusCode:statusCode]);
+                Callback(completion, nil, [TCPlacesServiceError errorWithStatusCode:statusCode]);
             }
         } else if (error) {
-            invokeCompletion(completion, nil, error);
+            Callback(completion, nil, error);
         }
     }];
 }
@@ -92,7 +78,7 @@
  * Invokes the `completion` block with the given parameters.
  * If `completion` block is nil, then nothing will happen.
  */
-FOUNDATION_STATIC_INLINE void invokeCompletion(TCPlacesAutocompleteServiceCallback completion, NSArray *predictions, NSError *error)
+FOUNDATION_STATIC_INLINE void Callback(TCPlacesAutocompleteServiceCallback completion, NSArray *predictions, NSError *error)
 {
     if (completion) {
         completion(predictions, error);
@@ -103,9 +89,11 @@ FOUNDATION_STATIC_INLINE void invokeCompletion(TCPlacesAutocompleteServiceCallba
  * Returns an array of TCPlacesAutocompletePrediction objects from
  * the response data.
  */
-- (NSArray *)predictionsFromResponse:(NSArray *)predictionsResponse
+static NSArray *AutocompletePredictionsFromResponse(NSDictionary *response)
 {
+    NSArray *predictionsResponse = response[@"predictions"];
     NSMutableArray *predictions = [[NSMutableArray alloc] initWithCapacity:[predictionsResponse count]];
+    
     for (NSDictionary *predictionResponse in predictionsResponse) {
         TCPlacesAutocompletePrediction *prediction = [[TCPlacesAutocompletePrediction alloc] initWithProperties:predictionResponse];
         [predictions addObject:prediction];
@@ -114,20 +102,19 @@ FOUNDATION_STATIC_INLINE void invokeCompletion(TCPlacesAutocompleteServiceCallba
 }
 
 /**
- * Returns a dictionary representation of the parameters.
+ * Returns a dictionary representation of the parameters,
+ * and includes the API key and sensor parameters too.
  */
-- (NSDictionary *)dictionaryFromParameters:(TCPlacesAutocompleteParameters *)parameters
+static NSDictionary *DictionaryFromParameters(TCPlacesAutocompleteParameters *parameters, NSString *APIKey, BOOL sensor)
 {
-    NSAssert([self.key length] > 0,
-             @"You must provide an API key to use the Google Places APIs.");
-    NSAssert([parameters.input length] > 0,
-             @"Google Places Autocomplete API requires a non-empty input string.");
-    
     NSMutableDictionary *mutableDictionary = [[NSMutableDictionary alloc] init];
-    
-    // Required parameters for Google Places Autocomplete API.
-    mutableDictionary[@"key"] = self.key;
-    mutableDictionary[@"sensor"] = [TCGoogleMapsAPIDataMapper stringFromBool:self.sensor];
+
+    // Add the key and sensor parameters that are required for all
+    // Google Places API requests.
+    mutableDictionary[@"key"] = APIKey;
+    mutableDictionary[@"sensor"] = [TCGoogleMapsAPIDataMapper stringFromBool:sensor];
+
+    // Required parameter (search text).
     mutableDictionary[@"input"] = parameters.input;
     
     // Optional parameters for searching nearby a given location.

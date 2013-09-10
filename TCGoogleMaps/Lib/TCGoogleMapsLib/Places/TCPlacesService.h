@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TCPlacesAutocompleteService.h"
+
+#import "TCPlacesServiceBlocks.h"
 
 @class TCPlacesAutocompleteParameters;
 
@@ -37,9 +38,16 @@
  * autocomplete request parameters.
  *
  * @param parameters the autocomplete request parameters. Cannot be nil.
- * @param completion the block to execute when autocomplete prediction results are returned. 
- *                   Pass in nil, if you don't need to be notified of completion.
+ * @param completion the block to execute when autocomplete prediction results are returned
  */
 - (void)placePredictionsWithParameters:(TCPlacesAutocompleteParameters *)parameters completion:(TCPlacesAutocompleteServiceCallback)completion;
+
+/**
+ * Retrieves details about the place identified by the given reference.
+ *
+ * @param reference  the place reference string
+ * @param completion the block to execute when place detais are returned
+ */
+- (void)placeDetailsWithReference:(NSString *)reference completion:(TCPlaceDetailsServiceCallback)completion;
 
 @end
