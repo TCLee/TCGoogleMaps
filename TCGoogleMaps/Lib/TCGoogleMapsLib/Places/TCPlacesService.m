@@ -7,32 +7,27 @@
 //
 
 #import "TCPlacesService.h"
-#import "TCPlacesServicePrivate.h"
 #import "TCPlacesAutocompleteService.h"
-#import "TCGoogleMapsAPIClient.h"
+#import "TCPlaceDetailsService.h"
 
 @interface TCPlacesService ()
-
-/**
- * The API key parameter used for all Google Places API requests.
- */
-@property (nonatomic, copy) NSString *APIKey;
-
-/**
- * The sensor parameter used for all Google Places API requests.
- */
-@property (nonatomic, assign) BOOL sensor;
 
 /**
  * The service object to access Google Places Autocomplete API.
  */
 @property (nonatomic, strong, readonly) TCPlacesAutocompleteService *autocompleteService;
 
+/**
+ * The service object to access Google Place Details API.
+ */
+@property (nonatomic, strong, readonly) TCPlaceDetailsService *placeDetailsService;
+
 @end
 
 @implementation TCPlacesService
 
 @synthesize autocompleteService = _autocompleteService;
+@synthesize placeDetailsService = _placeDetailsService;
 
 + (TCPlacesService *)sharedService
 {
@@ -44,46 +39,34 @@
     return _sharedService;
 }
 
-+ (void)setAPIKey:(NSString *)APIKey sensor:(BOOL)sensor
-{
-    TCPlacesService *sharedService = [[self class] sharedService];
-    sharedService.APIKey = APIKey;
-    sharedService.sensor = sensor;
-}
-
-- (TCGoogleMapsAPIClient *)APIClient
-{
-    // Use the default shared API client, if no custom API client is given.
-    return _APIClient ?: [TCGoogleMapsAPIClient sharedClient];
-}
-
 #pragma mark - Places Autocomplete Service
 
 - (TCPlacesAutocompleteService *)autocompleteService
 {
     if (!_autocompleteService) {
-        _autocompleteService = [[TCPlacesAutocompleteService alloc] initWithAPIClient:self.APIClient key:self.APIKey sensor:self.sensor];
+        _autocompleteService = [[TCPlacesAutocompleteService alloc] init];
     }
     return _autocompleteService;
 }
 
 - (void)placePredictionsWithParameters:(TCPlacesAutocompleteParameters *)parameters completion:(TCPlacesAutocompleteServiceCallback)completion
 {
-    NSAssert([self.APIKey length] > 0,
-             @"You must provide the API key to use Google Places service. "
-             "Call setAPIKey:sensor: to provide the required API key and sensor parameters.");
-
     [self.autocompleteService placePredictionsWithParameters:parameters completion:completion];
 }
 
 #pragma mark - Place Details Service
 
-- (void)placeDetailsWithReference:(NSString *)reference completion:(TCPlaceDetailsServiceCallback)completion
+- (TCPlaceDetailsService *)placeDetailsService
 {
-    NSAssert([self.APIKey length] > 0,
-             @"You must provide the API key to use Google Places service. "
-             "Call setAPIKey:sensor: to provide the required API key and sensor parameters.");
-    
+    if (!_placeDetailsService) {
+        _placeDetailsService = [[TCPlaceDetailsService alloc] init];
+    }
+    return _placeDetailsService;
+}
+
+- (void)placeDetailsWithReference:(NSString *)reference completion:(TCPlaceDetailsServiceCallback)completion
+{    
+    [self.placeDetailsService placeDetailsWithReference:reference completion:completion];
 }
 
 @end

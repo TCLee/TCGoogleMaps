@@ -7,17 +7,49 @@
 //
 
 #import "TCPlaceDetailsService.h"
+#import "TCPlace.h"
+#import "TCPlacesServiceStatusConstants.h"
+#import "TCPlacesServiceError.h"
+#import "TCGoogleMapsAPIClient.h"
+
+@interface TCPlaceDetailsService ()
+
+@property (nonatomic, strong) AFHTTPRequestOperation *placesDetailsRequest;
+
+@end
 
 @implementation TCPlaceDetailsService
 
-- (id)initWithAPIClient:(TCGoogleMapsAPIClient *)APIClient key:(NSString *)key sensor:(BOOL)sensor
-{
-    
-}
-
 - (void)placeDetailsWithReference:(NSString *)reference completion:(TCPlaceDetailsServiceCallback)completion
 {
+    // Cancel previous request (if any) before we begin a new one.
+    [self.placesDetailsRequest cancel];
     
+    self.placesDetailsRequest = [[TCGoogleMapsAPIClient sharedClient] getPath:@"place/details/json" parameters:@{@"reference": reference} completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
+        if (responseObject) {
+            ParseResponse(responseObject, completion);
+        } else {
+            Callback(completion, nil, error);
+        }
+    }];
+}
+
+FOUNDATION_STATIC_INLINE void Callback(TCPlaceDetailsServiceCallback block, id place, NSError *error)
+{
+    if (block) {
+        block(place, error);
+    }
+}
+
+static void ParseResponse(NSDictionary *response, TCPlaceDetailsServiceCallback completion)
+{
+    NSString *statusCode = response[@"status"];
+    if ([statusCode isEqualToString:TCPlacesServiceStatusOK]) {
+        TCPlace *place = [[TCPlace alloc] initWithProperties:response[@"result"]];
+        Callback(completion, place, nil);
+    } else {
+        Callback(completion, nil, [TCPlacesServiceError errorWithStatusCode:statusCode]);
+    }
 }
 
 @end

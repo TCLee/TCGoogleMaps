@@ -7,7 +7,19 @@
 //
 
 #import "TCPlace.h"
+#import "TCGoogleMapsAPIDataMapper.h"
 
 @implementation TCPlace
+
+- (id)initWithProperties:(NSDictionary *)properties
+{
+    self = [super init];
+    if (self) {
+        _name = [properties[@"name"] copy];
+        _location = [TCGoogleMapsAPIDataMapper coordinateFromProperties:properties[@"geometry"][@"location"]];
+        _address = [properties[@"vicinity"] copy];
+    }
+    return self;
+}
 
 @end

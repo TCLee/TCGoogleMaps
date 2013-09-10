@@ -34,4 +34,9 @@
  */
 @property (nonatomic, assign) CLLocationDistance radius;
 
+/**
+ * Returns a dictionary representation of the parameters.
+ */
+- (NSDictionary *)dictionary;
+
 @end

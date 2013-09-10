@@ -8,7 +8,6 @@
 
 #import "TCAppDelegate.h"
 #import "TCGoogleAPIKeys.h"
-#import "TCGooglePlaces.h"
 
 @implementation TCAppDelegate
 
@@ -16,8 +15,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [GMSServices provideAPIKey:kTCGoogleMapsAPIKey];
-    
-    [TCPlacesService setAPIKey:kTCGooglePlacesAPIKey sensor:NO];
         
     return YES;
 }

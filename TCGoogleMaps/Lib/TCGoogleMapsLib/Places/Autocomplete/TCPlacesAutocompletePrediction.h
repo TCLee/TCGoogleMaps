@@ -24,4 +24,10 @@
  */
 @property (nonatomic, copy, readonly) NSString *reference;
 
+/**
+ * Initializes a newly allocated `TCPlacesAutocompletePrediction` object with
+ * results returned from `TCPlacesService`.
+ */
+- (id)initWithProperties:(NSDictionary *)properties;
+
 @end

@@ -19,7 +19,7 @@
 typedef void (^TCGoogleMapsAPIClientCallback)(AFHTTPRequestOperation *operation, id responseObject, NSError *error);
 
 /**
- * Subclass of AFHTTPClient to access Google Maps API services.
+ * Subclass of AFHTTPClient to access Google Maps services.
  */
 @interface TCGoogleMapsAPIClient : AFHTTPClient
 

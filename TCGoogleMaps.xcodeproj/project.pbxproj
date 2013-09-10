@@ -112,7 +112,6 @@
 		810E4FD417D97E6800B69AF3 /* TCGooglePlaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCGooglePlaces.h; sourceTree = "<group>"; };
 		810E4FD517D9B2E700B69AF3 /* TCPlacesServiceErrorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceErrorTests.h; sourceTree = "<group>"; };
 		810E4FD617D9B2E700B69AF3 /* TCPlacesServiceErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceErrorTests.m; sourceTree = "<group>"; };
-		810E4FDB17DC2FD900B69AF3 /* TCPlacesServicePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesServicePrivate.h; sourceTree = "<group>"; };
 		810E4FE317DD7E6E00B69AF3 /* TCPlacesServiceStatusConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceStatusConstants.h; sourceTree = "<group>"; };
 		810E4FE417DD7E6F00B69AF3 /* TCPlacesServiceStatusConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesServiceStatusConstants.m; sourceTree = "<group>"; };
 		810E4FE617DD948B00B69AF3 /* TCPlacesServiceErrorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceErrorConstants.h; sourceTree = "<group>"; };
@@ -123,7 +122,6 @@
 		810E4FF417DDBEAD00B69AF3 /* TCPlacesAutocompleteParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompleteParameters.m; sourceTree = "<group>"; };
 		810E4FF517DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompletePrediction.h; sourceTree = "<group>"; };
 		810E4FF617DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompletePrediction.m; sourceTree = "<group>"; };
-		810E4FF717DDBEAD00B69AF3 /* TCPlacesAutocompletePredictionPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompletePredictionPrivate.h; sourceTree = "<group>"; };
 		810E4FF817DDBEAD00B69AF3 /* TCPlacesAutocompleteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompleteService.h; sourceTree = "<group>"; };
 		810E4FF917DDBEAD00B69AF3 /* TCPlacesAutocompleteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompleteService.m; sourceTree = "<group>"; };
 		810E4FFB17DDBEAD00B69AF3 /* TCPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlace.h; sourceTree = "<group>"; };
@@ -269,7 +267,6 @@
 				810E4FF417DDBEAD00B69AF3 /* TCPlacesAutocompleteParameters.m */,
 				810E4FF517DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.h */,
 				810E4FF617DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.m */,
-				810E4FF717DDBEAD00B69AF3 /* TCPlacesAutocompletePredictionPrivate.h */,
 			);
 			path = Autocomplete;
 			sourceTree = "<group>";
@@ -523,12 +520,9 @@
 			isa = PBXGroup;
 			children = (
 				810E4FD417D97E6800B69AF3 /* TCGooglePlaces.h */,
-				810E4FF217DDBEAC00B69AF3 /* Autocomplete */,
-				810E4FFA17DDBEAD00B69AF3 /* PlaceDetails */,
 				810E500617DEABCF00B69AF3 /* TCPlacesServiceBlocks.h */,
 				81AA9B9C17D5E46400B45089 /* TCPlacesService.h */,
 				81AA9B9D17D5E46400B45089 /* TCPlacesService.m */,
-				810E4FDB17DC2FD900B69AF3 /* TCPlacesServicePrivate.h */,
 				810E4FCE17D8844E00B69AF3 /* TCPlacesServiceError.h */,
 				810E4FCF17D8844E00B69AF3 /* TCPlacesServiceError.m */,
 				810E4FCB17D87D3100B69AF3 /* TCPlacesServiceStatus.h */,
@@ -537,6 +531,8 @@
 				810E4FE717DD948D00B69AF3 /* TCPlacesServiceErrorConstants.m */,
 				810E4FE317DD7E6E00B69AF3 /* TCPlacesServiceStatusConstants.h */,
 				810E4FE417DD7E6F00B69AF3 /* TCPlacesServiceStatusConstants.m */,
+				810E4FF217DDBEAC00B69AF3 /* Autocomplete */,
+				810E4FFA17DDBEAD00B69AF3 /* PlaceDetails */,
 			);
 			path = Places;
 			sourceTree = "<group>";

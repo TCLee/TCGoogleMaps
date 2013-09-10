@@ -28,4 +28,9 @@
  */
 @property (nonatomic, assign, readonly) CLLocationCoordinate2D location;
 
+/**
+ * Initializes a place's properties from the given dictionary.
+ */
+- (id)initWithProperties:(NSDictionary *)properties;
+
 @end
