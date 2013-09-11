@@ -7,6 +7,8 @@
 //
 
 #import "TCPlacesAutocompletePrediction.h"
+#import "TCPlacesPredictionTerm.h"
+#import "TCPlacesPredictionTermPrivate.h"
 
 @implementation TCPlacesAutocompletePrediction
 
@@ -18,8 +20,24 @@
     if (self) {
         _description = [properties[@"description"] copy];
         _reference = [properties[@"reference"] copy];
+        _terms = PredictionTermsFromResponse(properties[@"terms"]);
     }
     return self;
+}
+
+/**
+ * Returns an array of TCPlacesPredictionTerm objects from
+ * the response data.
+ */
+static NSArray *PredictionTermsFromResponse(NSArray *response)
+{
+    NSMutableArray *terms = [[NSMutableArray alloc] initWithCapacity:
+                             [response count]];
+    for (NSDictionary *termResponse in response) {
+        TCPlacesPredictionTerm *term = [[TCPlacesPredictionTerm alloc] initWithProperties:termResponse];
+        [terms addObject:term];
+    }    
+    return [terms copy];
 }
 
 @end

@@ -25,9 +25,9 @@
 @property (nonatomic, copy, readonly) NSString *reference;
 
 /**
- * Initializes a newly allocated `TCPlacesAutocompletePrediction` object with
- * results returned from `TCPlacesService`.
+ * Information about individual terms in the above description, from 
+ * most to least specific. For example, "Taco Bell", "Willitis", and "CA".
  */
-- (id)initWithProperties:(NSDictionary *)properties;
+@property (nonatomic, copy, readonly) NSArray *terms;
 
 @end

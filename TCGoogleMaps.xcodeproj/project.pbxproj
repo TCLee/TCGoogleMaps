@@ -160,6 +160,9 @@
 		81C1820B17E000D0009AF620 /* TCPlacesPredictionTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesPredictionTerm.m; sourceTree = "<group>"; };
 		81C1820E17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleMapsAPIDataMapper.h; sourceTree = "<group>"; };
 		81C1820F17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoogleMapsAPIDataMapper.m; sourceTree = "<group>"; };
+		81C1821117E00DCF009AF620 /* TCPlacesPredictionTermPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesPredictionTermPrivate.h; sourceTree = "<group>"; };
+		81C1821217E0197A009AF620 /* TCPlacesAutocompletePredictionPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompletePredictionPrivate.h; sourceTree = "<group>"; };
+		81C1821317E019FF009AF620 /* TCPlacesAutocompleteParametersPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompleteParametersPrivate.h; sourceTree = "<group>"; };
 		81C1BAE917CEF6900032BA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81C1BAEA17CEF6900032BA8F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81C1BAEB17CEF6900032BA8F /* TCGoogleMaps-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMaps-Info.plist"; sourceTree = "<group>"; };
@@ -270,10 +273,13 @@
 				810E4FF817DDBEAD00B69AF3 /* TCPlacesAutocompleteService.h */,
 				810E4FF917DDBEAD00B69AF3 /* TCPlacesAutocompleteService.m */,
 				810E4FF317DDBEAD00B69AF3 /* TCPlacesAutocompleteParameters.h */,
+				81C1821317E019FF009AF620 /* TCPlacesAutocompleteParametersPrivate.h */,
 				810E4FF417DDBEAD00B69AF3 /* TCPlacesAutocompleteParameters.m */,
 				810E4FF517DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.h */,
+				81C1821217E0197A009AF620 /* TCPlacesAutocompletePredictionPrivate.h */,
 				810E4FF617DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.m */,
 				81C1820A17E000D0009AF620 /* TCPlacesPredictionTerm.h */,
+				81C1821117E00DCF009AF620 /* TCPlacesPredictionTermPrivate.h */,
 				81C1820B17E000D0009AF620 /* TCPlacesPredictionTerm.m */,
 			);
 			path = Autocomplete;

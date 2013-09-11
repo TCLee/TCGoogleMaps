@@ -133,7 +133,15 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     TCPlacesAutocompletePrediction *prediction = self.placePredictions[indexPath.row];
-    cell.textLabel.text = prediction.description;    
+    
+    // First prediction term will be the name of the place.
+    TCPlacesPredictionTerm *firstTerm = prediction.terms[0];
+    cell.textLabel.text = firstTerm.value;
+
+    // Remaining terms will be the address of the place.
+    NSArray *remainingTerms = [prediction.terms subarrayWithRange:NSMakeRange(1, prediction.terms.count - 1)];
+    cell.detailTextLabel.text = [remainingTerms componentsJoinedByString:@", "];
+    
     return cell;
 }
 
