@@ -13,10 +13,14 @@ static NSString * const kTCGooglePlacesAPIBaseURLString = @"https://maps.googlea
 
 @implementation TCGooglePlacesAPIClient
 
-- (id)initWithBaseURL:(NSURL *)url
-{    
-    self = [super initWithBaseURL:[NSURL URLWithString:kTCGooglePlacesAPIBaseURLString]];
-    return self;
++ (instancetype)defaultClient
+{
+    static TCGooglePlacesAPIClient *_defaultClient = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _defaultClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:kTCGooglePlacesAPIBaseURLString]];
+    });
+    return _defaultClient;
 }
 
 - (AFHTTPRequestOperation *)getPath:(NSString *)path parameters:(NSDictionary *)parameters completion:(TCGoogleMapsAPIClientCallback)completion
