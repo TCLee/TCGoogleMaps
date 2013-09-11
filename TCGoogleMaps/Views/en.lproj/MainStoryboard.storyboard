@@ -8,10 +8,48 @@
         <scene sceneID="5">
             <objects>
                 <viewController storyboardIdentifier="TCMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="TCMapViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3" customClass="GMSMapView">
+                    <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhx-hF-7BA" customClass="GMSMapView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLe-Vl-txQ">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Route Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzc-GJ-023">
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10 km, 20 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGx-9J-75H">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jGx-9J-75H" firstAttribute="top" secondItem="wzc-GJ-023" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FWs-vr-ZhG"/>
+                                    <constraint firstAttribute="trailing" secondItem="jGx-9J-75H" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ISb-PB-XWy"/>
+                                    <constraint firstItem="wzc-GJ-023" firstAttribute="leading" secondItem="KLe-Vl-txQ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="iNx-TA-mds"/>
+                                    <constraint firstAttribute="trailing" secondItem="wzc-GJ-023" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iy7-AO-WfG"/>
+                                    <constraint firstItem="wzc-GJ-023" firstAttribute="top" secondItem="KLe-Vl-txQ" secondAttribute="top" constant="20" symbolic="YES" type="default" id="jiB-Af-ZoL"/>
+                                    <constraint firstItem="jGx-9J-75H" firstAttribute="leading" secondItem="KLe-Vl-txQ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="maa-6D-hdF"/>
+                                    <constraint firstAttribute="bottom" secondItem="jGx-9J-75H" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="sWb-p8-9mt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KLe-Vl-txQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="D0z-tS-Qm3"/>
+                            <constraint firstItem="Yhx-hF-7BA" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="EJn-1l-z8P"/>
+                            <constraint firstItem="KLe-Vl-txQ" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="QT3-uw-t1S"/>
+                            <constraint firstItem="KLe-Vl-txQ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="b8N-qQ-o67"/>
+                            <constraint firstItem="Yhx-hF-7BA" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="nvd-zw-onh"/>
+                            <constraint firstItem="Yhx-hF-7BA" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="p30-c3-Nf5"/>
+                            <constraint firstItem="Yhx-hF-7BA" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="tka-2P-zgy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="xsh-Sc-5ar">
                         <barButtonItem key="rightBarButtonItem" title="Directions" id="hpT-YA-THn">
@@ -22,7 +60,10 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="mapView" destination="3" id="5FY-k3-AoQ"/>
+                        <outlet property="distanceAndDurationLabel" destination="jGx-9J-75H" id="Mj9-0a-VEF"/>
+                        <outlet property="mapView" destination="Yhx-hF-7BA" id="7Ao-Fn-MMt"/>
+                        <outlet property="routeDetailsView" destination="KLe-Vl-txQ" id="IdO-HA-T4m"/>
+                        <outlet property="routeNameLabel" destination="wzc-GJ-023" id="oq7-SP-uut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -45,13 +86,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="31" translatesAutoresizingMaskIntoConstraints="NO" id="I33-aA-JAw">
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="29" translatesAutoresizingMaskIntoConstraints="NO" id="I33-aA-JAw">
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNw-3s-p4k">
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
@@ -194,7 +235,10 @@
         <class className="TCMapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TCMapViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="distanceAndDurationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mapView" candidateClass="GMSMapView"/>
+                <relationship kind="outlet" name="routeDetailsView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="routeNameLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="TCSearchViewController" superclassName="UIViewController">

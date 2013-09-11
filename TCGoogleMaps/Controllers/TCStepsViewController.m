@@ -7,6 +7,7 @@
 //
 
 #import "TCStepsViewController.h"
+#import "TCGoogleDirections.h"
 
 @interface TCStepsViewController ()
 

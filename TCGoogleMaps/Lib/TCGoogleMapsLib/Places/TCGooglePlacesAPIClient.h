@@ -10,6 +10,10 @@
 
 #import "TCGoogleMapsAPIClient.h"
 
+/**
+ * Subclass of `TCGoogleMapsAPIClient` to specifically access 
+ * Google Places services.
+ */
 @interface TCGooglePlacesAPIClient : TCGoogleMapsAPIClient
 
 + (TCGooglePlacesAPIClient *)sharedClient;

@@ -14,8 +14,10 @@
 
 @interface TCMapViewController ()
 
-/* Google Map view. */
 @property (nonatomic, weak) IBOutlet GMSMapView *mapView;
+@property (nonatomic, weak) IBOutlet UIView *routeDetailsView;
+@property (nonatomic, weak) IBOutlet UILabel *routeNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *distanceAndDurationLabel;
 
 /* Place Details result returned from Google Places API. */
 @property (nonatomic, strong) TCPlace *place;
@@ -37,6 +39,9 @@
     
     // Show the navigation bar so that we can navigate back to search view.
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    // Hide the route details view, until we have a route to show.
+    self.routeDetailsView.alpha = 0.0f;
     
     // If we have a valid Google Places reference, we will fetch the details for the place.
     if (self.placeReference) {
@@ -113,6 +118,7 @@
             [self.mapView animateWithCameraUpdate:cameraUpdate];
             
             [self drawRoute:self.route onMap:self.mapView];
+            [self showRouteDetailsViewWithRoute:self.route];
         } else {
             NSLog(@"[Google Directions API] - Error: %@", [error localizedDescription]);
         }
@@ -124,6 +130,26 @@
     GMSPolyline *polyline = [GMSPolyline polylineWithPath:route.overviewPath];
     polyline.strokeWidth = 10.0f;
     polyline.map = mapView;
+}
+
+- (void)showRouteDetailsViewWithRoute:(TCDirectionsRoute *)route
+{
+    self.routeNameLabel.text = route.summary;
+    
+    // With no waypoints, we only have one leg.
+    TCDirectionsLeg *leg = route.legs[0];
+    self.distanceAndDurationLabel.text = [NSString stringWithFormat:@"%@, %@",
+                                          leg.distance.text, leg.duration.text];
+    
+    // Fade in animation for the route details view.
+    [UIView animateWithDuration:1.0f animations:^{
+        self.routeDetailsView.alpha = 1.0f;
+    }];
+}
+
+- (void)hideRouteDetailsView
+{
+    
 }
 
 @end

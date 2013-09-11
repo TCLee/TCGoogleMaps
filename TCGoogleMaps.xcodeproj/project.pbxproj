@@ -15,7 +15,6 @@
 		810E4FB917D70D1600B69AF3 /* TCDirectionsStepTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FB817D70D1600B69AF3 /* TCDirectionsStepTestData.json */; };
 		810E4FBC17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FBB17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m */; };
 		810E4FBF17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FBE17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m */; };
-		810E4FC217D82D7100B69AF3 /* TCGoogleMapsAPIDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FC117D82D6F00B69AF3 /* TCGoogleMapsAPIDataMapper.m */; };
 		810E4FC517D83F8A00B69AF3 /* TCGoogleMapsAPIDataMapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FC417D83F8A00B69AF3 /* TCGoogleMapsAPIDataMapperTests.m */; };
 		810E4FC817D8646B00B69AF3 /* TCMockAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FC717D8646A00B69AF3 /* TCMockAPIClient.m */; };
 		810E4FCA17D8755300B69AF3 /* TCPlacesAutocomplete_Error.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FC917D8755300B69AF3 /* TCPlacesAutocomplete_Error.json */; };
@@ -44,6 +43,8 @@
 		81AA9B9B17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */; };
 		81AA9B9E17D5E46400B45089 /* TCPlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9D17D5E46400B45089 /* TCPlacesService.m */; };
 		81C1820917DF0FB4009AF620 /* TCGooglePlacesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */; };
+		81C1820C17E000D1009AF620 /* TCPlacesPredictionTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1820B17E000D0009AF620 /* TCPlacesPredictionTerm.m */; };
+		81C1821017E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1820F17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m */; };
 		81C1BAED17CEF6900032BA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BAE817CEF6900032BA8F /* InfoPlist.strings */; };
 		81C1BAEE17CEF6900032BA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAEA17CEF6900032BA8F /* main.m */; };
 		81C1BAF717CEF7230032BA8F /* TCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF217CEF7230032BA8F /* TCMapViewController.m */; };
@@ -99,8 +100,6 @@
 		810E4FBB17D757AC00B69AF3 /* TCPlacesAutocompletePredictionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompletePredictionTests.m; sourceTree = "<group>"; };
 		810E4FBD17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompleteParametersTests.h; sourceTree = "<group>"; };
 		810E4FBE17D81F9800B69AF3 /* TCPlacesAutocompleteParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompleteParametersTests.m; sourceTree = "<group>"; };
-		810E4FC017D82D6E00B69AF3 /* TCGoogleMapsAPIDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleMapsAPIDataMapper.h; sourceTree = "<group>"; };
-		810E4FC117D82D6F00B69AF3 /* TCGoogleMapsAPIDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoogleMapsAPIDataMapper.m; sourceTree = "<group>"; };
 		810E4FC317D83F8A00B69AF3 /* TCGoogleMapsAPIDataMapperTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleMapsAPIDataMapperTests.h; sourceTree = "<group>"; };
 		810E4FC417D83F8A00B69AF3 /* TCGoogleMapsAPIDataMapperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoogleMapsAPIDataMapperTests.m; sourceTree = "<group>"; };
 		810E4FC617D8646A00B69AF3 /* TCMockAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMockAPIClient.h; sourceTree = "<group>"; };
@@ -157,6 +156,10 @@
 		81AA9B9D17D5E46400B45089 /* TCPlacesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesService.m; sourceTree = "<group>"; };
 		81C1820717DF0FB2009AF620 /* TCGooglePlacesAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGooglePlacesAPIClient.h; sourceTree = "<group>"; };
 		81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGooglePlacesAPIClient.m; sourceTree = "<group>"; };
+		81C1820A17E000D0009AF620 /* TCPlacesPredictionTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesPredictionTerm.h; sourceTree = "<group>"; };
+		81C1820B17E000D0009AF620 /* TCPlacesPredictionTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesPredictionTerm.m; sourceTree = "<group>"; };
+		81C1820E17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleMapsAPIDataMapper.h; sourceTree = "<group>"; };
+		81C1820F17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoogleMapsAPIDataMapper.m; sourceTree = "<group>"; };
 		81C1BAE917CEF6900032BA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81C1BAEA17CEF6900032BA8F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81C1BAEB17CEF6900032BA8F /* TCGoogleMaps-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMaps-Info.plist"; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 				810E4FF417DDBEAD00B69AF3 /* TCPlacesAutocompleteParameters.m */,
 				810E4FF517DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.h */,
 				810E4FF617DDBEAD00B69AF3 /* TCPlacesAutocompletePrediction.m */,
+				81C1820A17E000D0009AF620 /* TCPlacesPredictionTerm.h */,
+				81C1820B17E000D0009AF620 /* TCPlacesPredictionTerm.m */,
 			);
 			path = Autocomplete;
 			sourceTree = "<group>";
@@ -381,6 +386,15 @@
 			path = Places;
 			sourceTree = "<group>";
 		};
+		81C1820D17E0091E009AF620 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81C1820E17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.h */,
+				81C1820F17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		81C1BAE717CEF6900032BA8F /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,12 +499,11 @@
 		81C1BB2017CF04AC0032BA8F /* TCGoogleMapsLib */ = {
 			isa = PBXGroup;
 			children = (
+				81C1820D17E0091E009AF620 /* Helpers */,
 				81C1BB2117CF04AC0032BA8F /* Directions */,
 				81C1BB3117CF04AC0032BA8F /* Places */,
 				81C1BB3217CF04AC0032BA8F /* TCGoogleMapsAPIClient.h */,
 				81C1BB3317CF04AC0032BA8F /* TCGoogleMapsAPIClient.m */,
-				810E4FC017D82D6E00B69AF3 /* TCGoogleMapsAPIDataMapper.h */,
-				810E4FC117D82D6F00B69AF3 /* TCGoogleMapsAPIDataMapper.m */,
 			);
 			path = TCGoogleMapsLib;
 			sourceTree = "<group>";
@@ -826,7 +839,6 @@
 				81C1BB4117CF162D0032BA8F /* TCDirectionsStatus.m in Sources */,
 				81C1BB4517CF1FF30032BA8F /* TCGoogleAPIKeys.m in Sources */,
 				81AA9B9E17D5E46400B45089 /* TCPlacesService.m in Sources */,
-				810E4FC217D82D7100B69AF3 /* TCGoogleMapsAPIDataMapper.m in Sources */,
 				810E4FCD17D87D3200B69AF3 /* TCPlacesServiceStatus.m in Sources */,
 				810E4FD017D8845000B69AF3 /* TCPlacesServiceError.m in Sources */,
 				810E4FE517DD7E7100B69AF3 /* TCPlacesServiceStatusConstants.m in Sources */,
@@ -838,6 +850,8 @@
 				810E500217DDBEAD00B69AF3 /* TCPlace.m in Sources */,
 				810E500317DDBEAD00B69AF3 /* TCPlaceDetailsService.m in Sources */,
 				81C1820917DF0FB4009AF620 /* TCGooglePlacesAPIClient.m in Sources */,
+				81C1820C17E000D1009AF620 /* TCPlacesPredictionTerm.m in Sources */,
+				81C1821017E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

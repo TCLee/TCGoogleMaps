@@ -12,4 +12,5 @@
 #import "TCPlacesServiceStatusConstants.h"
 #import "TCPlacesAutocompleteParameters.h"
 #import "TCPlacesAutocompletePrediction.h"
+#import "TCPlacesPredictionTerm.h"
 #import "TCPlace.h"

@@ -6,5 +6,9 @@
 //  Copyright (c) 2013 Lee Tze Cheun. All rights reserved.
 //
 
+/**
+ * API key constants used to access Google's APIs.
+ */
+
 FOUNDATION_EXPORT NSString * const kTCGoogleMapsAPIKey;
 FOUNDATION_EXPORT NSString * const kTCGooglePlacesAPIKey;

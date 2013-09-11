@@ -25,6 +25,7 @@ static NSString * const kTCGooglePlacesAPIBaseURLString = @"https://maps.googlea
 
 - (AFHTTPRequestOperation *)getPath:(NSString *)path parameters:(NSDictionary *)parameters completion:(TCGoogleMapsAPIClientCallback)completion
 {
+    // We need an API key to access Google Places services.
     NSMutableDictionary *mutableParameters = [[NSMutableDictionary alloc] initWithDictionary:parameters];
     mutableParameters[@"key"] = kTCGooglePlacesAPIKey;
     

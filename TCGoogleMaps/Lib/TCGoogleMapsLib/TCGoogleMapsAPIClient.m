@@ -41,7 +41,7 @@ static NSString * const kTCGoogleMapsAPIBaseURLString = @"https://maps.googleapi
                          parameters:(NSDictionary *)parameters
                          completion:(TCGoogleMapsAPIClientCallback)completion
 {
-    // Add the "sensor" parameter to the list of other parameters.
+    // "sensor" parameter is required for all requests to Google APIs.
     NSMutableDictionary *mutableParameters = [[NSMutableDictionary alloc] initWithDictionary:parameters];
     mutableParameters[@"sensor"] = @"false";
     

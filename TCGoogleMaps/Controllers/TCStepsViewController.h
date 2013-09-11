@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TCGoogleDirections.h"
+@class TCDirectionsRoute;
 
 /*
  Controller for the table view that displays the text directions.
