@@ -43,7 +43,7 @@ NSString * const TCDirectionsStatusCodeErrorKey = @"TCDirectionsStatusCode";
     // Cancel any ongoing directions request operation before we begin a new one.
     [self.directionsRequestOperation cancel];        
     
-    self.directionsRequestOperation = [[TCGoogleMapsAPIClient sharedClient] getPath:@"directions/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
+    self.directionsRequestOperation = [[TCGoogleMapsAPIClient defaultClient] getPath:@"directions/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
         if (responseObject) {
             [self parseResponse:responseObject completion:completion];
         } else {

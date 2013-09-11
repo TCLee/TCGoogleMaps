@@ -24,9 +24,10 @@ typedef void (^TCGoogleMapsAPIClientCallback)(AFHTTPRequestOperation *operation,
 @interface TCGoogleMapsAPIClient : AFHTTPClient
 
 /**
- * Returns the shared instance of the client to access Google Maps API services.
+ * Convenience method to return a default instance of the API client to 
+ * access Google Maps APIs.
  */
-+ (TCGoogleMapsAPIClient *)sharedClient;
++ (instancetype)defaultClient;
 
 /**
  * Similar to AFHTTPClient's getPath:parameters:success:failure: method.

@@ -25,7 +25,7 @@
     // Cancel previous request (if any) before we begin a new one.
     [self.placesDetailsRequest cancel];
     
-    self.placesDetailsRequest = [[TCGooglePlacesAPIClient sharedClient] getPath:@"details/json" parameters:@{@"reference": reference} completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
+    self.placesDetailsRequest = [[TCGooglePlacesAPIClient defaultClient] getPath:@"details/json" parameters:@{@"reference": reference} completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
         if (responseObject) {
             ParseResponse(responseObject, completion);
         } else {

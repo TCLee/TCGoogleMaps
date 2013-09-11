@@ -12,15 +12,14 @@ static NSString * const kTCGoogleMapsAPIBaseURLString = @"https://maps.googleapi
 
 @implementation TCGoogleMapsAPIClient
 
-+ (TCGoogleMapsAPIClient *)sharedClient
++ (instancetype)defaultClient
 {
-    static TCGoogleMapsAPIClient *_sharedClient = nil;
+    static TCGoogleMapsAPIClient *_defaultClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[TCGoogleMapsAPIClient alloc] initWithBaseURL:[NSURL URLWithString:kTCGoogleMapsAPIBaseURLString]];
-    });
-    
-    return _sharedClient;
+        _defaultClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:kTCGoogleMapsAPIBaseURLString]];
+    });    
+    return _defaultClient;
 }
 
 - (id)initWithBaseURL:(NSURL *)url

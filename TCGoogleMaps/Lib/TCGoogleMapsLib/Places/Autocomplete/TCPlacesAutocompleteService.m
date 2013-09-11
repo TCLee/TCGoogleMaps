@@ -41,7 +41,7 @@
     // We don't want to overwhelm Google's servers with too many requests at a time.
     [self.placesAutocompleteRequest cancel];
     
-    self.placesAutocompleteRequest = [[TCGooglePlacesAPIClient sharedClient] getPath:@"autocomplete/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
+    self.placesAutocompleteRequest = [[TCGooglePlacesAPIClient defaultClient] getPath:@"autocomplete/json" parameters:[parameters dictionary] completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
         if (responseObject) {
             ParseResponse(responseObject, completion);
         } else if (error) {

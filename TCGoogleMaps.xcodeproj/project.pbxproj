@@ -42,15 +42,14 @@
 		81AA9B9717D5D86B00B45089 /* TCDurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B8F17D5D86B00B45089 /* TCDurationTests.m */; };
 		81AA9B9B17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */; };
 		81AA9B9E17D5E46400B45089 /* TCPlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA9B9D17D5E46400B45089 /* TCPlacesService.m */; };
-		81C1820917DF0FB4009AF620 /* TCGooglePlacesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */; };
 		81C1820C17E000D1009AF620 /* TCPlacesPredictionTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1820B17E000D0009AF620 /* TCPlacesPredictionTerm.m */; };
 		81C1821017E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1820F17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m */; };
+		81C1821717E0282B009AF620 /* TCGooglePlacesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1821617E0282B009AF620 /* TCGooglePlacesAPIClient.m */; };
 		81C1BAED17CEF6900032BA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BAE817CEF6900032BA8F /* InfoPlist.strings */; };
 		81C1BAEE17CEF6900032BA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAEA17CEF6900032BA8F /* main.m */; };
 		81C1BAF717CEF7230032BA8F /* TCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF217CEF7230032BA8F /* TCMapViewController.m */; };
 		81C1BAF817CEF7230032BA8F /* TCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF417CEF7230032BA8F /* TCSearchViewController.m */; };
 		81C1BAF917CEF7230032BA8F /* TCStepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF617CEF7230032BA8F /* TCStepsViewController.m */; };
-		81C1BB0617CEF85B0032BA8F /* TCGooglePlacesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB0017CEF85B0032BA8F /* TCGooglePlacesAPI.m */; };
 		81C1BB0B17CEF9E70032BA8F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BB0917CEF9E70032BA8F /* MainStoryboard.storyboard */; };
 		81C1BB1517CEFAF90032BA8F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BB1017CEFAF90032BA8F /* Default-568h@2x.png */; };
 		81C1BB1617CEFAF90032BA8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BB1117CEFAF90032BA8F /* Default.png */; };
@@ -154,8 +153,6 @@
 		81AA9B9A17D5DC4F00B45089 /* TCPlacesAutocompleteServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesAutocompleteServiceTests.m; sourceTree = "<group>"; };
 		81AA9B9C17D5E46400B45089 /* TCPlacesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesService.h; sourceTree = "<group>"; };
 		81AA9B9D17D5E46400B45089 /* TCPlacesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesService.m; sourceTree = "<group>"; };
-		81C1820717DF0FB2009AF620 /* TCGooglePlacesAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGooglePlacesAPIClient.h; sourceTree = "<group>"; };
-		81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGooglePlacesAPIClient.m; sourceTree = "<group>"; };
 		81C1820A17E000D0009AF620 /* TCPlacesPredictionTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlacesPredictionTerm.h; sourceTree = "<group>"; };
 		81C1820B17E000D0009AF620 /* TCPlacesPredictionTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlacesPredictionTerm.m; sourceTree = "<group>"; };
 		81C1820E17E0091F009AF620 /* TCGoogleMapsAPIDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleMapsAPIDataMapper.h; sourceTree = "<group>"; };
@@ -163,6 +160,8 @@
 		81C1821117E00DCF009AF620 /* TCPlacesPredictionTermPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesPredictionTermPrivate.h; sourceTree = "<group>"; };
 		81C1821217E0197A009AF620 /* TCPlacesAutocompletePredictionPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompletePredictionPrivate.h; sourceTree = "<group>"; };
 		81C1821317E019FF009AF620 /* TCPlacesAutocompleteParametersPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesAutocompleteParametersPrivate.h; sourceTree = "<group>"; };
+		81C1821517E0282B009AF620 /* TCGooglePlacesAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGooglePlacesAPIClient.h; sourceTree = "<group>"; };
+		81C1821617E0282B009AF620 /* TCGooglePlacesAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGooglePlacesAPIClient.m; sourceTree = "<group>"; };
 		81C1BAE917CEF6900032BA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81C1BAEA17CEF6900032BA8F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81C1BAEB17CEF6900032BA8F /* TCGoogleMaps-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TCGoogleMaps-Info.plist"; sourceTree = "<group>"; };
@@ -173,8 +172,6 @@
 		81C1BAF417CEF7230032BA8F /* TCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSearchViewController.m; sourceTree = "<group>"; };
 		81C1BAF517CEF7230032BA8F /* TCStepsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStepsViewController.h; sourceTree = "<group>"; };
 		81C1BAF617CEF7230032BA8F /* TCStepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStepsViewController.m; sourceTree = "<group>"; };
-		81C1BAFF17CEF85B0032BA8F /* TCGooglePlacesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGooglePlacesAPI.h; sourceTree = "<group>"; };
-		81C1BB0017CEF85B0032BA8F /* TCGooglePlacesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGooglePlacesAPI.m; sourceTree = "<group>"; };
 		81C1BB0A17CEF9E70032BA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		81C1BB1017CEFAF90032BA8F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		81C1BB1117CEFAF90032BA8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -401,6 +398,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		81C1821417E02829009AF620 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				81C1821517E0282B009AF620 /* TCGooglePlacesAPIClient.h */,
+				81C1821617E0282B009AF620 /* TCGooglePlacesAPIClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		81C1BAE717CEF6900032BA8F /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,8 +434,6 @@
 		81C1BAFA17CEF85B0032BA8F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				81C1BAFF17CEF85B0032BA8F /* TCGooglePlacesAPI.h */,
-				81C1BB0017CEF85B0032BA8F /* TCGooglePlacesAPI.m */,
 				810E4FE917DD98AD00B69AF3 /* TCUserLocationManager.h */,
 				810E4FEA17DD98AD00B69AF3 /* TCUserLocationManager.m */,
 			);
@@ -542,19 +546,18 @@
 			isa = PBXGroup;
 			children = (
 				810E4FD417D97E6800B69AF3 /* TCGooglePlaces.h */,
-				81C1820717DF0FB2009AF620 /* TCGooglePlacesAPIClient.h */,
-				81C1820817DF0FB3009AF620 /* TCGooglePlacesAPIClient.m */,
-				810E500617DEABCF00B69AF3 /* TCPlacesServiceBlocks.h */,
 				81AA9B9C17D5E46400B45089 /* TCPlacesService.h */,
 				81AA9B9D17D5E46400B45089 /* TCPlacesService.m */,
 				810E4FCE17D8844E00B69AF3 /* TCPlacesServiceError.h */,
 				810E4FCF17D8844E00B69AF3 /* TCPlacesServiceError.m */,
 				810E4FCB17D87D3100B69AF3 /* TCPlacesServiceStatus.h */,
 				810E4FCC17D87D3100B69AF3 /* TCPlacesServiceStatus.m */,
+				810E500617DEABCF00B69AF3 /* TCPlacesServiceBlocks.h */,
 				810E4FE617DD948B00B69AF3 /* TCPlacesServiceErrorConstants.h */,
 				810E4FE717DD948D00B69AF3 /* TCPlacesServiceErrorConstants.m */,
 				810E4FE317DD7E6E00B69AF3 /* TCPlacesServiceStatusConstants.h */,
 				810E4FE417DD7E6F00B69AF3 /* TCPlacesServiceStatusConstants.m */,
+				81C1821417E02829009AF620 /* Network */,
 				810E4FF217DDBEAC00B69AF3 /* Autocomplete */,
 				810E4FFA17DDBEAD00B69AF3 /* PlaceDetails */,
 			);
@@ -832,7 +835,6 @@
 				81C1BAF717CEF7230032BA8F /* TCMapViewController.m in Sources */,
 				81C1BAF817CEF7230032BA8F /* TCSearchViewController.m in Sources */,
 				81C1BAF917CEF7230032BA8F /* TCStepsViewController.m in Sources */,
-				81C1BB0617CEF85B0032BA8F /* TCGooglePlacesAPI.m in Sources */,
 				81C1BB1A17CEFBB00032BA8F /* TCAppDelegate.m in Sources */,
 				81C1BB3617CF04AC0032BA8F /* TCDirectionsLeg.m in Sources */,
 				81C1BB3717CF04AC0032BA8F /* TCDirectionsParameters.m in Sources */,
@@ -855,9 +857,9 @@
 				810E500117DDBEAD00B69AF3 /* TCPlacesAutocompleteService.m in Sources */,
 				810E500217DDBEAD00B69AF3 /* TCPlace.m in Sources */,
 				810E500317DDBEAD00B69AF3 /* TCPlaceDetailsService.m in Sources */,
-				81C1820917DF0FB4009AF620 /* TCGooglePlacesAPIClient.m in Sources */,
 				81C1820C17E000D1009AF620 /* TCPlacesPredictionTerm.m in Sources */,
 				81C1821017E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m in Sources */,
+				81C1821717E0282B009AF620 /* TCGooglePlacesAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

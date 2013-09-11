@@ -16,6 +16,4 @@
  */
 @interface TCGooglePlacesAPIClient : TCGoogleMapsAPIClient
 
-+ (TCGooglePlacesAPIClient *)sharedClient;
-
 @end

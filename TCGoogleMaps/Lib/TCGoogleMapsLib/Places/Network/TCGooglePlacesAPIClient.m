@@ -13,19 +13,15 @@ static NSString * const kTCGooglePlacesAPIBaseURLString = @"https://maps.googlea
 
 @implementation TCGooglePlacesAPIClient
 
-+ (TCGooglePlacesAPIClient *)sharedClient
-{
-    static TCGooglePlacesAPIClient *_sharedClient = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _sharedClient = [[TCGooglePlacesAPIClient alloc] initWithBaseURL:[NSURL URLWithString:kTCGooglePlacesAPIBaseURLString]];
-    });    
-    return _sharedClient;    
+- (id)initWithBaseURL:(NSURL *)url
+{    
+    self = [super initWithBaseURL:[NSURL URLWithString:kTCGooglePlacesAPIBaseURLString]];
+    return self;
 }
 
 - (AFHTTPRequestOperation *)getPath:(NSString *)path parameters:(NSDictionary *)parameters completion:(TCGoogleMapsAPIClientCallback)completion
 {
-    // We need an API key to access Google Places services.
+    // We need an API key to access Google Places APIs.
     NSMutableDictionary *mutableParameters = [[NSMutableDictionary alloc] initWithDictionary:parameters];
     mutableParameters[@"key"] = kTCGooglePlacesAPIKey;
     
