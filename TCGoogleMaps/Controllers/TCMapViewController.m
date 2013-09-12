@@ -55,8 +55,15 @@
 {
     if ([segue.identifier isEqualToString:@"showTextDirections"]) {
         UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
-        TCStepsViewController *directionsViewController = (TCStepsViewController *)navigationController.topViewController;                
-        directionsViewController.route = self.route;
+        TCStepsViewController *directionsViewController = (TCStepsViewController *)navigationController.topViewController;
+        
+        // Make sure we have a valid route that has at least one leg.
+        if (self.route && [self.route.legs count] > 0) {
+            // Since we did not specify any waypoints, the route will only
+            // have one leg.
+            TCDirectionsLeg *leg = self.route.legs[0];
+            directionsViewController.steps = leg.steps;            
+        }
     }
 }
 
@@ -145,11 +152,6 @@
     [UIView animateWithDuration:1.0f animations:^{
         self.routeDetailsView.alpha = 1.0f;
     }];
-}
-
-- (void)hideRouteDetailsView
-{
-    
 }
 
 @end

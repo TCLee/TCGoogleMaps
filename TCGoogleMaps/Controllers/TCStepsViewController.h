@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@class TCDirectionsRoute;
-
-/*
- Controller for the table view that displays the text directions.
+/**
+ * Controller for the table view that displays the instructions 
+ * for the route.
  */
 @interface TCStepsViewController : UITableViewController
 
-@property (nonatomic, strong) TCDirectionsRoute *route;
+/**
+ * The array of TCDirectionsStep objects of the route.
+ * Each TCDirectionsStep object will contain the instructions for each
+ * step of the route.
+ */
+@property (nonatomic, copy) NSArray *steps;
 
 @end
