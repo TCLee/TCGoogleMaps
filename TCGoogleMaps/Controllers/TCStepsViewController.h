@@ -8,17 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class TCPlace;
+
 /**
- * Controller for the table view that displays the instructions 
- * for the route.
+ * Controller for the table view that displays the steps of a route.
  */
 @interface TCStepsViewController : UITableViewController
 
 /**
- * The array of TCDirectionsStep objects of the route.
- * Each TCDirectionsStep object will contain the instructions for each
- * step of the route.
+ * <#Description#>
+ *
+ * @param steps <#steps description#>
+ * @param place <#place description#>
  */
-@property (nonatomic, copy) NSArray *steps;
+- (void)setSteps:(NSArray *)steps destination:(TCPlace *)place;
 
 @end

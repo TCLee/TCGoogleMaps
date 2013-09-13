@@ -27,10 +27,7 @@
     
     // Required parameter (search text).
     mutableDictionary[@"input"] = self.input;
-    
-    // We are only interested in business results.
-    mutableDictionary[@"types"] = @"establishment";
-    
+        
     // Optional parameters for searching nearby a given location.
     if (CLLocationCoordinate2DIsValid(self.location)) {
         mutableDictionary[@"location"] = [TCGoogleMapsAPIDataMapper stringFromCoordinate:self.location];

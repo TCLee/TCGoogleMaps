@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81021FB217E2B43E000A1FDE /* TCCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81021FB117E2B43E000A1FDE /* TCCellModel.m */; };
+		810E0B5E17E1D8C90006E5D5 /* turn_arrive.png in Resources */ = {isa = PBXBuildFile; fileRef = 810E0B5A17E1D8C90006E5D5 /* turn_arrive.png */; };
+		810E0B5F17E1D8C90006E5D5 /* turn_arrive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 810E0B5B17E1D8C90006E5D5 /* turn_arrive@2x.png */; };
+		810E0B6017E1D8C90006E5D5 /* turn_my_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 810E0B5C17E1D8C90006E5D5 /* turn_my_location.png */; };
+		810E0B6117E1D8C90006E5D5 /* turn_my_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 810E0B5D17E1D8C90006E5D5 /* turn_my_location@2x.png */; };
 		810E4FB117D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAD17D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json */; };
 		810E4FB217D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAE17D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json */; };
 		810E4FB317D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAF17D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json */; };
@@ -89,6 +94,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81021FB017E2B43E000A1FDE /* TCCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCellModel.h; sourceTree = "<group>"; };
+		81021FB117E2B43E000A1FDE /* TCCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCellModel.m; sourceTree = "<group>"; };
+		810E0B5A17E1D8C90006E5D5 /* turn_arrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turn_arrive.png; sourceTree = "<group>"; };
+		810E0B5B17E1D8C90006E5D5 /* turn_arrive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turn_arrive@2x.png"; sourceTree = "<group>"; };
+		810E0B5C17E1D8C90006E5D5 /* turn_my_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turn_my_location.png; sourceTree = "<group>"; };
+		810E0B5D17E1D8C90006E5D5 /* turn_my_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turn_my_location@2x.png"; sourceTree = "<group>"; };
 		810E4FAD17D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_AlternativeRoutes.json; sourceTree = "<group>"; };
 		810E4FAE17D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_InvalidRequest.json; sourceTree = "<group>"; };
 		810E4FAF17D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_NotFound.json; sourceTree = "<group>"; };
@@ -243,6 +254,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810E0B5917E1D8C90006E5D5 /* Directions */ = {
+			isa = PBXGroup;
+			children = (
+				810E0B5A17E1D8C90006E5D5 /* turn_arrive.png */,
+				810E0B5B17E1D8C90006E5D5 /* turn_arrive@2x.png */,
+				810E0B5C17E1D8C90006E5D5 /* turn_my_location.png */,
+				810E0B5D17E1D8C90006E5D5 /* turn_my_location@2x.png */,
+			);
+			path = Directions;
+			sourceTree = "<group>";
+		};
 		810E4FAC17D70C3F00B69AF3 /* Directions */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +458,8 @@
 			children = (
 				810E4FE917DD98AD00B69AF3 /* TCUserLocationManager.h */,
 				810E4FEA17DD98AD00B69AF3 /* TCUserLocationManager.m */,
+				81021FB017E2B43E000A1FDE /* TCCellModel.h */,
+				81021FB117E2B43E000A1FDE /* TCCellModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -468,6 +492,7 @@
 		81C1BB0E17CEFAF90032BA8F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				810E0B5917E1D8C90006E5D5 /* Directions */,
 				81C1BB0F17CEFAF90032BA8F /* Default */,
 				81C1BB1317CEFAF90032BA8F /* Icon */,
 			);
@@ -724,6 +749,10 @@
 				81C1BB1617CEFAF90032BA8F /* Default.png in Resources */,
 				81C1BB1717CEFAF90032BA8F /* Default@2x.png in Resources */,
 				8152489017D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig in Resources */,
+				810E0B5E17E1D8C90006E5D5 /* turn_arrive.png in Resources */,
+				810E0B5F17E1D8C90006E5D5 /* turn_arrive@2x.png in Resources */,
+				810E0B6017E1D8C90006E5D5 /* turn_my_location.png in Resources */,
+				810E0B6117E1D8C90006E5D5 /* turn_my_location@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,6 +889,7 @@
 				81C1820C17E000D1009AF620 /* TCPlacesPredictionTerm.m in Sources */,
 				81C1821017E0091F009AF620 /* TCGoogleMapsAPIDataMapper.m in Sources */,
 				81C1821717E0282B009AF620 /* TCGooglePlacesAPIClient.m in Sources */,
+				81021FB217E2B43E000A1FDE /* TCCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

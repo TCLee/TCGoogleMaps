@@ -14,15 +14,20 @@
 
 @interface TCMapViewController ()
 
+/** Google Maps view. */
 @property (nonatomic, weak) IBOutlet GMSMapView *mapView;
+
+/**
+ * Labels to display the route's name, distance and duration.
+ */
 @property (nonatomic, weak) IBOutlet UIView *routeDetailsView;
 @property (nonatomic, weak) IBOutlet UILabel *routeNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *distanceAndDurationLabel;
 
-/* Place Details result returned from Google Places API. */
+/** Place Details result returned from Google Places API. */
 @property (nonatomic, strong) TCPlace *place;
 
-/* Route result returned from Google Directions API. */
+/** Route result returned from Google Directions API. */
 @property (nonatomic, strong) TCDirectionsRoute *route;
 
 @end
@@ -32,6 +37,14 @@
 @implementation TCMapViewController
 
 #pragma mark - View Events
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // Tell Google Maps to draw the user's location on the map view.
+    self.mapView.myLocationEnabled = YES;
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -55,14 +68,16 @@
 {
     if ([segue.identifier isEqualToString:@"showTextDirections"]) {
         UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
-        TCStepsViewController *directionsViewController = (TCStepsViewController *)navigationController.topViewController;
+        TCStepsViewController *stepsViewController = (TCStepsViewController *)navigationController.topViewController;
         
         // Make sure we have a valid route that has at least one leg.
         if (self.route && [self.route.legs count] > 0) {
             // Since we did not specify any waypoints, the route will only
             // have one leg.
             TCDirectionsLeg *leg = self.route.legs[0];
-            directionsViewController.steps = leg.steps;            
+            
+            // Pass the array of steps and the place details of the destination.
+            [stepsViewController setSteps:leg.steps destination:self.place];
         }
     }
 }
@@ -77,8 +92,6 @@
             [self createMarkerForPlace:self.place onMap:self.mapView];
             
             if (self.myLocation) {
-                [self createMarkerForMyLocation:self.myLocation
-                                          onMap:self.mapView];
                 [self getDirectionsFromMyLocation:self.myLocation
                                           toPlace:self.place];
             }
@@ -95,15 +108,6 @@
     marker.title = place.name;
     marker.snippet = place.address;
     marker.map = mapView;
-}
-
-- (void)createMarkerForMyLocation:(CLLocation *)myLocation onMap:(GMSMapView *)mapView
-{
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.icon = [GMSMarker markerImageWithColor:[UIColor greenColor]];
-    marker.position = myLocation.coordinate;
-    marker.title = @"My Location";
-    marker.map = mapView;    
 }
 
 #pragma mark - Google Directions API

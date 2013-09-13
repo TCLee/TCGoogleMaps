@@ -24,7 +24,7 @@
         _duration = [[TCDuration alloc] initWithProperties:properties[@"duration"]];
         _startLocation = [TCGoogleMapsAPIDataMapper coordinateFromProperties:properties[@"start_location"]];
         _endLocation = [TCGoogleMapsAPIDataMapper coordinateFromProperties:properties[@"end_location"]];
-        _path = [GMSPath pathFromEncodedPath:properties[@"polyline"][@"points"]];        
+        _path = [GMSPath pathFromEncodedPath:properties[@"polyline"][@"points"]];
     }
     return self;
 }

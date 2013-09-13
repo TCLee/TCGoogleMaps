@@ -120,11 +120,7 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (!self.placePredictions) {
-        return 0;
-    }
-
-    return [self.placePredictions count];
+    return self.placePredictions ? self.placePredictions.count : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
