@@ -7,22 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
+
+#import "TCStepsDelegate.h"
 
 /**
  * View Controller to display the Google Maps view.
  */
-@interface TCMapViewController : UIViewController
+@interface TCMapViewController : UIViewController <TCStepsDelegate>
 
 /**
- * A unique token that you can use to retrieve additional information
- * about this place in a Place Details request.
+ * Marks the user's current location on the map view and get the place's details
+ * with the given place reference string.
+ *
+ * @param myLocation     the user's current location
+ * @param placeReference the place reference string to retrieve the place's details
  */
-@property (nonatomic, copy) NSString *placeReference;
-
-/**
- * The user's current location.
- */
-@property (nonatomic, strong) CLLocation *myLocation;
+- (void)setMyLocation:(CLLocation *)myLocation placeReference:(NSString *)placeReference;
 
 @end

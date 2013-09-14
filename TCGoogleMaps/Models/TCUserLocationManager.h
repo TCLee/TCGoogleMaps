@@ -10,17 +10,20 @@
 #import <CoreLocation/CoreLocation.h>
 
 /**
- * The callback block when user's location is ready or there's an error.
+ * The callback block when user's location is found or there's an error.
  *
  * @param userLocation the user's current location or nil on error
  * @param error the error object describing why user's location is not available
  */
 typedef void (^TCUserLocationCallback) (CLLocation *userLocation, NSError *error);
 
+/**
+ * This class provides methods to find the user's current location.
+ */
 @interface TCUserLocationManager : NSObject <CLLocationManagerDelegate>
 
 /**
- * Start getting user location updates.
+ * Start attempting to locate user.
  *
  * @param completion the block to be called when user's location is ready
  *                   or there's an error
@@ -28,7 +31,7 @@ typedef void (^TCUserLocationCallback) (CLLocation *userLocation, NSError *error
 - (void)startLocatingUserWithCompletion:(TCUserLocationCallback)completion;
 
 /**
- * Stop getting user location updates.
+ * Stop attempting to locate user.
  */
 - (void)stopLocatingUser;
 

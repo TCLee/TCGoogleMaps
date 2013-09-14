@@ -31,6 +31,12 @@
 @property (nonatomic, strong, readonly) UIImage *image;
 
 /**
+ * You can use this property to associate any arbitrary object with this 
+ * cell model.
+ */
+@property (nonatomic, strong) id userData;
+
+/**
  * Initializes the table cell's model with the given contents and returns it.
  *
  * @param text       The string to be displayed on a cell's text label.

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		81021FB217E2B43E000A1FDE /* TCCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81021FB117E2B43E000A1FDE /* TCCellModel.m */; };
+		81021FBA17E3101E000A1FDE /* ic_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 81021FB817E3101E000A1FDE /* ic_list.png */; };
+		81021FBB17E3101E000A1FDE /* ic_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81021FB917E3101E000A1FDE /* ic_list@2x.png */; };
 		810E0B5E17E1D8C90006E5D5 /* turn_arrive.png in Resources */ = {isa = PBXBuildFile; fileRef = 810E0B5A17E1D8C90006E5D5 /* turn_arrive.png */; };
 		810E0B5F17E1D8C90006E5D5 /* turn_arrive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 810E0B5B17E1D8C90006E5D5 /* turn_arrive@2x.png */; };
 		810E0B6017E1D8C90006E5D5 /* turn_my_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 810E0B5C17E1D8C90006E5D5 /* turn_my_location.png */; };
@@ -96,6 +98,9 @@
 /* Begin PBXFileReference section */
 		81021FB017E2B43E000A1FDE /* TCCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCellModel.h; sourceTree = "<group>"; };
 		81021FB117E2B43E000A1FDE /* TCCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCellModel.m; sourceTree = "<group>"; };
+		81021FB817E3101E000A1FDE /* ic_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list.png; sourceTree = "<group>"; };
+		81021FB917E3101E000A1FDE /* ic_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_list@2x.png"; sourceTree = "<group>"; };
+		81021FBC17E40A2A000A1FDE /* TCStepsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCStepsDelegate.h; sourceTree = "<group>"; };
 		810E0B5A17E1D8C90006E5D5 /* turn_arrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turn_arrive.png; sourceTree = "<group>"; };
 		810E0B5B17E1D8C90006E5D5 /* turn_arrive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turn_arrive@2x.png"; sourceTree = "<group>"; };
 		810E0B5C17E1D8C90006E5D5 /* turn_my_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turn_my_location.png; sourceTree = "<group>"; };
@@ -254,6 +259,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81021FB317E2F9FA000A1FDE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				81021FB817E3101E000A1FDE /* ic_list.png */,
+				81021FB917E3101E000A1FDE /* ic_list@2x.png */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		810E0B5917E1D8C90006E5D5 /* Directions */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +463,7 @@
 				81C1BAF217CEF7230032BA8F /* TCMapViewController.m */,
 				81C1BAF517CEF7230032BA8F /* TCStepsViewController.h */,
 				81C1BAF617CEF7230032BA8F /* TCStepsViewController.m */,
+				81021FBC17E40A2A000A1FDE /* TCStepsDelegate.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -492,6 +507,7 @@
 		81C1BB0E17CEFAF90032BA8F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				81021FB317E2F9FA000A1FDE /* UI */,
 				810E0B5917E1D8C90006E5D5 /* Directions */,
 				81C1BB0F17CEFAF90032BA8F /* Default */,
 				81C1BB1317CEFAF90032BA8F /* Icon */,
@@ -753,6 +769,8 @@
 				810E0B5F17E1D8C90006E5D5 /* turn_arrive@2x.png in Resources */,
 				810E0B6017E1D8C90006E5D5 /* turn_my_location.png in Resources */,
 				810E0B6117E1D8C90006E5D5 /* turn_my_location@2x.png in Resources */,
+				81021FBA17E3101E000A1FDE /* ic_list.png in Resources */,
+				81021FBB17E3101E000A1FDE /* ic_list@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

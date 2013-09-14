@@ -34,17 +34,21 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 #pragma mark - View Events
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // Find the user's current location.
+    // The results returned from the autocomplete is based on the user's location.
+    [self startLocatingUser];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
 
     // Hide the navigation bar for the search view.
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-    
-    // Attempt to get the user's location, if we have not located the user yet.
-    if (!self.myLocation) {
-        [self startLocatingUser];
-    }
+    [self.navigationController setNavigationBarHidden:YES animated:YES];    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -67,9 +71,9 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 #pragma mark - UISearchBar Delegate
 
-/*
- While user types in the search field, we will asynchronously fetch a list 
- of place suggestions.
+/**
+ * While user types in the search field, we will asynchronously fetch a list
+ * of place suggestions.
  */
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
@@ -87,7 +91,6 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
     parameters.location = self.myLocation.coordinate;
     parameters.radius = kSearchRadiusInMeters;
     
-    // Asynchronously fetches the place autocomplete predictions from user's search text.
     [[TCPlacesService sharedService] placePredictionsWithParameters:parameters completion:^(NSArray *predictions, NSError *error) {
         // It is possible that the UISearchBar's text has changed when we return
         // from the network with the results. If it has changed, we should not
@@ -95,11 +98,8 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
         if (predictions && [parameters.input isEqualToString:searchBar.text]) {
             self.placePredictions = predictions;
             [self.tableView reloadData];
-            return;
-        }
-        
-        // Google Places Autocomplete API error handling.
-        if (error) {
+        } else {
+            // Google Places Autocomplete API error handling.
             if (NSURLErrorCancelled == error.code) {
                 NSLog(@"[Google Places Autocomplete API] - Cancelled request for input \"%@\".", parameters.input);
             } else {
@@ -112,7 +112,7 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
                     NSLog(@"[Google Places Autocomplete API] - Error: %@", description);
                 }
             }
-        }
+        }                
     }];        
 }
 
@@ -145,15 +145,15 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showMap"]) {
+    if ([[segue identifier] isEqualToString:@"ShowMap"]) {
         // Get the selected place.
         NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
         TCPlacesAutocompletePrediction *prediction = self.placePredictions[selectedIndexPath.row];
         
         // Display it on the map with directions.
         TCMapViewController *mapViewController = (TCMapViewController *) [segue destinationViewController];
-        mapViewController.myLocation = self.myLocation;
-        mapViewController.placeReference = prediction.reference;
+        [mapViewController setMyLocation:self.myLocation
+                          placeReference:prediction.reference];
     }
 }
 

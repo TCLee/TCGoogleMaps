@@ -7,6 +7,7 @@
 //
 
 #import "TCStepsViewController.h"
+#import "TCStepsDelegate.h"
 #import "TCCellModel.h"
 
 #import "TCGoogleDirections.h"
@@ -30,10 +31,17 @@ static CGFloat const kCellDefaultHeight = 80.0f;
 
 /**
  * Returns the default font used by the cell's text label.
- * The default font is cached, so calling this method repeatedly is
+ * The font is cached, so calling this method repeatedly is
  * still efficient.
  */
 + (UIFont *)defaultTextLabelFont;
+
+/**
+ * Returns the default font used by the cell's detail text label.
+ * The font is cached, so calling this method repeatedly is
+ * still efficient.
+ */
++ (UIFont *)defaultDetailTextLabelFont;
 
 @end
 
@@ -47,6 +55,16 @@ static CGFloat const kCellDefaultHeight = 80.0f;
         _cellTextLabelFont = [UIFont systemFontOfSize:15.0f];
     });
     return _cellTextLabelFont;    
+}
+
++ (UIFont *)defaultDetailTextLabelFont
+{
+    static UIFont *_cellDetailTextLabelFont = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _cellDetailTextLabelFont = [UIFont systemFontOfSize:13.0f];
+    });
+    return _cellDetailTextLabelFont;
 }
 
 @end
@@ -73,7 +91,7 @@ static CGFloat const kCellDefaultHeight = 80.0f;
 @property (nonatomic, strong, readonly) TCPlace *destination;
 
 /**
- * Dismiss this modal view controller.
+ * User taps the 'Done' button to dismiss this modal view controller.
  */
 - (IBAction)dismiss:(id)sender;
 
@@ -83,20 +101,11 @@ static CGFloat const kCellDefaultHeight = 80.0f;
 
 #pragma mark Cell Models
 
-- (void)setSteps:(NSArray *)theSteps
-{
-    // Only recreate the model objects, if the steps have changed.
-    if (_steps != theSteps) {
-        _steps = [theSteps copy];
-        _cellModels = [self createCellModelsWithSteps:_steps];
-    }
-}
-
-- (void)setSteps:(NSArray *)theSteps destination:(TCPlace *)theDestination
+- (void)setSteps:(NSArray *)theSteps destination:(TCPlace *)place
 {
     // Place details of the destination.
-    if (_destination != theDestination) {
-        _destination = theDestination;
+    if (_destination != place) {
+        _destination = place;
     }
     
     // Only recreate the model objects, if the steps have changed.
@@ -127,6 +136,10 @@ static CGFloat const kCellDefaultHeight = 80.0f;
         TCCellModel *cellModel = [[TCCellModel alloc] initWithText:step.instructions
                                                         detailText:step.distance.text
                                                              image:nil];
+        // Store a reference to the TCDirectionsStep object, so that we
+        // can retrieve it later.
+        cellModel.userData = step;
+        
         [myCellModels addObject:cellModel];
     }
     
@@ -161,31 +174,62 @@ static CGFloat const kCellDefaultHeight = 80.0f;
 
 #pragma mark Table View Delegate
 
-//TODO: We also need to take into account the subtitle label of the cell!
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Get the instructions from the selected step.
-//    TCDirectionsStep *step = self.steps[indexPath.row];
-//    
-//    // The actual label's width may differ from the preferred width because
-//    // of the way the text is layout.
-//    CGFloat preferredLabelWidth = tableView.frame.size.width - kCellContentMargin;
-//    
-//    // Calculate the expected label size with the given constraints.
-//    CGSize labelSize = [step.instructions sizeWithFont:[UITableViewCell defaultTextLabelFont]
-//                                     constrainedToSize:CGSizeMake(preferredLabelWidth, CGFLOAT_MAX)
-//                                         lineBreakMode:NSLineBreakByWordWrapping];
-//    
-//    // Make sure that the calculated row height is not less than the default
-//    // minimum height.
-//    return MAX(kCellDefaultHeight, labelSize.height + kCellContentMargin);
-//}
+// The row height has to be dynamic because of the long text contents
+// that will word wrap.
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TCCellModel *cellModel = self.cellModels[indexPath.row];    
+    
+    // The actual label's width may differ from the preferred width because
+    // of the way the text is layout.
+    CGFloat preferredLabelWidth = tableView.frame.size.width - kCellContentMargin;
+    // We want a fixed width for the label. The height can grow as needed.
+    CGSize preferredLabelSize = CGSizeMake(preferredLabelWidth, CGFLOAT_MAX);
+    
+    // The expected size for the cell's text label.
+    CGSize textLabelSize = [cellModel.text sizeWithFont:[UITableViewCell defaultTextLabelFont]
+                                      constrainedToSize:preferredLabelSize
+                                          lineBreakMode:NSLineBreakByWordWrapping];
+
+    // The expected size for the cell's detail text label.
+    CGSize detailTextLabelSize = [cellModel.detailText sizeWithFont:[UITableViewCell defaultDetailTextLabelFont]
+                                                  constrainedToSize:preferredLabelSize
+                                                      lineBreakMode:NSLineBreakByWordWrapping];
+    
+    // Total up the labels heights and margins together to get the cell height.
+    CGFloat cellHeight = textLabelSize.height + detailTextLabelSize.height + kCellContentMargin;
+    
+    // Make sure that the calculated cell's height is not less than the default
+    // minimum height.
+    return MAX(kCellDefaultHeight, cellHeight);
+}
+
+#define LAST_ROW ([tableView numberOfRowsInSection:indexPath.section] - 1)
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // Dismiss the modal view controller here rather than in the delegate
+    // because it's a common behavior for all the delegate's messages.
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if (0 == indexPath.row) {
+        // Selected My Location (origin)
+        [self.delegate stepsViewControllerDidSelectMyLocation:self];
+    } else if (LAST_ROW == indexPath.row) {
+        // Selected destination
+        [self.delegate stepsViewControllerDidSelectDestination:self];
+    } else {
+        // Selected the steps between origin and destination.
+        TCCellModel *cellModel = self.cellModels[indexPath.row];
+        TCDirectionsStep *step = (TCDirectionsStep *)cellModel.userData;        
+        [self.delegate stepsViewController:self didSelectStep:step];
+    }
+}
 
 #pragma mark IBAction Methods
 
-/*
- User press the Done button to dismiss this modal view controller.
- */
 - (IBAction)dismiss:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];

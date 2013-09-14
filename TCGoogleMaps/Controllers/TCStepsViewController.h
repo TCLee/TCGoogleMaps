@@ -9,17 +9,25 @@
 #import <UIKit/UIKit.h>
 
 @class TCPlace;
+@protocol TCStepsDelegate;
 
 /**
- * Controller for the table view that displays the steps of a route.
+ * Table view controller that displays the steps of a route.
  */
 @interface TCStepsViewController : UITableViewController
 
 /**
- * <#Description#>
+ * The object that acts as the delegate to this view controller.
+ * Usually, this will be the presenting view controller.
+ */
+@property (nonatomic, weak) id<TCStepsDelegate> delegate;
+
+/**
+ * Set the route's steps and the destination's place details.
+ * This will update the view accordingly.
  *
- * @param steps <#steps description#>
- * @param place <#place description#>
+ * @param steps The array of TCDirectionsStep objects.
+ * @param place The place details of the destination.
  */
 - (void)setSteps:(NSArray *)steps destination:(TCPlace *)place;
 
