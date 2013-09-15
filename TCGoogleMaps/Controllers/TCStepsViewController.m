@@ -13,8 +13,6 @@
 #import "TCGoogleDirections.h"
 #import "TCGooglePlaces.h"
 
-#import <QuartzCore/QuartzCore.h>
-
 /**
  * The space between the text label and the cell.
  */
@@ -163,7 +161,7 @@ static CGFloat const kCellDefaultHeight = 80.0f;
 {
     static NSString * const CellIdentifier = @"TCDirectionsStepCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+        
     TCCellModel *model = self.cellModels[indexPath.row];
     cell.textLabel.text = model.text;
     cell.detailTextLabel.text = model.detailText;
@@ -173,6 +171,21 @@ static CGFloat const kCellDefaultHeight = 80.0f;
 }
 
 #pragma mark Table View Delegate
+
+/**
+ * Returns the last row in a given section of a table view.
+ */
+#define LAST_ROW ([tableView numberOfRowsInSection:indexPath.section] - 1)
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Use a different color for the first and last row representing the origin and destination.
+    if (0 == indexPath.row || LAST_ROW == indexPath.row) {
+        [cell setBackgroundColor:[UIColor colorWithRed:0.9f green:0.9f blue:0.9f alpha:1.0f]];
+    } else {
+        [cell setBackgroundColor:[UIColor clearColor]];
+    }
+}
 
 // The row height has to be dynamic because of the long text contents
 // that will word wrap.
@@ -203,8 +216,6 @@ static CGFloat const kCellDefaultHeight = 80.0f;
     // minimum height.
     return MAX(kCellDefaultHeight, cellHeight);
 }
-
-#define LAST_ROW ([tableView numberOfRowsInSection:indexPath.section] - 1)
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

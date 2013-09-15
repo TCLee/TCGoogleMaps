@@ -41,7 +41,7 @@
 /** Route result returned from Google Directions API. */
 @property (nonatomic, strong) TCDirectionsRoute *route;
 
-/** The marker for the step's start location. */
+/** The marker for the step's location. */
 @property (nonatomic, strong) GMSMarker *stepMarker;
 
 /** The marker that represents the destination. */
@@ -193,21 +193,15 @@
 
 #pragma mark - TCStepsViewController Delegate
 
-// Zoom in to focus on My Location.
 - (void)stepsViewControllerDidSelectMyLocation:(TCStepsViewController *)stepsViewController
 {
-    GMSCameraUpdate *cameraUpdate = [GMSCameraUpdate setTarget:self.myLocation.coordinate zoom:17.0f];
-    [self.mapView animateWithCameraUpdate:cameraUpdate];    
+    // Passing in nil to selectMarker will deselect any currently selected marker.
+    [self mapView:self.mapView setCameraTarget:self.myLocation.coordinate selectMarker:nil];
 }
 
-// Zoom in to focus on the destination.
 - (void)stepsViewControllerDidSelectDestination:(TCStepsViewController *)stepsViewController
 {
-    // Show the info window of the destination marker.
-    self.mapView.selectedMarker = self.destinationMarker;
-    
-    GMSCameraUpdate *cameraUpdate = [GMSCameraUpdate setTarget:self.destinationMarker.position zoom:17.0f];
-    [self.mapView animateWithCameraUpdate:cameraUpdate];
+    [self mapView:self.mapView setCameraTarget:self.destinationMarker.position selectMarker:self.destinationMarker];
 }
 
 - (void)stepsViewController:(TCStepsViewController *)stepsViewController didSelectStep:(TCDirectionsStep *)step
@@ -223,7 +217,9 @@
     // Add marker to represent the start of the step.
     self.stepMarker = [self createMarkerForStep:step onMap:self.mapView];
     
-    [self showInfoWindowforMarker:self.stepMarker onMap:self.mapView];
+    // Select the step marker to show its info window.
+    self.mapView.selectedMarker = self.stepMarker;    
+    [self.mapView animateToLocation:self.stepMarker.position];
 }
 
 - (GMSMarker *)createMarkerForStep:(TCDirectionsStep *)step onMap:(GMSMapView *)mapView
@@ -236,27 +232,38 @@
     return marker;
 }
 
-- (void)showInfoWindowforMarker:(GMSMarker *)marker onMap:(GMSMapView *)mapView
-{
-    // Select the marker to show the info window programatically.
-    mapView.selectedMarker = marker;
-    
-    // Center map's camera on marker and its info window.
-    [mapView animateToLocation:marker.position];
-}
-
 /**
  * Returns the image used for the selected step's marker icon.
  */
 - (UIImage *)stepMarkerIcon
 {
     // Here we are just creating a 1x1 transparent image to be used for
-    // the marker icon.    
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(1.0f, 1.0f), NO, 0.0f);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();    
-    UIGraphicsEndImageContext();
+    // the marker icon. Thus, making the marker icon invisible.    
+    static UIImage * _image = nil;
+    if (!_image) {
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(1.0f, 1.0f), NO, 0.0f);
+        _image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    }
+    return _image;
+}
+
+/**
+ * Zooms the camera in at given coordinate and selects the marker to open 
+ * its info window.
+ *
+ * @param mapView    The GMSMapView instance.
+ * @param coordinate The coordinate to focus camera on.
+ * @param marker     The marker to select on the mapView.
+ */
+- (void)mapView:(GMSMapView *)mapView setCameraTarget:(CLLocationCoordinate2D)coordinate selectMarker:(GMSMarker *)marker
+{
+    // Show the info window of the selected marker.
+    mapView.selectedMarker = marker;
     
-    return image;
+    // Zoom in to focus on target location.
+    GMSCameraUpdate *cameraUpdate = [GMSCameraUpdate setTarget:coordinate zoom:17.0f];
+    [mapView animateWithCameraUpdate:cameraUpdate];
 }
 
 @end

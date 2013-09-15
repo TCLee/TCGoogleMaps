@@ -28,7 +28,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.55000000000000004" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="jGx-9J-75H" firstAttribute="top" secondItem="wzc-GJ-023" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FWs-vr-ZhG"/>
                                     <constraint firstAttribute="trailing" secondItem="jGx-9J-75H" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ISb-PB-XWy"/>
