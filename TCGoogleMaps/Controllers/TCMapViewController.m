@@ -118,6 +118,10 @@
             
             // Create marker for the destination on the map view.
             self.destinationMarker = [self createMarkerForPlace:self.place onMap:self.mapView];
+
+            // Focus camera on destination.
+            [self.mapView animateWithCameraUpdate:
+             [GMSCameraUpdate setTarget:self.destinationMarker.position]];
             
             // Request Google Directions API for directions starting from
             // my location to destination.
@@ -157,8 +161,8 @@
             self.route = routes[0];
             
             // Move camera viewport to fit the viewport bounding box of this route.
-            GMSCameraUpdate *cameraUpdate = [GMSCameraUpdate fitBounds:self.route.bounds];
-            [self.mapView animateWithCameraUpdate:cameraUpdate];
+            [self.mapView animateWithCameraUpdate:
+             [GMSCameraUpdate fitBounds:self.route.bounds]];
             
             [self drawRoute:self.route onMap:self.mapView];
             [self showRouteDetailsViewWithRoute:self.route];
@@ -208,13 +212,12 @@
 {    
     // Zoom in to fit the step's path.
     GMSCoordinateBounds *bounds = [[GMSCoordinateBounds alloc] initWithPath:step.path];
-    GMSCameraUpdate *cameraUpdate = [GMSCameraUpdate fitBounds:bounds];
-    [self.mapView animateWithCameraUpdate:cameraUpdate];
+    [self.mapView animateWithCameraUpdate:[GMSCameraUpdate fitBounds:bounds]];
     
-    // Remove any previous step's marker from the map view.
+    // Remove any previous step's marker from the map.
     self.stepMarker.map = nil;
     
-    // Add marker to represent the start of the step.
+    // Create marker to represent the start of the step.
     self.stepMarker = [self createMarkerForStep:step onMap:self.mapView];
     
     // Select the step marker to show its info window.
@@ -262,8 +265,8 @@
     mapView.selectedMarker = marker;
     
     // Zoom in to focus on target location.
-    GMSCameraUpdate *cameraUpdate = [GMSCameraUpdate setTarget:coordinate zoom:17.0f];
-    [mapView animateWithCameraUpdate:cameraUpdate];
+    [mapView animateWithCameraUpdate:
+     [GMSCameraUpdate setTarget:coordinate zoom:17.0f]];
 }
 
 @end
