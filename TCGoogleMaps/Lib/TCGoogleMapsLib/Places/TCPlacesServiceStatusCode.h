@@ -1,5 +1,5 @@
 //
-//  TCPlacesServiceStatusConstants.h
+//  TCPlacesServiceStatusCode.h
 //  TCGoogleMaps
 //
 //  Created by Lee Tze Cheun on 9/9/13.

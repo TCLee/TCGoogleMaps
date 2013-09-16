@@ -8,7 +8,7 @@
 
 #import "TCPlaceDetailsService.h"
 #import "TCPlace.h"
-#import "TCPlacesServiceStatusConstants.h"
+#import "TCPlacesServiceStatusCode.h"
 #import "TCPlacesServiceError.h"
 #import "TCGooglePlacesAPIClient.h"
 
