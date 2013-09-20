@@ -5,30 +5,30 @@ This sample project shows how we can use **Google Maps SDK for iOS**, **Google P
 <br>
 *Search autocomplete with results sorted based on distance from your current location and relevance.*
 
-<img src="README-Images/Screenshot1.png" alt="Google Places Autocomplete" title="Google Places Autocomplete">
+<img src="README-Images/iOS7/Screenshot1.png" alt="Google Places Autocomplete" title="Google Places Autocomplete">
 
 <br>
 *Selecting a search result will give you the directions from your location to the selected destination.*  
 
-<img src="README-Images/Screenshot2.png" alt="Google Maps Directions" title="Google Maps Directions">
+<img src="README-Images/iOS7/Screenshot2.png" alt="Google Maps Directions" title="Google Maps Directions">
 
 <br>
 *Tapping on the list icon will bring up turn-by-turn directions.*
 
-<img src="README-Images/Screenshot3.png" alt="Turn-by-Turn Directions" title="Turn-by-Turn Directions">
+<img src="README-Images/iOS7/Screenshot3.png" alt="Turn-by-Turn Directions" title="Turn-by-Turn Directions">
 
 <br>
 *Selecting a step from the list will zoom in on that specific step on the map.*
 
-<img src="README-Images/Screenshot4.png" alt="Step-by-Step Directions on Map" title="Step-by-Step Directions on Map">
+<img src="README-Images/iOS7/Screenshot4.png" alt="Step-by-Step Directions on Map" title="Step-by-Step Directions on Map">
 
 <br>
 ###How to Build and Run
 <dl>
   <dt>Build Requirements</dt>
-  <dd>Xcode 4.6 or later, iOS 6.0 SDK or later, CocoaPods</dd>
+  <dd>Xcode 5, iOS 6.0 SDK or iOS 7.0 SDK, CocoaPods</dd>
   <dt>Runtime Requirements</dt>
-  <dd>iOS 6.0 or later</dd>
+  <dd>iOS 6.0 or iOS 7.0</dd>
 </dl>
 
 ####Step 1: Download and Install CocoaPods
