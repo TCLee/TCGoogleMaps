@@ -84,9 +84,6 @@
     
     // Show the navigation bar so that we can navigate back to search view.
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    
-    // Disable the step-by-step instructions until we have a valid route.
-    self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 
 #pragma mark - Storyboard
