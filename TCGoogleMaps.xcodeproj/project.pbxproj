@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		81021FB217E2B43E000A1FDE /* TCCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81021FB117E2B43E000A1FDE /* TCCellModel.m */; };
-		81021FBA17E3101E000A1FDE /* ic_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 81021FB817E3101E000A1FDE /* ic_list.png */; };
-		81021FBB17E3101E000A1FDE /* ic_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81021FB917E3101E000A1FDE /* ic_list@2x.png */; };
 		810E4FB117D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAD17D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json */; };
 		810E4FB217D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAE17D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json */; };
 		810E4FB317D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 810E4FAF17D70C3F00B69AF3 /* TCDirectionsServiceTests_NotFound.json */; };
@@ -31,12 +29,7 @@
 		810E500117DDBEAD00B69AF3 /* TCPlacesAutocompleteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FF917DDBEAD00B69AF3 /* TCPlacesAutocompleteService.m */; };
 		810E500217DDBEAD00B69AF3 /* TCPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FFC17DDBEAD00B69AF3 /* TCPlace.m */; };
 		810E500317DDBEAD00B69AF3 /* TCPlaceDetailsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E4FFE17DDBEAD00B69AF3 /* TCPlaceDetailsService.m */; };
-		811BAB3617E7033B008840DD /* turn_arrive.png in Resources */ = {isa = PBXBuildFile; fileRef = 811BAB3217E7033B008840DD /* turn_arrive.png */; };
-		811BAB3717E7033B008840DD /* turn_arrive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 811BAB3317E7033B008840DD /* turn_arrive@2x.png */; };
-		811BAB3817E7033B008840DD /* turn_my_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 811BAB3417E7033B008840DD /* turn_my_location.png */; };
-		811BAB3917E7033B008840DD /* turn_my_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 811BAB3517E7033B008840DD /* turn_my_location@2x.png */; };
-		811BAB3B17E70364008840DD /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 811BAB3A17E70364008840DD /* AppIcon@2x.png */; };
-		811BAB3D17E7036C008840DD /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 811BAB3C17E7036C008840DD /* AppIcon.png */; };
+		81179BE817EC253700190AC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81179BE717EC253700190AC1 /* Images.xcassets */; };
 		812645FC17E6EC030074745A /* TCGoogleMapsAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 812645FB17E6EC030074745A /* TCGoogleMapsAPIClient.m */; };
 		8152489017D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */; };
 		815CF88017D071CA00FFFA83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 815CF87B17D071CA00FFFA83 /* InfoPlist.strings */; };
@@ -60,9 +53,6 @@
 		81C1BAF817CEF7230032BA8F /* TCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF417CEF7230032BA8F /* TCSearchViewController.m */; };
 		81C1BAF917CEF7230032BA8F /* TCStepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BAF617CEF7230032BA8F /* TCStepsViewController.m */; };
 		81C1BB0B17CEF9E70032BA8F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BB0917CEF9E70032BA8F /* MainStoryboard.storyboard */; };
-		81C1BB1517CEFAF90032BA8F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BB1017CEFAF90032BA8F /* Default-568h@2x.png */; };
-		81C1BB1617CEFAF90032BA8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BB1117CEFAF90032BA8F /* Default.png */; };
-		81C1BB1717CEFAF90032BA8F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C1BB1217CEFAF90032BA8F /* Default@2x.png */; };
 		81C1BB1A17CEFBB00032BA8F /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB1917CEFBB00032BA8F /* TCAppDelegate.m */; };
 		81C1BB3617CF04AC0032BA8F /* TCDirectionsLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB2417CF04AC0032BA8F /* TCDirectionsLeg.m */; };
 		81C1BB3717CF04AC0032BA8F /* TCDirectionsParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C1BB2617CF04AC0032BA8F /* TCDirectionsParameters.m */; };
@@ -99,8 +89,6 @@
 /* Begin PBXFileReference section */
 		81021FB017E2B43E000A1FDE /* TCCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCellModel.h; sourceTree = "<group>"; };
 		81021FB117E2B43E000A1FDE /* TCCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCellModel.m; sourceTree = "<group>"; };
-		81021FB817E3101E000A1FDE /* ic_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list.png; sourceTree = "<group>"; };
-		81021FB917E3101E000A1FDE /* ic_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_list@2x.png"; sourceTree = "<group>"; };
 		81021FBC17E40A2A000A1FDE /* TCStepsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCStepsDelegate.h; sourceTree = "<group>"; };
 		810E4FAD17D70C3F00B69AF3 /* TCDirectionsServiceTests_AlternativeRoutes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_AlternativeRoutes.json; sourceTree = "<group>"; };
 		810E4FAE17D70C3F00B69AF3 /* TCDirectionsServiceTests_InvalidRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TCDirectionsServiceTests_InvalidRequest.json; sourceTree = "<group>"; };
@@ -139,12 +127,7 @@
 		810E4FFD17DDBEAD00B69AF3 /* TCPlaceDetailsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlaceDetailsService.h; sourceTree = "<group>"; };
 		810E4FFE17DDBEAD00B69AF3 /* TCPlaceDetailsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlaceDetailsService.m; sourceTree = "<group>"; };
 		810E500617DEABCF00B69AF3 /* TCPlacesServiceBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPlacesServiceBlocks.h; sourceTree = "<group>"; };
-		811BAB3217E7033B008840DD /* turn_arrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turn_arrive.png; sourceTree = "<group>"; };
-		811BAB3317E7033B008840DD /* turn_arrive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turn_arrive@2x.png"; sourceTree = "<group>"; };
-		811BAB3417E7033B008840DD /* turn_my_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turn_my_location.png; sourceTree = "<group>"; };
-		811BAB3517E7033B008840DD /* turn_my_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turn_my_location@2x.png"; sourceTree = "<group>"; };
-		811BAB3A17E70364008840DD /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
-		811BAB3C17E7036C008840DD /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		81179BE717EC253700190AC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		812645FA17E6EC030074745A /* TCGoogleMapsAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleMapsAPIClient.h; sourceTree = "<group>"; };
 		812645FB17E6EC030074745A /* TCGoogleMapsAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoogleMapsAPIClient.m; sourceTree = "<group>"; };
 		8152488F17D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-TCGoogleMapsTests.xcconfig"; path = "Pods/Pods-TCGoogleMapsTests.xcconfig"; sourceTree = "<group>"; };
@@ -192,9 +175,6 @@
 		81C1BAF517CEF7230032BA8F /* TCStepsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStepsViewController.h; sourceTree = "<group>"; };
 		81C1BAF617CEF7230032BA8F /* TCStepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStepsViewController.m; sourceTree = "<group>"; };
 		81C1BB0A17CEF9E70032BA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		81C1BB1017CEFAF90032BA8F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		81C1BB1117CEFAF90032BA8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		81C1BB1217CEFAF90032BA8F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		81C1BB1817CEFBB00032BA8F /* TCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
 		81C1BB1917CEFBB00032BA8F /* TCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
 		81C1BB2217CF04AC0032BA8F /* TCGoogleDirections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoogleDirections.h; sourceTree = "<group>"; };
@@ -260,19 +240,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81021FB317E2F9FA000A1FDE /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				811BAB3217E7033B008840DD /* turn_arrive.png */,
-				811BAB3317E7033B008840DD /* turn_arrive@2x.png */,
-				811BAB3417E7033B008840DD /* turn_my_location.png */,
-				811BAB3517E7033B008840DD /* turn_my_location@2x.png */,
-				81021FB817E3101E000A1FDE /* ic_list.png */,
-				81021FB917E3101E000A1FDE /* ic_list@2x.png */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		810E4FAC17D70C3F00B69AF3 /* Directions */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,38 +469,9 @@
 		81C1BB0D17CEFAF90032BA8F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				81C1BB0E17CEFAF90032BA8F /* Images */,
+				81179BE717EC253700190AC1 /* Images.xcassets */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		81C1BB0E17CEFAF90032BA8F /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				81021FB317E2F9FA000A1FDE /* UI */,
-				81C1BB0F17CEFAF90032BA8F /* Default */,
-				81C1BB1317CEFAF90032BA8F /* Icon */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		81C1BB0F17CEFAF90032BA8F /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				81C1BB1017CEFAF90032BA8F /* Default-568h@2x.png */,
-				81C1BB1117CEFAF90032BA8F /* Default.png */,
-				81C1BB1217CEFAF90032BA8F /* Default@2x.png */,
-			);
-			path = Default;
-			sourceTree = "<group>";
-		};
-		81C1BB1317CEFAF90032BA8F /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-				811BAB3C17E7036C008840DD /* AppIcon.png */,
-				811BAB3A17E70364008840DD /* AppIcon@2x.png */,
-			);
-			path = Icon;
 			sourceTree = "<group>";
 		};
 		81C1BB1417CEFAF90032BA8F /* Data */ = {
@@ -761,19 +699,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C1BAED17CEF6900032BA8F /* InfoPlist.strings in Resources */,
+				81179BE817EC253700190AC1 /* Images.xcassets in Resources */,
 				81C1BB0B17CEF9E70032BA8F /* MainStoryboard.storyboard in Resources */,
-				81C1BB1517CEFAF90032BA8F /* Default-568h@2x.png in Resources */,
-				81C1BB1617CEFAF90032BA8F /* Default.png in Resources */,
-				81C1BB1717CEFAF90032BA8F /* Default@2x.png in Resources */,
 				8152489017D068860032FEAF /* Pods-TCGoogleMapsTests.xcconfig in Resources */,
-				81021FBA17E3101E000A1FDE /* ic_list.png in Resources */,
-				81021FBB17E3101E000A1FDE /* ic_list@2x.png in Resources */,
-				811BAB3617E7033B008840DD /* turn_arrive.png in Resources */,
-				811BAB3717E7033B008840DD /* turn_arrive@2x.png in Resources */,
-				811BAB3817E7033B008840DD /* turn_my_location.png in Resources */,
-				811BAB3917E7033B008840DD /* turn_my_location@2x.png in Resources */,
-				811BAB3B17E70364008840DD /* AppIcon@2x.png in Resources */,
-				811BAB3D17E7036C008840DD /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,6 +981,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5B7A5E821894650A594A93A /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch";
@@ -1068,6 +998,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5B7A5E821894650A594A93A /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch";

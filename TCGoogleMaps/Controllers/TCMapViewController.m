@@ -26,6 +26,9 @@
 @property (nonatomic, weak) IBOutlet UILabel *routeNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *distanceAndDurationLabel;
 
+/** The bar button item to view detail steps of the route. */
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *stepsBarButtonItem;
+
 /**
  * A unique token that you can use to retrieve additional information
  * about this place in a Place Details request.
@@ -63,7 +66,11 @@
     // Only fetch new place details from Google Places API, if place's
     // reference has changed.
     if (_placeReference != aPlaceReference) {
-        _placeReference = [aPlaceReference copy];                
+        _placeReference = [aPlaceReference copy];
+        
+        // Hide the steps bar button item, until we have a valid route.
+        self.navigationItem.rightBarButtonItem = nil;
+        
         [self getPlaceDetailsWithReference:_placeReference];
     }
 }
@@ -76,14 +83,6 @@
     
     // Tell Google Maps to draw the user's location on the map view.
     self.mapView.myLocationEnabled = YES;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    // Show the navigation bar so that we can navigate back to search view.
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 #pragma mark - Storyboard
@@ -168,7 +167,7 @@
             [self showRouteDetailsViewWithRoute:self.route];
             
             // With a valid route, we can now allow user to view the step-by-step instructions.
-            self.navigationItem.rightBarButtonItem.enabled = YES;
+            self.navigationItem.rightBarButtonItem = self.stepsBarButtonItem;
         } else {
             NSLog(@"[Google Directions API] - Error: %@", [error localizedDescription]);
         }

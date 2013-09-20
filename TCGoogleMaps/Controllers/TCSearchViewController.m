@@ -38,17 +38,19 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 {
     [super viewDidLoad];
     
-    // Find the user's current location.
-    // The results returned from the autocomplete is based on the user's location.
-    [self startLocatingUser];
+    // Add the search bar to the navigation bar.
+    self.navigationItem.titleView = self.searchBar;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
-    // Hide the navigation bar for the search view.
-    [self.navigationController setNavigationBarHidden:YES animated:YES];    
+    
+    // If we have not located the user yet, we should find where the user is.
+    // The results returned from the autocomplete is based on the user's location.
+    if (!self.myLocation) {
+        [self startLocatingUser];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -170,7 +172,7 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 - (void)startLocatingUser
 {
     // Show progress HUD while we find the user's location.
-    MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
     progressHUD.dimBackground = YES;
     progressHUD.labelText = @"Finding My Location";
     

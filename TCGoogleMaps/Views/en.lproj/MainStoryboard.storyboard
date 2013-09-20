@@ -60,22 +60,22 @@
                             <constraint firstItem="Yhx-hF-7BA" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="tka-2P-zgy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="xsh-Sc-5ar">
-                        <barButtonItem key="rightBarButtonItem" image="ic_list" id="hpT-YA-THn">
-                            <connections>
-                                <segue destination="BBw-bA-18Y" kind="modal" identifier="ShowDirectionsSteps" modalTransitionStyle="coverVertical" id="ToK-75-H1k"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Map" id="xsh-Sc-5ar"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="distanceAndDurationLabel" destination="jGx-9J-75H" id="Mj9-0a-VEF"/>
                         <outlet property="mapView" destination="Yhx-hF-7BA" id="7Ao-Fn-MMt"/>
                         <outlet property="routeDetailsView" destination="KLe-Vl-txQ" id="IdO-HA-T4m"/>
                         <outlet property="routeNameLabel" destination="wzc-GJ-023" id="oq7-SP-uut"/>
+                        <outlet property="stepsBarButtonItem" destination="hpT-YA-THn" id="nWN-hu-OCP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <barButtonItem image="ic_list.png" id="hpT-YA-THn">
+                    <connections>
+                        <segue destination="BBw-bA-18Y" kind="modal" identifier="ShowDirectionsSteps" modalTransitionStyle="coverVertical" id="ToK-75-H1k"/>
+                    </connections>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="437" y="840"/>
         </scene>
@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TCDirectionsStepCell" textLabel="I33-aA-JAw" detailTextLabel="nNw-3s-p4k" style="IBUITableViewCellStyleSubtitle" id="Zsu-au-D7C">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TCDirectionsStepCell" textLabel="I33-aA-JAw" detailTextLabel="nNw-3s-p4k" style="IBUITableViewCellStyleSubtitle" id="Zsu-au-D7C">
                                 <rect key="frame" x="0.0" y="86" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zsu-au-D7C" id="rjD-kE-RqD">
@@ -96,14 +96,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="The instructions for the route's step goes here. This can be a very long text." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" id="I33-aA-JAw">
-                                            <rect key="frame" x="15" y="14" width="286" height="36"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <rect key="frame" x="15" y="11" width="286" height="41"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="10 km" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="37" id="nNw-3s-p4k">
-                                            <rect key="frame" x="15" y="50" width="37" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="10 km" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="40" id="nNw-3s-p4k">
+                                            <rect key="frame" x="15" y="52" width="40" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
@@ -141,26 +141,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="die-Z7-09f">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="die-Z7-09f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultCell" textLabel="0Ea-d9-cMM" detailTextLabel="6l6-u2-RhH" style="IBUITableViewCellStyleSubtitle" id="cmd-mM-K3e">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultCell" textLabel="0Ea-d9-cMM" detailTextLabel="6l6-u2-RhH" style="IBUITableViewCellStyleSubtitle" id="cmd-mM-K3e">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cmd-mM-K3e" id="rjJ-Xh-dbM">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Search Result" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ea-d9-cMM">
-                                                    <rect key="frame" x="15" y="4" width="102" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <rect key="frame" x="15" y="12" width="102" height="20"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6l6-u2-RhH">
-                                                    <rect key="frame" x="15" y="24" width="50" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="15" y="32" width="50" height="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
@@ -176,45 +176,36 @@
                                     <outlet property="delegate" destination="nGO-YA-E8B" id="N3y-Xb-Qmg"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" placeholder="Search Google Places" translatesAutoresizingMaskIntoConstraints="NO" id="5hk-30-emd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                <scopeButtonTitles>
-                                    <string>Driving</string>
-                                    <string>Transit</string>
-                                </scopeButtonTitles>
-                                <connections>
-                                    <outlet property="delegate" destination="nGO-YA-E8B" id="bUH-8M-9DG"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="die-Z7-09f" firstAttribute="bottom" secondItem="9SG-wD-c2H" secondAttribute="bottom" id="1Z9-Bm-74m"/>
                             <constraint firstItem="die-Z7-09f" firstAttribute="trailing" secondItem="9SG-wD-c2H" secondAttribute="trailing" id="AWh-Pc-dm0"/>
-                            <constraint firstItem="5hk-30-emd" firstAttribute="trailing" secondItem="9SG-wD-c2H" secondAttribute="trailing" id="Is2-SV-rqX"/>
-                            <constraint firstItem="die-Z7-09f" firstAttribute="top" secondItem="5hk-30-emd" secondAttribute="bottom" id="QOz-lC-W6M"/>
-                            <constraint firstItem="5hk-30-emd" firstAttribute="top" secondItem="9SG-wD-c2H" secondAttribute="top" id="VPH-Wt-U8U"/>
-                            <constraint firstItem="5hk-30-emd" firstAttribute="leading" secondItem="9SG-wD-c2H" secondAttribute="leading" id="aGV-CG-6HA"/>
+                            <constraint firstItem="die-Z7-09f" firstAttribute="top" secondItem="9SG-wD-c2H" secondAttribute="top" id="JrP-DW-znP"/>
                             <constraint firstItem="die-Z7-09f" firstAttribute="leading" secondItem="9SG-wD-c2H" secondAttribute="leading" id="uaG-rd-sdS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VeF-kU-4uT">
-                        <barButtonItem key="backBarButtonItem" title="Search" id="0LH-q5-VHg"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="VeF-kU-4uT"/>
                     <connections>
                         <outlet property="searchBar" destination="5hk-30-emd" id="PIA-Eu-MxY"/>
                         <outlet property="tableView" destination="die-Z7-09f" id="3dr-gv-rvG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcs-t3-qMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" placeholder="Search Google Places" id="5hk-30-emd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    <connections>
+                        <outlet property="delegate" destination="nGO-YA-E8B" id="bUH-8M-9DG"/>
+                    </connections>
+                </searchBar>
             </objects>
             <point key="canvasLocation" x="-72" y="840"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OKG-tn-VMG">
             <objects>
-                <navigationController navigationBarHidden="YES" id="HL1-3T-KuG" sceneMemberID="viewController">
+                <navigationController id="HL1-3T-KuG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZT0-jr-tMc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -249,7 +240,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_list" width="16" height="16"/>
+        <image name="ic_list.png" width="19" height="19"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
