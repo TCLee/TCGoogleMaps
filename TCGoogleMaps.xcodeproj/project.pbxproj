@@ -1053,6 +1053,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5B7A5E821894650A594A93A /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -1067,6 +1068,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5B7A5E821894650A594A93A /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCGoogleMaps/SupportingFiles/TCGoogleMaps-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
