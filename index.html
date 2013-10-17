@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TCGoogleMaps by TCLee</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>TCGoogleMaps</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/TCLee/TCGoogleMaps">View the Project on GitHub <small>TCLee/TCGoogleMaps</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/TCLee/TCGoogleMaps/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/TCLee/TCGoogleMaps/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/TCLee/TCGoogleMaps">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>TCGoogleMaps is a navigation app that is built using Google Maps SDK for iOS, Google Places API  and Google Directions API.</p>
+
+<p><br><em>Search autocomplete with results sorted based on distance from your current location and relevance.</em></p>
+
+<p><img src="README-Images/iOS7/Screenshot1.png" alt="Google Places Autocomplete" title="Google Places Autocomplete"></p>
+
+<p><br><em>Selecting a search result will give you the directions from your location to the selected destination.</em>  </p>
+
+<p><img src="README-Images/iOS7/Screenshot2.png" alt="Google Maps Directions" title="Google Maps Directions"></p>
+
+<p><br><em>Tapping on the list icon will bring up turn-by-turn directions.</em></p>
+
+<p><img src="README-Images/iOS7/Screenshot3.png" alt="Turn-by-Turn Directions" title="Turn-by-Turn Directions"></p>
+
+<p><br><em>Selecting a step from the list will zoom in on that specific step on the map.</em></p>
+
+<p><img src="README-Images/iOS7/Screenshot4.png" alt="Step-by-Step Directions on Map" title="Step-by-Step Directions on Map"></p>
+
+<p><br></p>
+
+<h3>
+<a name="how-to-build-and-run" class="anchor" href="#how-to-build-and-run"><span class="octicon octicon-link"></span></a>How to Build and Run</h3>
+
+<dl>
+<dt>Build Requirements</dt>
+  <dd>Xcode 5, iOS 6.0 SDK or iOS 7.0 SDK, CocoaPods</dd>
+  <dt>Runtime Requirements</dt>
+  <dd>iOS 6.0 or iOS 7.0</dd>
+</dl><h4>
+<a name="step-1-download-and-install-cocoapods" class="anchor" href="#step-1-download-and-install-cocoapods"><span class="octicon octicon-link"></span></a>Step 1: Download and Install CocoaPods</h4>
+
+<p>Follow the simple installation guide from <a href="http://cocoapods.org/">http://cocoapods.org/</a>.</p>
+
+<h4>
+<a name="step-2-install-library-dependencies" class="anchor" href="#step-2-install-library-dependencies"><span class="octicon octicon-link"></span></a>Step 2: Install Library Dependencies</h4>
+
+<p>Run the following commands in Terminal.app:  </p>
+
+<pre><code>$ cd &lt;PROJECT_DIRECTORY&gt;
+$ pod install  
+$ open TCGoogleMaps.xcworkspace
+</code></pre>
+
+<h4>
+<a name="step-3-generate-your-api-keys" class="anchor" href="#step-3-generate-your-api-keys"><span class="octicon octicon-link"></span></a>Step 3: Generate your API Keys</h4>
+
+<ol>
+<li>Go to <a href="https://code.google.com/apis/console/">Google API Console</a> and generate your API key.</li>
+<li>
+<p>In Xcode, open <code>TCGoogleMaps\App\TCGoogleAPIKeys.m</code> and replace with your own API key:</p>
+
+<div class="highlight highlight-Objective-C"><pre><span class="n">NSString</span> <span class="o">*</span> <span class="k">const</span> <span class="n">kTCGoogleMapsAPIKey</span> <span class="o">=</span> <span class="s">@"YOUR-API-KEY"</span><span class="p">;</span>
+<span class="n">NSString</span> <span class="o">*</span> <span class="k">const</span> <span class="n">kTCGooglePlacesAPIKey</span> <span class="o">=</span> <span class="s">@"YOUR-API-KEY"</span><span class="p">;</span>
+</pre></div>
+</li>
+</ol><h3>
+<a name="open-source-libraries-used" class="anchor" href="#open-source-libraries-used"><span class="octicon octicon-link"></span></a>Open Source Libraries Used</h3>
+
+<ul>
+<li>AFNetworking - <a href="https://github.com/AFNetworking/AFNetworking">https://github.com/AFNetworking/AFNetworking</a>
+</li>
+<li>MBProgressHUD - <a href="https://github.com/jdg/MBProgressHUD">https://github.com/jdg/MBProgressHUD</a>
+</li>
+</ul><h3>
+<a name="see-also" class="anchor" href="#see-also"><span class="octicon octicon-link"></span></a>See Also</h3>
+
+<ul>
+<li>Google Maps SDK for iOS - <a href="https://developers.google.com/maps/documentation/ios/">https://developers.google.com/maps/documentation/ios/</a>
+</li>
+<li>Google Places API - <a href="https://developers.google.com/places/">https://developers.google.com/places/</a>
+</li>
+<li>Google Directions API - <a href="https://developers.google.com/maps/documentation/directions/">https://developers.google.com/maps/documentation/directions/</a>
+</li>
+</ul><h3>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>This project's source code is provided for educational purposes only. Image resources are based on the icons used in Google Maps. See the LICENSE file for more info.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/TCLee">TCLee</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-44945057-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
