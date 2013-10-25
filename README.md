@@ -5,22 +5,22 @@ This sample project shows how we can use **Google Maps SDK for iOS**, **Google P
 <br>
 *Search autocomplete with results sorted based on distance from your current location and relevance.*
 
-<img src="README-Images/iOS7/Screenshot1.png" alt="Google Places Autocomplete" title="Google Places Autocomplete">
+!["Google Places Autocomplete"](http://tclee.github.io/TCGoogleMaps/images/Screenshot1.png "Google Places Autocomplete")
 
 <br>
 *Selecting a search result will give you the directions from your location to the selected destination.*  
 
-<img src="README-Images/iOS7/Screenshot2.png" alt="Google Maps Directions" title="Google Maps Directions">
+!["Google Maps Directions"](http://tclee.github.io/TCGoogleMaps/images/Screenshot2.png "Google Maps Directions")
 
 <br>
 *Tapping on the list icon will bring up turn-by-turn directions.*
 
-<img src="README-Images/iOS7/Screenshot3.png" alt="Turn-by-Turn Directions" title="Turn-by-Turn Directions">
+!["Turn-by-Turn Directions"](http://tclee.github.io/TCGoogleMaps/images/Screenshot3.png "Turn-by-Turn Directions")
 
 <br>
 *Selecting a step from the list will zoom in on that specific step on the map.*
 
-<img src="README-Images/iOS7/Screenshot4.png" alt="Step-by-Step Directions on Map" title="Step-by-Step Directions on Map">
+!["Step-by-Step Directions on Map"](http://tclee.github.io/TCGoogleMaps/images/Screenshot4.png "Step-by-Step Directions on Map")
 
 <br>
 ###How to Build and Run
