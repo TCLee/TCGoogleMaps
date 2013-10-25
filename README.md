@@ -1,26 +1,26 @@
 #TCGoogleMaps
 
-This sample project shows how we can use **Google Maps SDK for iOS**, **Google Places API**  and **Google Directions API** to build a simple navigation app.
+This sample project shows how we can use Google Maps SDK for iOS, Google Places API  and Google Directions API to build a simple navigation app.
 
 <br>
 *Search autocomplete with results sorted based on distance from your current location and relevance.*
 
-!["Google Places Autocomplete"](http://tclee.github.io/TCGoogleMaps/images/Screenshot1.png "Google Places Autocomplete")
+![Google Places Autocomplete](http://tclee.github.io/TCGoogleMaps/images/screenshot-1.png "Google Places Autocomplete")
 
 <br>
 *Selecting a search result will give you the directions from your location to the selected destination.*  
 
-!["Google Maps Directions"](http://tclee.github.io/TCGoogleMaps/images/Screenshot2.png "Google Maps Directions")
+![Google Maps Directions](http://tclee.github.io/TCGoogleMaps/images/screenshot-2.png "Google Maps Directions")
 
 <br>
 *Tapping on the list icon will bring up turn-by-turn directions.*
 
-!["Turn-by-Turn Directions"](http://tclee.github.io/TCGoogleMaps/images/Screenshot3.png "Turn-by-Turn Directions")
+![Turn-by-Turn Directions](http://tclee.github.io/TCGoogleMaps/images/screenshot-3.png "Turn-by-Turn Directions")
 
 <br>
 *Selecting a step from the list will zoom in on that specific step on the map.*
 
-!["Step-by-Step Directions on Map"](http://tclee.github.io/TCGoogleMaps/images/Screenshot4.png "Step-by-Step Directions on Map")
+![Step-by-Step Directions on Map](http://tclee.github.io/TCGoogleMaps/images/screenshot-4.png "Step-by-Step Directions on Map")
 
 <br>
 ###How to Build and Run
