@@ -21,7 +21,7 @@ typedef void (^TCGoogleMapsAPIClientCallback)(AFHTTPRequestOperation *operation,
 /**
  * Subclass of AFHTTPClient to access Google Maps services.
  */
-@interface TCGoogleMapsAPIClient : AFHTTPClient
+@interface TCGoogleMapsAPIClient : AFHTTPRequestOperationManager
 
 /**
  * Convenience method to return a default instance of the API client to 
