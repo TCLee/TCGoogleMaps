@@ -27,10 +27,7 @@ static NSString * const kTCGoogleMapsAPIBaseURLString = @"https://maps.googleapi
     self = [super initWithBaseURL:url];
     
     if (self) {
-        [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
-        
-        // Accept HTTP Header; see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1
-        [self setDefaultHeader:@"Accept" value:@"application/json"];
+        self.responseSerializer = [AFJSONResponseSerializer serializer];
     }
     
     return self;
@@ -45,22 +42,29 @@ static NSString * const kTCGoogleMapsAPIBaseURLString = @"https://maps.googleapi
     mutableParameters[@"sensor"] = @"false";
     
     // Create the HTTP request with the given path and parameters.
-    NSURLRequest *request = [self requestWithMethod:@"GET"
-                                               path:path
-                                         parameters:mutableParameters];
+    NSURL *url = [NSURL URLWithString:path relativeToURL:self.baseURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSError *error = nil;
+    
+    /*
+    if (!mutableParameters[@"language"]) {
+        mutableParameters[@"language"] = @"ru";
+    }
+    */
+    
+    request = [self.requestSerializer requestBySerializingRequest:request withParameters:mutableParameters error:&error];
     
     NSLog(@"Request URL: %@", [[request URL] absoluteString]);
     
     // Create the HTTP request operation and add it to the queue.
     AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Response: %@", responseObject);
-        
+        NSLog(@"Response: %@", responseObject);        
         completion(operation, responseObject, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(operation, nil, error);
     }];
     
-    [self enqueueHTTPRequestOperation:requestOperation];
+    [self.operationQueue addOperation:requestOperation];
     
     return requestOperation;
 }
